@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-30T13:00:26.380003+00:00",
+  "videos": [
+    {
+      "id": "balance_learning",
+      "title": "修复后的 Balance 五节点完整学图过程",
+      "sha256": "90e1aa58b8ed66b8fcd98b948b7607bf321c87a08af2b1d517bf84037a00d583",
+      "bytes": 1987344,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1744"
+      }
+    },
+    {
+      "id": "balance_load_pair",
+      "title": "修复后的 Balance 左右载荷配对",
+      "sha256": "0c9f1e46bae83a24d52d995e0b555ce142d6e24dd006bfb3095e1ffe31567f8a",
+      "bytes": 1578477,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1176"
+      }
+    },
+    {
+      "id": "balance_target_pair",
+      "title": "修复后的 Balance 目标位置配对",
+      "sha256": "db4f39488dce3d20ef8ce8d149a85aebcf8106c79779e41716228e1ad97d7dea",
+      "bytes": 1073571,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "30/1",
+        "nb_frames": "832"
+      }
+    },
+    {
+      "id": "pnp_six_learning",
+      "title": "原 PnP 六节点完整过程；全轨迹接触检查通过",
+      "sha256": "1ce84c2d9cbdb531701600414f67de6c6ba2cc1507b4f6892bf8c3a0a88dca26",
+      "bytes": 1552452,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1220"
+      }
+    },
+    {
+      "id": "pnp_grasp_pair",
+      "title": "原 PnP 夹爪开合配对；所用轨迹全接触检查通过",
+      "sha256": "ddd1786a744d4cc83b700d3d7851f8903a598f8507dd760fcc77a46e9434554b",
+      "bytes": 1004987,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "30/1",
+        "nb_frames": "674"
+      }
+    }
+  ],
+  "scope": "Contact-audited physical demonstrations and actual candidate graph logs; not evidence of complete DAG recovery or an ACC benchmark result",
+  "previous_archives_preserved": true
+}

@@ -1,0 +1,242 @@
+{
+  "status": "PASS_MEDIA_INVENTORY_ONLY",
+  "new_measurements": 0,
+  "new_model_outputs": 0,
+  "videos": [
+    {
+      "id": "domino_hold_middle",
+      "video": "library-domino_hold_middle.mp4",
+      "poster": "library-domino_hold_middle.png",
+      "sha256": "427bdbf44b787d49fa172c0dff494a41d13da53b8ee4f7bc7a616dbd7ccd680c",
+      "poster_sha256": "46235854c82b687175bb1767dc7e99fa733f9ad57a3193e47e6be777cde4164a",
+      "bytes": 231999,
+      "seconds": 9.65,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "20/1",
+        "nb_frames": "193"
+      },
+      "poster_time_seconds": 1,
+      "kind": "frozen_graph_check",
+      "evidence_scope": "A recorded physical operation checked against an existing frozen six-node graph and encoder. Descendant highlights are not fresh graph learning or fitted predictions."
+    },
+    {
+      "id": "domino_push_middle",
+      "video": "library-domino_push_middle.mp4",
+      "poster": "library-domino_push_middle.png",
+      "sha256": "029bfe353521490ee699a44732bdaaa1b63f8708dad8d5038d81bbf825c5b50c",
+      "poster_sha256": "a1fff7824e0bda8c10cb1627d309b200bef87f4f7a9706cd24e1462acfc28721",
+      "bytes": 201030,
+      "seconds": 7.6,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "20/1",
+        "nb_frames": "152"
+      },
+      "poster_time_seconds": 1,
+      "kind": "frozen_graph_check",
+      "evidence_scope": "A qualitative recorded operation with a frozen graph, not a counterfactual decoder or OOD benchmark."
+    },
+    {
+      "id": "domino_push_last",
+      "video": "library-domino_push_last.mp4",
+      "poster": "library-domino_push_last.png",
+      "sha256": "deb0d317dcd08c9da1fdfdc15117787b70773b744cc1d9590dd8a591786a5b1e",
+      "poster_sha256": "9b7fc358b000f2cc53cb08fd6364ddab937e483c92b235b17693082d7873f093",
+      "bytes": 208584,
+      "seconds": 7.6,
+      "stream": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "20/1",
+        "nb_frames": "152"
+      },
+      "poster_time_seconds": 1,
+      "kind": "frozen_graph_check",
+      "evidence_scope": "An endpoint physical check using the original frozen graph and encoder. It is not a new fitted state predictor."
+    },
+    {
+      "id": "domino_frozen_operations",
+      "video": "library-domino_frozen_operations.mp4",
+      "poster": "library-domino_frozen_operations.png",
+      "sha256": "1842b60c5aaf0fb345402feb9ad562fd2a02da1d5a27ab42239edf03d96eea98",
+      "poster_sha256": "63d4444149000e7746f4c84ab6dba3f470970301830e1488a6eebd959bde2ea2",
+      "bytes": 644683,
+      "seconds": 19.8,
+      "stream": {
+        "width": 1600,
+        "height": 960,
+        "r_frame_rate": "20/1",
+        "nb_frames": "396"
+      },
+      "poster_time_seconds": 1,
+      "kind": "frozen_graph_check",
+      "evidence_scope": "The same three physical operations in a compiled static-graph presentation; simulator outcomes are not model predictions."
+    },
+    {
+      "id": "tool_hook_pull",
+      "video": "library-tool_hook_pull.mp4",
+      "poster": "library-tool_hook_pull.png",
+      "sha256": "9307f9091529d905cc14a58787908352216d6090c2f43a5f31a1dd8654e16694",
+      "poster_sha256": "023cf33c962570f7159f28872cf36fe8c5a13ce0a94d92ade918d2c74c027c59",
+      "bytes": 588525,
+      "seconds": 11.4,
+      "stream": {
+        "width": 1024,
+        "height": 640,
+        "r_frame_rate": "30/1",
+        "nb_frames": "342"
+      },
+      "poster_time_seconds": 1,
+      "kind": "mechanical_preview",
+      "evidence_scope": "Contact-checked mechanical preview. No learned causal graph or model-generated image is supplied for this clip."
+    },
+    {
+      "id": "tool_miss_cube",
+      "video": "library-tool_miss_cube.mp4",
+      "poster": "library-tool_miss_cube.png",
+      "sha256": "939805dc4b5837ebc5a29ceca790c79c8ca891d371f371a9b17e2bc6a5d2fdeb",
+      "poster_sha256": "023cf33c962570f7159f28872cf36fe8c5a13ce0a94d92ade918d2c74c027c59",
+      "bytes": 613630,
+      "seconds": 11.4,
+      "stream": {
+        "width": 1024,
+        "height": 640,
+        "r_frame_rate": "30/1",
+        "nb_frames": "342"
+      },
+      "poster_time_seconds": 1,
+      "kind": "mechanical_preview",
+      "evidence_scope": "A physical negative control, not a causal-discovery or predictor evaluation."
+    },
+    {
+      "id": "tool_open_gripper",
+      "video": "library-tool_open_gripper.mp4",
+      "poster": "library-tool_open_gripper.png",
+      "sha256": "89eafd39d3982732eeeaadae4771c8f6fc8f6b70c1fcbb4bcad4d251448c4a13",
+      "poster_sha256": "023cf33c962570f7159f28872cf36fe8c5a13ce0a94d92ade918d2c74c027c59",
+      "bytes": 552847,
+      "seconds": 11.4,
+      "stream": {
+        "width": 1024,
+        "height": 640,
+        "r_frame_rate": "30/1",
+        "nb_frames": "342"
+      },
+      "poster_time_seconds": 1,
+      "kind": "mechanical_preview",
+      "evidence_scope": "Mechanical preview of an open-gripper control, without a learned graph. No object attachment constraint is used in the recorded source."
+    },
+    {
+      "id": "env_pickplace_1d",
+      "video": "library-env_pickplace_1d.mp4",
+      "poster": "library-env_pickplace_1d.png",
+      "sha256": "b0b78edbbe23e06443cdf68d33e02e1caf9b55292b961e7b2cab95a23e2acce3",
+      "poster_sha256": "8931e9e5ee8ae519d10bde2eaca64c6c2a2f036c18355730c195859d1852afb5",
+      "bytes": 1257411,
+      "seconds": 14.7,
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "20/1",
+        "nb_frames": "294"
+      },
+      "poster_time_seconds": 1,
+      "kind": "environment_preview",
+      "evidence_scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence."
+    },
+    {
+      "id": "env_pickplace_2d",
+      "video": "library-env_pickplace_2d.mp4",
+      "poster": "library-env_pickplace_2d.png",
+      "sha256": "8870615962b6aff52fd4669cbcd33da66ec618623d718ef80a32a365f2383d74",
+      "poster_sha256": "bafedab2e94f6809e156bd305cdc1101f4bfde415b49bab15e3dcdec56e82d9e",
+      "bytes": 2185338,
+      "seconds": 19.15,
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "20/1",
+        "nb_frames": "383"
+      },
+      "poster_time_seconds": 1,
+      "kind": "environment_preview",
+      "evidence_scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence."
+    },
+    {
+      "id": "env_billiards",
+      "video": "library-env_billiards.mp4",
+      "poster": "library-env_billiards.png",
+      "sha256": "228bd28bf8e6dd88fa5fe339e69ad14fa191a0c2337c9884f46787e0a97c8ca0",
+      "poster_sha256": "777c10bee06516b7e2c4a77ac91b159377130bdb813967f5b85d7b6cb2a80671",
+      "bytes": 1552038,
+      "seconds": 15.25,
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "20/1",
+        "nb_frames": "305"
+      },
+      "poster_time_seconds": 1,
+      "kind": "environment_preview",
+      "evidence_scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence."
+    },
+    {
+      "id": "env_balance",
+      "video": "library-env_balance.mp4",
+      "poster": "library-env_balance.png",
+      "sha256": "8d5835ca7b45fd229a9538313598d62356f3b54c90d0962274be3c8629399729",
+      "poster_sha256": "5ce8a6dcc6056e8af4cbb79601b02e15a07e21fe8f78c12885477284302f2b84",
+      "bytes": 887547,
+      "seconds": 9.75,
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "20/1",
+        "nb_frames": "195"
+      },
+      "poster_time_seconds": 1,
+      "kind": "environment_preview",
+      "evidence_scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence."
+    },
+    {
+      "id": "env_domino",
+      "video": "library-env_domino.mp4",
+      "poster": "library-env_domino.png",
+      "sha256": "bce8bcd9bb956d82be69905962a8bc5228a50f88d32802c072a0fad85f664363",
+      "poster_sha256": "cd677824e263662060ab74786f2eb30ddf2798cf0daf475e89106efee1f6d0e8",
+      "bytes": 1299030,
+      "seconds": 12.7,
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "20/1",
+        "nb_frames": "254"
+      },
+      "poster_time_seconds": 1,
+      "kind": "environment_preview",
+      "evidence_scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence."
+    },
+    {
+      "id": "env_gears",
+      "video": "library-env_gears.mp4",
+      "poster": "library-env_gears.png",
+      "sha256": "0055498325be37271589df426213d0e4e9ecb1bc6b9b5259a2dfbbb41a53e6e3",
+      "poster_sha256": "ae51e6a4148e788d89a33ea13283eccae885c0a3b279d55f372c5e74763a5d99",
+      "bytes": 765538,
+      "seconds": 8.05,
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "20/1",
+        "nb_frames": "161"
+      },
+      "poster_time_seconds": 1,
+      "kind": "environment_preview",
+      "evidence_scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence."
+    }
+  ],
+  "not_experiment_integrity_certification": true
+}

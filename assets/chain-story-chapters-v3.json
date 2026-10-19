@@ -1,0 +1,39 @@
+{
+  "module": "chain",
+  "fps": 20,
+  "frames": 655,
+  "duration": 32.75,
+  "chapters": [
+    {
+      "id": "question",
+      "label": "The question",
+      "time": 0.0
+    },
+    {
+      "id": "calibration",
+      "label": "Align the values",
+      "time": 3.5
+    },
+    {
+      "id": "round1",
+      "label": "Operate Entry",
+      "time": 7.0
+    },
+    {
+      "id": "update1",
+      "label": "Update after batch 1",
+      "time": 17.25
+    },
+    {
+      "id": "graph",
+      "label": "The learned graph",
+      "time": 22.25
+    },
+    {
+      "id": "query",
+      "label": "Inspect a frozen query",
+      "time": 25.75
+    }
+  ],
+  "video_sha256": "1ce0829d468e6b1775f787542744847a74bc2a03fcb1213048482a1d52b179ce"
+}

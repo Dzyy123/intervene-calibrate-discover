@@ -1,0 +1,724 @@
+{
+  "calibration": {
+    "chain": {
+      "n": 128,
+      "targets": [
+        1
+      ],
+      "raw_nmse": [
+        0.026856345884556303,
+        0.0019964854319428726,
+        0.002255877953966041,
+        0.006523978063902507
+      ],
+      "calibrated_nmse": [
+        0.05427924835984375,
+        0.0019964854319428726,
+        0.002255877953966041,
+        0.006523978063902507
+      ],
+      "examples": [
+        {
+          "image": "chain-calibration-0.png",
+          "sample_index": 0,
+          "raw": [
+            0.0719800392310006,
+            -0.014344947356772053,
+            -0.018112959264879436,
+            -0.07363628439412295
+          ],
+          "calibrated": [
+            0.17270182614255472,
+            -0.014344947356772053,
+            -0.018112959264879436,
+            -0.07363628439412295
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "chain-calibration-1.png",
+          "sample_index": 1,
+          "raw": [
+            0.07058503394481619,
+            -0.014368314007072058,
+            -0.017187516850565743,
+            -0.07132655713552083
+          ],
+          "calibrated": [
+            0.17156862929172537,
+            -0.014368314007072058,
+            -0.017187516850565743,
+            -0.07132655713552083
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "chain-calibration-2.png",
+          "sample_index": 2,
+          "raw": [
+            1.0528163408158804,
+            1.0095745933915268,
+            1.0113249477507527,
+            0.9965908889352502
+          ],
+          "calibrated": [
+            0.9947466227523455,
+            1.0095745933915268,
+            1.0113249477507527,
+            0.9965908889352502
+          ],
+          "scoring_label": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "image": "chain-calibration-3.png",
+          "sample_index": 3,
+          "raw": [
+            0.07353252516391251,
+            -0.008028965563530832,
+            -0.012614878802274632,
+            -0.06377039718967481
+          ],
+          "calibrated": [
+            0.1739630703709791,
+            -0.008028965563530832,
+            -0.012614878802274632,
+            -0.06377039718967481
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "chain-calibration-4.png",
+          "sample_index": 4,
+          "raw": [
+            0.06916351951013766,
+            -0.012719627375599174,
+            -0.016206431498481777,
+            -0.06862608501738521
+          ],
+          "calibrated": [
+            0.17041400493241748,
+            -0.012719627375599174,
+            -0.016206431498481777,
+            -0.06862608501738521
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "chain-calibration-5.png",
+          "sample_index": 5,
+          "raw": [
+            0.07251859942914507,
+            -0.012411342180165263,
+            -0.015678625275533875,
+            -0.0696951958969727
+          ],
+          "calibrated": [
+            0.1731393394902695,
+            -0.012411342180165263,
+            -0.015678625275533875,
+            -0.0696951958969727
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "chain-calibration-6.png",
+          "sample_index": 6,
+          "raw": [
+            0.0646613777723033,
+            -0.01817660234896934,
+            0.0022926184049403275,
+            1.0367869756149855
+          ],
+          "calibrated": [
+            0.16675784958307932,
+            -0.01817660234896934,
+            0.0022926184049403275,
+            1.0367869756149855
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "image": "chain-calibration-7.png",
+          "sample_index": 7,
+          "raw": [
+            0.07201174900777829,
+            -0.01075516395088627,
+            -0.01430435754247128,
+            -0.06641431947286236
+          ],
+          "calibrated": [
+            0.1727275859737,
+            -0.01075516395088627,
+            -0.01430435754247128,
+            -0.06641431947286236
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "raw_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "calibrated_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "parallel": {
+      "n": 128,
+      "targets": [
+        1,
+        3
+      ],
+      "raw_nmse": [
+        0.003911582080742851,
+        0.0058305424572938774,
+        0.0026639401141882496,
+        0.0034791433709647243
+      ],
+      "calibrated_nmse": [
+        0.0012428427573941015,
+        0.0058305424572938774,
+        0.001491069234107397,
+        0.0034791433709647243
+      ],
+      "examples": [
+        {
+          "image": "parallel-calibration-0.png",
+          "sample_index": 0,
+          "raw": [
+            -0.04304322714750697,
+            1.0740033306292887,
+            -0.010654435343459667,
+            -0.0286199709293804
+          ],
+          "calibrated": [
+            -0.0020720691171430272,
+            1.0740033306292887,
+            0.023545790358727947,
+            -0.0286199709293804
+          ],
+          "scoring_label": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-1.png",
+          "sample_index": 1,
+          "raw": [
+            -0.021495299918367294,
+            -0.01655143266556003,
+            -0.017516773894641346,
+            -0.015626085966198744
+          ],
+          "calibrated": [
+            0.018421400025945167,
+            -0.01655143266556003,
+            0.01696580496115857,
+            -0.015626085966198744
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-2.png",
+          "sample_index": 2,
+          "raw": [
+            -0.03320439886673654,
+            1.0599322217877152,
+            0.002319512250336331,
+            1.0648297976113277
+          ],
+          "calibrated": [
+            0.007286127001472187,
+            1.0599322217877152,
+            0.03598456358970614,
+            1.0648297976113277
+          ],
+          "scoring_label": [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-3.png",
+          "sample_index": 3,
+          "raw": [
+            -0.041136857232441315,
+            1.0681975836869775,
+            -0.009232606911988128,
+            -0.022835002518126757
+          ],
+          "calibrated": [
+            -0.0002587140152081613,
+            1.0681975836869775,
+            0.02490905425085546,
+            -0.022835002518126757
+          ],
+          "scoring_label": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-4.png",
+          "sample_index": 4,
+          "raw": [
+            -0.016928258746705893,
+            -0.030902122197998594,
+            -0.02096211536610504,
+            -0.0073206624857729
+          ],
+          "calibrated": [
+            0.022764103184344853,
+            -0.030902122197998594,
+            0.013662030757816551,
+            -0.0073206624857729
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-5.png",
+          "sample_index": 5,
+          "raw": [
+            -0.016706367264522015,
+            -0.017683392793102826,
+            -0.01728446254296223,
+            -0.017089831832210578
+          ],
+          "calibrated": [
+            0.02297508781085006,
+            -0.017683392793102826,
+            0.017188566095974273,
+            -0.017089831832210578
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-6.png",
+          "sample_index": 6,
+          "raw": [
+            -0.022291131606721137,
+            -0.012283202796906423,
+            1.013455297748589,
+            1.0046948846942136
+          ],
+          "calibrated": [
+            0.01766463090456316,
+            -0.012283202796906423,
+            1.0031587520498917,
+            1.0046948846942136
+          ],
+          "scoring_label": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "image": "parallel-calibration-7.png",
+          "sample_index": 7,
+          "raw": [
+            1.0084886719889639,
+            1.0411726873193885,
+            -0.02838186801692899,
+            -0.015316966179577562
+          ],
+          "calibrated": [
+            0.99688359409214,
+            1.0411726873193885,
+            0.006546705706839129,
+            -0.015316966179577562
+          ],
+          "scoring_label": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "raw_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "calibrated_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "queries": [
+    {
+      "id": "chain-root1-context0",
+      "module": "chain",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98310000,
+      "context_index": 0,
+      "images": {
+        "factual": "chain-root1-context0-factual.png",
+        "gt": "chain-root1-context0-gt.png",
+        "prediction": "chain-root1-context0-prediction.png",
+        "control": "chain-root1-context0-control.png",
+        "error": "chain-root1-context0-error-visible.png"
+      },
+      "image_mse": 0.0001777730470251826,
+      "control_mse": 0.00011398422982346531,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1379,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0006497454494222625,
+      "control_changed_region_mse": 0.00048265402840078336
+    },
+    {
+      "id": "chain-root1-context1",
+      "module": "chain",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98310001,
+      "context_index": 1,
+      "images": {
+        "factual": "chain-root1-context1-factual.png",
+        "gt": "chain-root1-context1-gt.png",
+        "prediction": "chain-root1-context1-prediction.png",
+        "control": "chain-root1-context1-control.png",
+        "error": "chain-root1-context1-error-visible.png"
+      },
+      "image_mse": 0.00015815825794165703,
+      "control_mse": 9.88674102708894e-05,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1378,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0004752777345321577,
+      "control_changed_region_mse": 0.00034384453004287173
+    },
+    {
+      "id": "chain-root1-context2",
+      "module": "chain",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98310002,
+      "context_index": 2,
+      "images": {
+        "factual": "chain-root1-context2-factual.png",
+        "gt": "chain-root1-context2-gt.png",
+        "prediction": "chain-root1-context2-prediction.png",
+        "control": "chain-root1-context2-control.png",
+        "error": "chain-root1-context2-error-visible.png"
+      },
+      "image_mse": 0.0001209636543036332,
+      "control_mse": 0.00588752454234349,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1924,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0005993936443763433,
+      "control_changed_region_mse": 0.049286395791586106
+    },
+    {
+      "id": "chain-root1-context3",
+      "module": "chain",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98310003,
+      "context_index": 3,
+      "images": {
+        "factual": "chain-root1-context3-factual.png",
+        "gt": "chain-root1-context3-gt.png",
+        "prediction": "chain-root1-context3-prediction.png",
+        "control": "chain-root1-context3-control.png",
+        "error": "chain-root1-context3-error-visible.png"
+      },
+      "image_mse": 0.0001199508602460592,
+      "control_mse": 0.005908731892981867,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1908,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.000598501194643462,
+      "control_changed_region_mse": 0.049698866022341026
+    },
+    {
+      "id": "parallel-root1-context0",
+      "module": "parallel",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98410000,
+      "context_index": 0,
+      "images": {
+        "factual": "parallel-root1-context0-factual.png",
+        "gt": "parallel-root1-context0-gt.png",
+        "prediction": "parallel-root1-context0-prediction.png",
+        "control": "parallel-root1-context0-control.png",
+        "error": "parallel-root1-context0-error-visible.png"
+      },
+      "image_mse": 0.00027055493229767396,
+      "control_mse": 0.000253988537561675,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1354,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.001533595664736,
+      "control_changed_region_mse": 0.0014936496605574001
+    },
+    {
+      "id": "parallel-root1-context1",
+      "module": "parallel",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98410001,
+      "context_index": 1,
+      "images": {
+        "factual": "parallel-root1-context1-factual.png",
+        "gt": "parallel-root1-context1-gt.png",
+        "prediction": "parallel-root1-context1-prediction.png",
+        "control": "parallel-root1-context1-control.png",
+        "error": "parallel-root1-context1-error-visible.png"
+      },
+      "image_mse": 0.0002869142001674036,
+      "control_mse": 0.0013579825567890554,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1539,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0023518653003039352,
+      "control_changed_region_mse": 0.013767707510240186
+    },
+    {
+      "id": "parallel-root1-context2",
+      "module": "parallel",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98410002,
+      "context_index": 2,
+      "images": {
+        "factual": "parallel-root1-context2-factual.png",
+        "gt": "parallel-root1-context2-gt.png",
+        "prediction": "parallel-root1-context2-prediction.png",
+        "control": "parallel-root1-context2-control.png",
+        "error": "parallel-root1-context2-error-visible.png"
+      },
+      "image_mse": 0.00027602251838235295,
+      "control_mse": 0.001382171345355953,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1531,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0018464820301826667,
+      "control_changed_region_mse": 0.013670231675786992
+    },
+    {
+      "id": "parallel-root1-context3",
+      "module": "parallel",
+      "target": 1,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98410003,
+      "context_index": 3,
+      "images": {
+        "factual": "parallel-root1-context3-factual.png",
+        "gt": "parallel-root1-context3-gt.png",
+        "prediction": "parallel-root1-context3-prediction.png",
+        "control": "parallel-root1-context3-control.png",
+        "error": "parallel-root1-context3-error-visible.png"
+      },
+      "image_mse": 0.0002198992725153787,
+      "control_mse": 0.001331055751293573,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1569,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0014505378502017534,
+      "control_changed_region_mse": 0.013216860995513566
+    },
+    {
+      "id": "parallel-root3-context0",
+      "module": "parallel",
+      "target": 3,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98420000,
+      "context_index": 0,
+      "images": {
+        "factual": "parallel-root3-context0-factual.png",
+        "gt": "parallel-root3-context0-gt.png",
+        "prediction": "parallel-root3-context0-prediction.png",
+        "control": "parallel-root3-context0-control.png",
+        "error": "parallel-root3-context0-error-visible.png"
+      },
+      "image_mse": 0.00037406235982955275,
+      "control_mse": 0.001481608823829777,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1089,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0019529819886326123,
+      "control_changed_region_mse": 0.017981254884543826
+    },
+    {
+      "id": "parallel-root3-context1",
+      "module": "parallel",
+      "target": 3,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98420001,
+      "context_index": 1,
+      "images": {
+        "factual": "parallel-root3-context1-factual.png",
+        "gt": "parallel-root3-context1-gt.png",
+        "prediction": "parallel-root3-context1-prediction.png",
+        "control": "parallel-root3-context1-control.png",
+        "error": "parallel-root3-context1-error-visible.png"
+      },
+      "image_mse": 0.00020241488650198637,
+      "control_mse": 0.0010024461620330321,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1095,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0011652748006415984,
+      "control_changed_region_mse": 0.013091258074841836
+    },
+    {
+      "id": "parallel-root3-context2",
+      "module": "parallel",
+      "target": 3,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98420002,
+      "context_index": 2,
+      "images": {
+        "factual": "parallel-root3-context2-factual.png",
+        "gt": "parallel-root3-context2-gt.png",
+        "prediction": "parallel-root3-context2-prediction.png",
+        "control": "parallel-root3-context2-control.png",
+        "error": "parallel-root3-context2-error-visible.png"
+      },
+      "image_mse": 0.00024543188266932587,
+      "control_mse": 0.0012274832446254643,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1068,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0018398090430022831,
+      "control_changed_region_mse": 0.016654691055634514
+    },
+    {
+      "id": "parallel-root3-context3",
+      "module": "parallel",
+      "target": 3,
+      "command": 1,
+      "factual_command": 0,
+      "context_seed": 98420003,
+      "context_index": 3,
+      "images": {
+        "factual": "parallel-root3-context3-factual.png",
+        "gt": "parallel-root3-context3-gt.png",
+        "prediction": "parallel-root3-context3-prediction.png",
+        "control": "parallel-root3-context3-control.png",
+        "error": "parallel-root3-context3-error-visible.png"
+      },
+      "image_mse": 0.00023370606157087012,
+      "control_mse": 0.0012183092765803215,
+      "heatmap_max_mae": 0.25,
+      "native_resolution": 128,
+      "interpretation": "paired endpoint-intervention query with linear factual-residual propagation; not a demonstrated exact nonlinear binary SCM",
+      "changed_pixels": 1062,
+      "changed_region_mask_definition": "mean absolute factual/GT RGB difference > 0.03; scoring only",
+      "changed_region_mse": 0.0017341343193851028,
+      "control_changed_region_mse": 0.016810131213717838
+    }
+  ],
+  "scope": "single-seed, shared graph-discovery replay contexts, imperfect linear-additive mechanisms on binary states; not exact counterfactual identification or published baseline ranking"
+}

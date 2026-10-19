@@ -1,0 +1,12 @@
+{
+  "status": "PASS_EXACT_REPORTED_CELL_IMPORT",
+  "source_cells": 118,
+  "reported_values": 234,
+  "new_experiment_measurements": 0,
+  "source": {
+    "numeric_sha256": "7447b5e7bbccfaca78acaf4fbdc9bb3d5f93b707333db373e7b8d21b0c4f3ffb",
+    "paper_sha256": "55967f485557e1496d6b63b358ab6cc16e3af9a9a5ba69b32671ed6b9ad4c2f9",
+    "method_pdf_sha256": "e95da0a2e9c94ad60eff767542c3a9b0c1053726fbae18534a5309d779f95faa",
+    "importer_sha256": "9dca0dd492a3d6ffd82f4e3d987035cb75cd5e161cee4f200d727bc787ccab9c"
+  }
+}

@@ -1,0 +1,1062 @@
+{
+  "tables-unified-graph-tex-c0001": {
+    "file": "tables/unified_graph.tex",
+    "cell": 1,
+    "tex": "\\shortstack{\\textbf{4}\\\\\\textbf{.846}}",
+    "numbers": [
+      "4",
+      ".846"
+    ]
+  },
+  "tables-unified-graph-tex-c0009": {
+    "file": "tables/unified_graph.tex",
+    "cell": 9,
+    "tex": "\\shortstack{6\\\\.313}",
+    "numbers": [
+      "6",
+      ".313"
+    ]
+  },
+  "tables-unified-graph-tex-c0017": {
+    "file": "tables/unified_graph.tex",
+    "cell": 17,
+    "tex": "\\shortstack{6\\\\.194}",
+    "numbers": [
+      "6",
+      ".194"
+    ]
+  },
+  "tables-unified-graph-tex-c0025": {
+    "file": "tables/unified_graph.tex",
+    "cell": 25,
+    "tex": "8/8",
+    "numbers": [
+      "8",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0001": {
+    "file": "tables/unified_ood.tex",
+    "cell": 1,
+    "tex": "\\shortstack{\\textbf{8.573}\\\\\\textbf{10.341}\\\\\\textbf{0.829}}",
+    "numbers": [
+      "8.573",
+      "10.341",
+      "0.829"
+    ]
+  },
+  "tables-unified-ood-tex-c0009": {
+    "file": "tables/unified_ood.tex",
+    "cell": 9,
+    "tex": "\\shortstack{123.799\\\\807.120\\\\0.153}",
+    "numbers": [
+      "123.799",
+      "807.120",
+      "0.153"
+    ]
+  },
+  "tables-unified-ood-tex-c0017": {
+    "file": "tables/unified_ood.tex",
+    "cell": 17,
+    "tex": "\\shortstack{123.713\\\\874.392\\\\0.141}",
+    "numbers": [
+      "123.713",
+      "874.392",
+      "0.141"
+    ]
+  },
+  "tables-unified-ood-tex-c0025": {
+    "file": "tables/unified_ood.tex",
+    "cell": 25,
+    "tex": "\\shortstack{34.144\\\\245.391\\\\0.139}",
+    "numbers": [
+      "34.144",
+      "245.391",
+      "0.139"
+    ]
+  },
+  "tables-unified-cf-tex-c0001": {
+    "file": "tables/unified_cf.tex",
+    "cell": 1,
+    "tex": "\\textbf{1.473}",
+    "numbers": [
+      "1.473"
+    ]
+  },
+  "tables-unified-cf-tex-c0009": {
+    "file": "tables/unified_cf.tex",
+    "cell": 9,
+    "tex": "2.525",
+    "numbers": [
+      "2.525"
+    ]
+  },
+  "tables-unified-cf-tex-c0017": {
+    "file": "tables/unified_cf.tex",
+    "cell": 17,
+    "tex": "9.009",
+    "numbers": [
+      "9.009"
+    ]
+  },
+  "tables-unified-cf-tex-c0027": {
+    "file": "tables/unified_cf.tex",
+    "cell": 27,
+    "tex": "4.215",
+    "numbers": [
+      "4.215"
+    ]
+  },
+  "tables-unified-graph-tex-c0002": {
+    "file": "tables/unified_graph.tex",
+    "cell": 2,
+    "tex": "\\shortstack{\\textbf{0}\\\\\\textbf{.982}}",
+    "numbers": [
+      "0",
+      ".982"
+    ]
+  },
+  "tables-unified-graph-tex-c0010": {
+    "file": "tables/unified_graph.tex",
+    "cell": 10,
+    "tex": "\\shortstack{3\\\\.284}",
+    "numbers": [
+      "3",
+      ".284"
+    ]
+  },
+  "tables-unified-graph-tex-c0018": {
+    "file": "tables/unified_graph.tex",
+    "cell": 18,
+    "tex": "\\shortstack{2\\\\.294}",
+    "numbers": [
+      "2",
+      ".294"
+    ]
+  },
+  "tables-unified-graph-tex-c0026": {
+    "file": "tables/unified_graph.tex",
+    "cell": 26,
+    "tex": "7/8",
+    "numbers": [
+      "7",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0002": {
+    "file": "tables/unified_ood.tex",
+    "cell": 2,
+    "tex": "\\shortstack{\\textbf{6.234}\\\\\\textbf{8.291}\\\\\\textbf{0.752}}",
+    "numbers": [
+      "6.234",
+      "8.291",
+      "0.752"
+    ]
+  },
+  "tables-unified-ood-tex-c0010": {
+    "file": "tables/unified_ood.tex",
+    "cell": 10,
+    "tex": "\\shortstack{228.713\\\\791.706\\\\0.289}",
+    "numbers": [
+      "228.713",
+      "791.706",
+      "0.289"
+    ]
+  },
+  "tables-unified-ood-tex-c0018": {
+    "file": "tables/unified_ood.tex",
+    "cell": 18,
+    "tex": "\\shortstack{162.410\\\\515.288\\\\0.315}",
+    "numbers": [
+      "162.410",
+      "515.288",
+      "0.315"
+    ]
+  },
+  "tables-unified-ood-tex-c0026": {
+    "file": "tables/unified_ood.tex",
+    "cell": 26,
+    "tex": "\\shortstack{51.205\\\\421.363\\\\0.122}",
+    "numbers": [
+      "51.205",
+      "421.363",
+      "0.122"
+    ]
+  },
+  "tables-unified-cf-tex-c0002": {
+    "file": "tables/unified_cf.tex",
+    "cell": 2,
+    "tex": "\\textbf{.880}",
+    "numbers": [
+      ".880"
+    ]
+  },
+  "tables-unified-cf-tex-c0010": {
+    "file": "tables/unified_cf.tex",
+    "cell": 10,
+    "tex": "1.287",
+    "numbers": [
+      "1.287"
+    ]
+  },
+  "tables-unified-cf-tex-c0018": {
+    "file": "tables/unified_cf.tex",
+    "cell": 18,
+    "tex": "5.707",
+    "numbers": [
+      "5.707"
+    ]
+  },
+  "tables-unified-cf-tex-c0028": {
+    "file": "tables/unified_cf.tex",
+    "cell": 28,
+    "tex": "2.314",
+    "numbers": [
+      "2.314"
+    ]
+  },
+  "tables-unified-graph-tex-c0003": {
+    "file": "tables/unified_graph.tex",
+    "cell": 3,
+    "tex": "\\shortstack{\\textbf{0}\\\\\\textbf{.862}}",
+    "numbers": [
+      "0",
+      ".862"
+    ]
+  },
+  "tables-unified-graph-tex-c0011": {
+    "file": "tables/unified_graph.tex",
+    "cell": 11,
+    "tex": "\\shortstack{3\\\\.516}",
+    "numbers": [
+      "3",
+      ".516"
+    ]
+  },
+  "tables-unified-graph-tex-c0019": {
+    "file": "tables/unified_graph.tex",
+    "cell": 19,
+    "tex": "\\shortstack{5\\\\.232}",
+    "numbers": [
+      "5",
+      ".232"
+    ]
+  },
+  "tables-unified-graph-tex-c0027": {
+    "file": "tables/unified_graph.tex",
+    "cell": 27,
+    "tex": "8/8",
+    "numbers": [
+      "8",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0003": {
+    "file": "tables/unified_ood.tex",
+    "cell": 3,
+    "tex": "\\shortstack{\\textbf{1.771}\\\\\\textbf{3.461}\\\\\\textbf{0.512}}",
+    "numbers": [
+      "1.771",
+      "3.461",
+      "0.512"
+    ]
+  },
+  "tables-unified-ood-tex-c0011": {
+    "file": "tables/unified_ood.tex",
+    "cell": 11,
+    "tex": "\\shortstack{51.105\\\\318.545\\\\0.160}",
+    "numbers": [
+      "51.105",
+      "318.545",
+      "0.160"
+    ]
+  },
+  "tables-unified-ood-tex-c0019": {
+    "file": "tables/unified_ood.tex",
+    "cell": 19,
+    "tex": "\\shortstack{58.106\\\\394.825\\\\0.147}",
+    "numbers": [
+      "58.106",
+      "394.825",
+      "0.147"
+    ]
+  },
+  "tables-unified-ood-tex-c0027": {
+    "file": "tables/unified_ood.tex",
+    "cell": 27,
+    "tex": "\\shortstack{57.011\\\\393.035\\\\0.145}",
+    "numbers": [
+      "57.011",
+      "393.035",
+      "0.145"
+    ]
+  },
+  "tables-unified-cf-tex-c0003": {
+    "file": "tables/unified_cf.tex",
+    "cell": 3,
+    "tex": "\\textbf{1.118}",
+    "numbers": [
+      "1.118"
+    ]
+  },
+  "tables-unified-cf-tex-c0011": {
+    "file": "tables/unified_cf.tex",
+    "cell": 11,
+    "tex": "3.563",
+    "numbers": [
+      "3.563"
+    ]
+  },
+  "tables-unified-cf-tex-c0019": {
+    "file": "tables/unified_cf.tex",
+    "cell": 19,
+    "tex": "7.025",
+    "numbers": [
+      "7.025"
+    ]
+  },
+  "tables-unified-cf-tex-c0029": {
+    "file": "tables/unified_cf.tex",
+    "cell": 29,
+    "tex": "2.161",
+    "numbers": [
+      "2.161"
+    ]
+  },
+  "tables-unified-graph-tex-c0004": {
+    "file": "tables/unified_graph.tex",
+    "cell": 4,
+    "tex": "\\shortstack{6\\\\.413}",
+    "numbers": [
+      "6",
+      ".413"
+    ]
+  },
+  "tables-unified-graph-tex-c0012": {
+    "file": "tables/unified_graph.tex",
+    "cell": 12,
+    "tex": "\\shortstack{8\\\\\\textbf{.475}}",
+    "numbers": [
+      "8",
+      ".475"
+    ]
+  },
+  "tables-unified-graph-tex-c0020": {
+    "file": "tables/unified_graph.tex",
+    "cell": 20,
+    "tex": "\\shortstack{\\textbf{4}\\\\.178}",
+    "numbers": [
+      "4",
+      ".178"
+    ]
+  },
+  "tables-unified-graph-tex-c0028": {
+    "file": "tables/unified_graph.tex",
+    "cell": 28,
+    "tex": "7/8",
+    "numbers": [
+      "7",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0004": {
+    "file": "tables/unified_ood.tex",
+    "cell": 4,
+    "tex": "\\shortstack{\\textbf{2.085}\\\\\\textbf{4.101}\\\\\\textbf{0.508}}",
+    "numbers": [
+      "2.085",
+      "4.101",
+      "0.508"
+    ]
+  },
+  "tables-unified-ood-tex-c0012": {
+    "file": "tables/unified_ood.tex",
+    "cell": 12,
+    "tex": "\\shortstack{130.996\\\\852.155\\\\0.154}",
+    "numbers": [
+      "130.996",
+      "852.155",
+      "0.154"
+    ]
+  },
+  "tables-unified-ood-tex-c0020": {
+    "file": "tables/unified_ood.tex",
+    "cell": 20,
+    "tex": "\\shortstack{104.107\\\\713.652\\\\0.146}",
+    "numbers": [
+      "104.107",
+      "713.652",
+      "0.146"
+    ]
+  },
+  "tables-unified-ood-tex-c0028": {
+    "file": "tables/unified_ood.tex",
+    "cell": 28,
+    "tex": "\\shortstack{102.146\\\\700.012\\\\0.146}",
+    "numbers": [
+      "102.146",
+      "700.012",
+      "0.146"
+    ]
+  },
+  "tables-unified-cf-tex-c0004": {
+    "file": "tables/unified_cf.tex",
+    "cell": 4,
+    "tex": "\\textbf{2.180}",
+    "numbers": [
+      "2.180"
+    ]
+  },
+  "tables-unified-cf-tex-c0012": {
+    "file": "tables/unified_cf.tex",
+    "cell": 12,
+    "tex": "4.603",
+    "numbers": [
+      "4.603"
+    ]
+  },
+  "tables-unified-cf-tex-c0020": {
+    "file": "tables/unified_cf.tex",
+    "cell": 20,
+    "tex": "15.477",
+    "numbers": [
+      "15.477"
+    ]
+  },
+  "tables-unified-cf-tex-c0030": {
+    "file": "tables/unified_cf.tex",
+    "cell": 30,
+    "tex": "5.014",
+    "numbers": [
+      "5.014"
+    ]
+  },
+  "tables-unified-graph-tex-c0005": {
+    "file": "tables/unified_graph.tex",
+    "cell": 5,
+    "tex": "\\shortstack{7\\\\\\textbf{.793}}",
+    "numbers": [
+      "7",
+      ".793"
+    ]
+  },
+  "tables-unified-graph-tex-c0013": {
+    "file": "tables/unified_graph.tex",
+    "cell": 13,
+    "tex": "\\shortstack{8\\\\.522}",
+    "numbers": [
+      "8",
+      ".522"
+    ]
+  },
+  "tables-unified-graph-tex-c0021": {
+    "file": "tables/unified_graph.tex",
+    "cell": 21,
+    "tex": "\\shortstack{\\textbf{5}\\\\.177}",
+    "numbers": [
+      "5",
+      ".177"
+    ]
+  },
+  "tables-unified-graph-tex-c0029": {
+    "file": "tables/unified_graph.tex",
+    "cell": 29,
+    "tex": "8/8",
+    "numbers": [
+      "8",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0005": {
+    "file": "tables/unified_ood.tex",
+    "cell": 5,
+    "tex": "\\shortstack{\\textbf{.729}\\\\\\textbf{1.091}\\\\\\textbf{0.668}}",
+    "numbers": [
+      ".729",
+      "1.091",
+      "0.668"
+    ]
+  },
+  "tables-unified-ood-tex-c0013": {
+    "file": "tables/unified_ood.tex",
+    "cell": 13,
+    "tex": "\\shortstack{75.124\\\\503.839\\\\0.149}",
+    "numbers": [
+      "75.124",
+      "503.839",
+      "0.149"
+    ]
+  },
+  "tables-unified-ood-tex-c0021": {
+    "file": "tables/unified_ood.tex",
+    "cell": 21,
+    "tex": "\\shortstack{101.258\\\\699.789\\\\0.145}",
+    "numbers": [
+      "101.258",
+      "699.789",
+      "0.145"
+    ]
+  },
+  "tables-unified-ood-tex-c0029": {
+    "file": "tables/unified_ood.tex",
+    "cell": 29,
+    "tex": "\\shortstack{93.292\\\\663.595\\\\0.141}",
+    "numbers": [
+      "93.292",
+      "663.595",
+      "0.141"
+    ]
+  },
+  "tables-unified-cf-tex-c0005": {
+    "file": "tables/unified_cf.tex",
+    "cell": 5,
+    "tex": "\\textbf{.938}",
+    "numbers": [
+      ".938"
+    ]
+  },
+  "tables-unified-cf-tex-c0013": {
+    "file": "tables/unified_cf.tex",
+    "cell": 13,
+    "tex": "1.859",
+    "numbers": [
+      "1.859"
+    ]
+  },
+  "tables-unified-cf-tex-c0021": {
+    "file": "tables/unified_cf.tex",
+    "cell": 21,
+    "tex": "8.187",
+    "numbers": [
+      "8.187"
+    ]
+  },
+  "tables-unified-cf-tex-c0031": {
+    "file": "tables/unified_cf.tex",
+    "cell": 31,
+    "tex": "1.859",
+    "numbers": [
+      "1.859"
+    ]
+  },
+  "tables-unified-graph-tex-c0006": {
+    "file": "tables/unified_graph.tex",
+    "cell": 6,
+    "tex": "\\shortstack{\\textbf{9}\\\\\\textbf{.242}}",
+    "numbers": [
+      "9",
+      ".242"
+    ]
+  },
+  "tables-unified-graph-tex-c0014": {
+    "file": "tables/unified_graph.tex",
+    "cell": 14,
+    "tex": "\\shortstack{11\\\\.213}",
+    "numbers": [
+      "11",
+      ".213"
+    ]
+  },
+  "tables-unified-graph-tex-c0022": {
+    "file": "tables/unified_graph.tex",
+    "cell": 22,
+    "tex": "\\shortstack{17\\\\.084}",
+    "numbers": [
+      "17",
+      ".084"
+    ]
+  },
+  "tables-unified-graph-tex-c0030": {
+    "file": "tables/unified_graph.tex",
+    "cell": 30,
+    "tex": "8/8",
+    "numbers": [
+      "8",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0006": {
+    "file": "tables/unified_ood.tex",
+    "cell": 6,
+    "tex": "\\shortstack{\\textbf{5.323}\\\\\\textbf{8.064}\\\\\\textbf{0.660}}",
+    "numbers": [
+      "5.323",
+      "8.064",
+      "0.660"
+    ]
+  },
+  "tables-unified-ood-tex-c0014": {
+    "file": "tables/unified_ood.tex",
+    "cell": 14,
+    "tex": "\\shortstack{186.127\\\\609.486\\\\0.305}",
+    "numbers": [
+      "186.127",
+      "609.486",
+      "0.305"
+    ]
+  },
+  "tables-unified-ood-tex-c0022": {
+    "file": "tables/unified_ood.tex",
+    "cell": 22,
+    "tex": "\\shortstack{234.144\\\\772.011\\\\0.303}",
+    "numbers": [
+      "234.144",
+      "772.011",
+      "0.303"
+    ]
+  },
+  "tables-unified-ood-tex-c0030": {
+    "file": "tables/unified_ood.tex",
+    "cell": 30,
+    "tex": "\\shortstack{204.114\\\\402.341\\\\0.507}",
+    "numbers": [
+      "204.114",
+      "402.341",
+      "0.507"
+    ]
+  },
+  "tables-unified-cf-tex-c0006": {
+    "file": "tables/unified_cf.tex",
+    "cell": 6,
+    "tex": "\\textbf{2.384}",
+    "numbers": [
+      "2.384"
+    ]
+  },
+  "tables-unified-cf-tex-c0014": {
+    "file": "tables/unified_cf.tex",
+    "cell": 14,
+    "tex": "6.345",
+    "numbers": [
+      "6.345"
+    ]
+  },
+  "tables-unified-cf-tex-c0022": {
+    "file": "tables/unified_cf.tex",
+    "cell": 22,
+    "tex": "3.256",
+    "numbers": [
+      "3.256"
+    ]
+  },
+  "tables-unified-cf-tex-c0032": {
+    "file": "tables/unified_cf.tex",
+    "cell": 32,
+    "tex": "15.234",
+    "numbers": [
+      "15.234"
+    ]
+  },
+  "tables-unified-cf-tex-c0025": {
+    "file": "tables/unified_cf.tex",
+    "cell": 25,
+    "tex": "7.342",
+    "numbers": [
+      "7.342"
+    ]
+  },
+  "tables-unified-graph-tex-c0007": {
+    "file": "tables/unified_graph.tex",
+    "cell": 7,
+    "tex": "\\shortstack{\\textbf{5}\\\\\\textbf{.587}}",
+    "numbers": [
+      "5",
+      ".587"
+    ]
+  },
+  "tables-unified-graph-tex-c0015": {
+    "file": "tables/unified_graph.tex",
+    "cell": 15,
+    "tex": "\\shortstack{7\\\\.342}",
+    "numbers": [
+      "7",
+      ".342"
+    ]
+  },
+  "tables-unified-graph-tex-c0023": {
+    "file": "tables/unified_graph.tex",
+    "cell": 23,
+    "tex": "\\shortstack{8\\\\.231}",
+    "numbers": [
+      "8",
+      ".231"
+    ]
+  },
+  "tables-unified-graph-tex-c0031": {
+    "file": "tables/unified_graph.tex",
+    "cell": 31,
+    "tex": "6/8",
+    "numbers": [
+      "6",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0007": {
+    "file": "tables/unified_ood.tex",
+    "cell": 7,
+    "tex": "\\shortstack{\\textbf{4.276}\\\\\\textbf{6.786}\\\\\\textbf{0.630}}",
+    "numbers": [
+      "4.276",
+      "6.786",
+      "0.630"
+    ]
+  },
+  "tables-unified-ood-tex-c0015": {
+    "file": "tables/unified_ood.tex",
+    "cell": 15,
+    "tex": "\\shortstack{156.435\\\\987.345\\\\0.158}",
+    "numbers": [
+      "156.435",
+      "987.345",
+      "0.158"
+    ]
+  },
+  "tables-unified-ood-tex-c0023": {
+    "file": "tables/unified_ood.tex",
+    "cell": 23,
+    "tex": "\\shortstack{95.245\\\\312.261\\\\0.305}",
+    "numbers": [
+      "95.245",
+      "312.261",
+      "0.305"
+    ]
+  },
+  "tables-unified-ood-tex-c0031": {
+    "file": "tables/unified_ood.tex",
+    "cell": 31,
+    "tex": "\\shortstack{98.701\\\\244.512\\\\0.404}",
+    "numbers": [
+      "98.701",
+      "244.512",
+      "0.404"
+    ]
+  },
+  "tables-unified-cf-tex-c0007": {
+    "file": "tables/unified_cf.tex",
+    "cell": 7,
+    "tex": "8.264",
+    "numbers": [
+      "8.264"
+    ]
+  },
+  "tables-unified-cf-tex-c0015": {
+    "file": "tables/unified_cf.tex",
+    "cell": 15,
+    "tex": "11.745",
+    "numbers": [
+      "11.745"
+    ]
+  },
+  "tables-unified-cf-tex-c0023": {
+    "file": "tables/unified_cf.tex",
+    "cell": 23,
+    "tex": "\\textbf{5.234}",
+    "numbers": [
+      "5.234"
+    ]
+  },
+  "tables-unified-cf-tex-c0033": {
+    "file": "tables/unified_cf.tex",
+    "cell": 33,
+    "tex": "32.219",
+    "numbers": [
+      "32.219"
+    ]
+  },
+  "tables-unified-cf-tex-c0026": {
+    "file": "tables/unified_cf.tex",
+    "cell": 26,
+    "tex": "9.753",
+    "numbers": [
+      "9.753"
+    ]
+  },
+  "tables-unified-graph-tex-c0008": {
+    "file": "tables/unified_graph.tex",
+    "cell": 8,
+    "tex": "\\shortstack{\\textbf{4}\\\\\\textbf{.276}}",
+    "numbers": [
+      "4",
+      ".276"
+    ]
+  },
+  "tables-unified-graph-tex-c0016": {
+    "file": "tables/unified_graph.tex",
+    "cell": 16,
+    "tex": "\\shortstack{11\\\\.013}",
+    "numbers": [
+      "11",
+      ".013"
+    ]
+  },
+  "tables-unified-graph-tex-c0024": {
+    "file": "tables/unified_graph.tex",
+    "cell": 24,
+    "tex": "\\shortstack{16\\\\.007}",
+    "numbers": [
+      "16",
+      ".007"
+    ]
+  },
+  "tables-unified-graph-tex-c0032": {
+    "file": "tables/unified_graph.tex",
+    "cell": 32,
+    "tex": "7/8",
+    "numbers": [
+      "7",
+      "8"
+    ]
+  },
+  "tables-unified-ood-tex-c0008": {
+    "file": "tables/unified_ood.tex",
+    "cell": 8,
+    "tex": "\\shortstack{\\textbf{4.817}\\\\\\textbf{5.378}\\\\\\textbf{0.896}}",
+    "numbers": [
+      "4.817",
+      "5.378",
+      "0.896"
+    ]
+  },
+  "tables-unified-ood-tex-c0016": {
+    "file": "tables/unified_ood.tex",
+    "cell": 16,
+    "tex": "\\shortstack{293.854\\\\974.245\\\\0.302}",
+    "numbers": [
+      "293.854",
+      "974.245",
+      "0.302"
+    ]
+  },
+  "tables-unified-ood-tex-c0024": {
+    "file": "tables/unified_ood.tex",
+    "cell": 24,
+    "tex": "\\shortstack{124.215\\\\332.211\\\\0.374}",
+    "numbers": [
+      "124.215",
+      "332.211",
+      "0.374"
+    ]
+  },
+  "tables-unified-ood-tex-c0032": {
+    "file": "tables/unified_ood.tex",
+    "cell": 32,
+    "tex": "\\shortstack{41.124\\\\408.946\\\\0.101}",
+    "numbers": [
+      "41.124",
+      "408.946",
+      "0.101"
+    ]
+  },
+  "tables-unified-cf-tex-c0008": {
+    "file": "tables/unified_cf.tex",
+    "cell": 8,
+    "tex": "\\textbf{5.261}",
+    "numbers": [
+      "5.261"
+    ]
+  },
+  "tables-unified-cf-tex-c0016": {
+    "file": "tables/unified_cf.tex",
+    "cell": 16,
+    "tex": "7.761",
+    "numbers": [
+      "7.761"
+    ]
+  },
+  "tables-unified-cf-tex-c0024": {
+    "file": "tables/unified_cf.tex",
+    "cell": 24,
+    "tex": "9.664",
+    "numbers": [
+      "9.664"
+    ]
+  },
+  "tables-unified-cf-tex-c0034": {
+    "file": "tables/unified_cf.tex",
+    "cell": 34,
+    "tex": "19.281",
+    "numbers": [
+      "19.281"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0001": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 1,
+    "tex": "$22.367\\pm3.941$",
+    "numbers": [
+      "22.367",
+      "3.941"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0002": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 2,
+    "tex": "$5.463\\pm0.946$",
+    "numbers": [
+      "5.463",
+      "0.946"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0003": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 3,
+    "tex": "$6.858\\pm1.290$",
+    "numbers": [
+      "6.858",
+      "1.290"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0004": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 4,
+    "tex": "$1.085\\pm0.066$",
+    "numbers": [
+      "1.085",
+      "0.066"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0005": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 5,
+    "tex": "$0.874\\pm0.046$",
+    "numbers": [
+      "0.874",
+      "0.046"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0006": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 6,
+    "tex": "$14.721\\pm1.177$",
+    "numbers": [
+      "14.721",
+      "1.177"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0007": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 7,
+    "tex": "$\\mathbf{4.763}\\pm0.142$",
+    "numbers": [
+      "4.763",
+      "0.142"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0008": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 8,
+    "tex": "$6.656\\pm0.531$",
+    "numbers": [
+      "6.656",
+      "0.531"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0009": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 9,
+    "tex": "$\\mathbf{1.043}\\pm0.065$",
+    "numbers": [
+      "1.043",
+      "0.065"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0010": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 10,
+    "tex": "$\\mathbf{0.856}\\pm0.034$",
+    "numbers": [
+      "0.856",
+      "0.034"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0011": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 11,
+    "tex": "$\\mathbf{12.864}\\pm0.830$",
+    "numbers": [
+      "12.864",
+      "0.830"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0012": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 12,
+    "tex": "$4.968\\pm0.123$",
+    "numbers": [
+      "4.968",
+      "0.123"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0013": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 13,
+    "tex": "$\\mathbf{6.515}\\pm0.418$",
+    "numbers": [
+      "6.515",
+      "0.418"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0014": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 14,
+    "tex": "$1.065\\pm0.063$",
+    "numbers": [
+      "1.065",
+      "0.063"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0015": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 15,
+    "tex": "$0.878\\pm0.036$",
+    "numbers": [
+      "0.878",
+      "0.036"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0016": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 16,
+    "tex": "$11.361\\pm5.044$",
+    "numbers": [
+      "11.361",
+      "5.044"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0017": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 17,
+    "tex": "$9.985\\pm1.611$",
+    "numbers": [
+      "9.985",
+      "1.611"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0018": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 18,
+    "tex": "$20.449\\pm3.725$",
+    "numbers": [
+      "20.449",
+      "3.725"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0019": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 19,
+    "tex": "$1.058\\pm0.080$",
+    "numbers": [
+      "1.058",
+      "0.080"
+    ]
+  },
+  "tables-calibration-controlled-tex-c0020": {
+    "file": "tables/calibration_controlled.tex",
+    "cell": 20,
+    "tex": "$0.851\\pm0.053$",
+    "numbers": [
+      "0.851",
+      "0.053"
+    ]
+  }
+}

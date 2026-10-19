@@ -1,0 +1,49 @@
+{
+  "module": "parallel",
+  "fps": 20,
+  "frames": 990,
+  "duration": 49.5,
+  "chapters": [
+    {
+      "id": "question",
+      "label": "要回答的问题",
+      "time": 0.0
+    },
+    {
+      "id": "calibration",
+      "label": "对齐操作值",
+      "time": 3.5
+    },
+    {
+      "id": "round1",
+      "label": "操作入口 A",
+      "time": 7.0
+    },
+    {
+      "id": "update1",
+      "label": "第 1 批结束后更新图",
+      "time": 17.25
+    },
+    {
+      "id": "round2",
+      "label": "操作入口 B",
+      "time": 23.75
+    },
+    {
+      "id": "update2",
+      "label": "第 2 批结束后更新图",
+      "time": 34.0
+    },
+    {
+      "id": "graph",
+      "label": "学到的图",
+      "time": 39.0
+    },
+    {
+      "id": "query",
+      "label": "查看冻结后的查询",
+      "time": 42.5
+    }
+  ],
+  "video_sha256": "6bcca1bcb851284204ca4024410ccd1acaea3c2476784180a2a0aa3a25124e06"
+}

@@ -1,0 +1,1444 @@
+{
+  "origin": "Reported in the submitted manuscript; not remeasured by the project website",
+  "datasets": [
+    {
+      "id": "domino_scm",
+      "name": "Domino SCM",
+      "test_groups": "ID / amplitude shift"
+    },
+    {
+      "id": "domino_physical",
+      "name": "Physical Domino",
+      "test_groups": "A / B",
+      "ab_only": true
+    },
+    {
+      "id": "pnp",
+      "name": "Pick-and-Place",
+      "test_groups": "ID / amplitude shift"
+    },
+    {
+      "id": "balance",
+      "name": "Balance",
+      "test_groups": "ID / amplitude shift"
+    },
+    {
+      "id": "gears",
+      "name": "Gears",
+      "test_groups": "ID / amplitude shift"
+    },
+    {
+      "id": "spring",
+      "name": "CAUSAL3D Spring",
+      "test_groups": "A / B",
+      "ab_only": true
+    },
+    {
+      "id": "seesaw",
+      "name": "CAUSAL3D Seesaw",
+      "test_groups": "A / B",
+      "ab_only": true
+    },
+    {
+      "id": "causalworld",
+      "name": "CausalWorld",
+      "test_groups": "A / B",
+      "ab_only": true
+    }
+  ],
+  "graph": {
+    "domino_scm": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0001",
+        "display": [
+          "4",
+          ".846"
+        ],
+        "values": [
+          4.0,
+          0.846
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0009",
+        "display": [
+          "6",
+          ".313"
+        ],
+        "values": [
+          6.0,
+          0.313
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0017",
+        "display": [
+          "6",
+          ".194"
+        ],
+        "values": [
+          6.0,
+          0.194
+        ]
+      }
+    },
+    "domino_physical": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0002",
+        "display": [
+          "0",
+          ".982"
+        ],
+        "values": [
+          0.0,
+          0.982
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0010",
+        "display": [
+          "3",
+          ".284"
+        ],
+        "values": [
+          3.0,
+          0.284
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0018",
+        "display": [
+          "2",
+          ".294"
+        ],
+        "values": [
+          2.0,
+          0.294
+        ]
+      }
+    },
+    "pnp": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0003",
+        "display": [
+          "0",
+          ".862"
+        ],
+        "values": [
+          0.0,
+          0.862
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0011",
+        "display": [
+          "3",
+          ".516"
+        ],
+        "values": [
+          3.0,
+          0.516
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0019",
+        "display": [
+          "5",
+          ".232"
+        ],
+        "values": [
+          5.0,
+          0.232
+        ]
+      }
+    },
+    "balance": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0004",
+        "display": [
+          "6",
+          ".413"
+        ],
+        "values": [
+          6.0,
+          0.413
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0012",
+        "display": [
+          "8",
+          ".475"
+        ],
+        "values": [
+          8.0,
+          0.475
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0020",
+        "display": [
+          "4",
+          ".178"
+        ],
+        "values": [
+          4.0,
+          0.178
+        ]
+      }
+    },
+    "gears": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0005",
+        "display": [
+          "7",
+          ".793"
+        ],
+        "values": [
+          7.0,
+          0.793
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0013",
+        "display": [
+          "8",
+          ".522"
+        ],
+        "values": [
+          8.0,
+          0.522
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0021",
+        "display": [
+          "5",
+          ".177"
+        ],
+        "values": [
+          5.0,
+          0.177
+        ]
+      }
+    },
+    "spring": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0006",
+        "display": [
+          "9",
+          ".242"
+        ],
+        "values": [
+          9.0,
+          0.242
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0014",
+        "display": [
+          "11",
+          ".213"
+        ],
+        "values": [
+          11.0,
+          0.213
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0022",
+        "display": [
+          "17",
+          ".084"
+        ],
+        "values": [
+          17.0,
+          0.084
+        ]
+      }
+    },
+    "seesaw": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0007",
+        "display": [
+          "5",
+          ".587"
+        ],
+        "values": [
+          5.0,
+          0.587
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0015",
+        "display": [
+          "7",
+          ".342"
+        ],
+        "values": [
+          7.0,
+          0.342
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0023",
+        "display": [
+          "8",
+          ".231"
+        ],
+        "values": [
+          8.0,
+          0.231
+        ]
+      }
+    },
+    "causalworld": {
+      "ours": {
+        "source_cell": "tables-unified-graph-tex-c0008",
+        "display": [
+          "4",
+          ".276"
+        ],
+        "values": [
+          4.0,
+          0.276
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-graph-tex-c0016",
+        "display": [
+          "11",
+          ".013"
+        ],
+        "values": [
+          11.0,
+          0.013
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-graph-tex-c0024",
+        "display": [
+          "16",
+          ".007"
+        ],
+        "values": [
+          16.0,
+          0.007
+        ]
+      }
+    }
+  },
+  "consequences": {
+    "domino_scm": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0001",
+        "display": [
+          "8.573",
+          "10.341",
+          "0.829"
+        ],
+        "values": [
+          8.573,
+          10.341,
+          0.829
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0009",
+        "display": [
+          "123.799",
+          "807.120",
+          "0.153"
+        ],
+        "values": [
+          123.799,
+          807.12,
+          0.153
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0017",
+        "display": [
+          "123.713",
+          "874.392",
+          "0.141"
+        ],
+        "values": [
+          123.713,
+          874.392,
+          0.141
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0025",
+        "display": [
+          "34.144",
+          "245.391",
+          "0.139"
+        ],
+        "values": [
+          34.144,
+          245.391,
+          0.139
+        ]
+      }
+    },
+    "domino_physical": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0002",
+        "display": [
+          "6.234",
+          "8.291",
+          "0.752"
+        ],
+        "values": [
+          6.234,
+          8.291,
+          0.752
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0010",
+        "display": [
+          "228.713",
+          "791.706",
+          "0.289"
+        ],
+        "values": [
+          228.713,
+          791.706,
+          0.289
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0018",
+        "display": [
+          "162.410",
+          "515.288",
+          "0.315"
+        ],
+        "values": [
+          162.41,
+          515.288,
+          0.315
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0026",
+        "display": [
+          "51.205",
+          "421.363",
+          "0.122"
+        ],
+        "values": [
+          51.205,
+          421.363,
+          0.122
+        ]
+      }
+    },
+    "pnp": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0003",
+        "display": [
+          "1.771",
+          "3.461",
+          "0.512"
+        ],
+        "values": [
+          1.771,
+          3.461,
+          0.512
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0011",
+        "display": [
+          "51.105",
+          "318.545",
+          "0.160"
+        ],
+        "values": [
+          51.105,
+          318.545,
+          0.16
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0019",
+        "display": [
+          "58.106",
+          "394.825",
+          "0.147"
+        ],
+        "values": [
+          58.106,
+          394.825,
+          0.147
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0027",
+        "display": [
+          "57.011",
+          "393.035",
+          "0.145"
+        ],
+        "values": [
+          57.011,
+          393.035,
+          0.145
+        ]
+      }
+    },
+    "balance": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0004",
+        "display": [
+          "2.085",
+          "4.101",
+          "0.508"
+        ],
+        "values": [
+          2.085,
+          4.101,
+          0.508
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0012",
+        "display": [
+          "130.996",
+          "852.155",
+          "0.154"
+        ],
+        "values": [
+          130.996,
+          852.155,
+          0.154
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0020",
+        "display": [
+          "104.107",
+          "713.652",
+          "0.146"
+        ],
+        "values": [
+          104.107,
+          713.652,
+          0.146
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0028",
+        "display": [
+          "102.146",
+          "700.012",
+          "0.146"
+        ],
+        "values": [
+          102.146,
+          700.012,
+          0.146
+        ]
+      }
+    },
+    "gears": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0005",
+        "display": [
+          ".729",
+          "1.091",
+          "0.668"
+        ],
+        "values": [
+          0.729,
+          1.091,
+          0.668
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0013",
+        "display": [
+          "75.124",
+          "503.839",
+          "0.149"
+        ],
+        "values": [
+          75.124,
+          503.839,
+          0.149
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0021",
+        "display": [
+          "101.258",
+          "699.789",
+          "0.145"
+        ],
+        "values": [
+          101.258,
+          699.789,
+          0.145
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0029",
+        "display": [
+          "93.292",
+          "663.595",
+          "0.141"
+        ],
+        "values": [
+          93.292,
+          663.595,
+          0.141
+        ]
+      }
+    },
+    "spring": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0006",
+        "display": [
+          "5.323",
+          "8.064",
+          "0.660"
+        ],
+        "values": [
+          5.323,
+          8.064,
+          0.66
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0014",
+        "display": [
+          "186.127",
+          "609.486",
+          "0.305"
+        ],
+        "values": [
+          186.127,
+          609.486,
+          0.305
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0022",
+        "display": [
+          "234.144",
+          "772.011",
+          "0.303"
+        ],
+        "values": [
+          234.144,
+          772.011,
+          0.303
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0030",
+        "display": [
+          "204.114",
+          "402.341",
+          "0.507"
+        ],
+        "values": [
+          204.114,
+          402.341,
+          0.507
+        ]
+      }
+    },
+    "seesaw": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0007",
+        "display": [
+          "4.276",
+          "6.786",
+          "0.630"
+        ],
+        "values": [
+          4.276,
+          6.786,
+          0.63
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0015",
+        "display": [
+          "156.435",
+          "987.345",
+          "0.158"
+        ],
+        "values": [
+          156.435,
+          987.345,
+          0.158
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0023",
+        "display": [
+          "95.245",
+          "312.261",
+          "0.305"
+        ],
+        "values": [
+          95.245,
+          312.261,
+          0.305
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0031",
+        "display": [
+          "98.701",
+          "244.512",
+          "0.404"
+        ],
+        "values": [
+          98.701,
+          244.512,
+          0.404
+        ]
+      }
+    },
+    "causalworld": {
+      "ours": {
+        "source_cell": "tables-unified-ood-tex-c0008",
+        "display": [
+          "4.817",
+          "5.378",
+          "0.896"
+        ],
+        "values": [
+          4.817,
+          5.378,
+          0.896
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-ood-tex-c0016",
+        "display": [
+          "293.854",
+          "974.245",
+          "0.302"
+        ],
+        "values": [
+          293.854,
+          974.245,
+          0.302
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-ood-tex-c0024",
+        "display": [
+          "124.215",
+          "332.211",
+          "0.374"
+        ],
+        "values": [
+          124.215,
+          332.211,
+          0.374
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-ood-tex-c0032",
+        "display": [
+          "41.124",
+          "408.946",
+          "0.101"
+        ],
+        "values": [
+          41.124,
+          408.946,
+          0.101
+        ]
+      }
+    }
+  },
+  "images": {
+    "domino_scm": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0001",
+        "display": [
+          "1.473"
+        ],
+        "values": [
+          1.473
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0009",
+        "display": [
+          "2.525"
+        ],
+        "values": [
+          2.525
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0017",
+        "display": [
+          "9.009"
+        ],
+        "values": [
+          9.009
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0027",
+        "display": [
+          "4.215"
+        ],
+        "values": [
+          4.215
+        ]
+      },
+      "icm_vae": null
+    },
+    "domino_physical": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0002",
+        "display": [
+          ".880"
+        ],
+        "values": [
+          0.88
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0010",
+        "display": [
+          "1.287"
+        ],
+        "values": [
+          1.287
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0018",
+        "display": [
+          "5.707"
+        ],
+        "values": [
+          5.707
+        ],
+        "reference_only": true
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0028",
+        "display": [
+          "2.314"
+        ],
+        "values": [
+          2.314
+        ]
+      },
+      "icm_vae": null
+    },
+    "pnp": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0003",
+        "display": [
+          "1.118"
+        ],
+        "values": [
+          1.118
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0011",
+        "display": [
+          "3.563"
+        ],
+        "values": [
+          3.563
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0019",
+        "display": [
+          "7.025"
+        ],
+        "values": [
+          7.025
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0029",
+        "display": [
+          "2.161"
+        ],
+        "values": [
+          2.161
+        ]
+      },
+      "icm_vae": null
+    },
+    "balance": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0004",
+        "display": [
+          "2.180"
+        ],
+        "values": [
+          2.18
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0012",
+        "display": [
+          "4.603"
+        ],
+        "values": [
+          4.603
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0020",
+        "display": [
+          "15.477"
+        ],
+        "values": [
+          15.477
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0030",
+        "display": [
+          "5.014"
+        ],
+        "values": [
+          5.014
+        ]
+      },
+      "icm_vae": null
+    },
+    "gears": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0005",
+        "display": [
+          ".938"
+        ],
+        "values": [
+          0.938
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0013",
+        "display": [
+          "1.859"
+        ],
+        "values": [
+          1.859
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0021",
+        "display": [
+          "8.187"
+        ],
+        "values": [
+          8.187
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0031",
+        "display": [
+          "1.859"
+        ],
+        "values": [
+          1.859
+        ]
+      },
+      "icm_vae": null
+    },
+    "spring": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0006",
+        "display": [
+          "2.384"
+        ],
+        "values": [
+          2.384
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0014",
+        "display": [
+          "6.345"
+        ],
+        "values": [
+          6.345
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0022",
+        "display": [
+          "3.256"
+        ],
+        "values": [
+          3.256
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0032",
+        "display": [
+          "15.234"
+        ],
+        "values": [
+          15.234
+        ]
+      },
+      "icm_vae": {
+        "source_cell": "tables-unified-cf-tex-c0025",
+        "display": [
+          "7.342"
+        ],
+        "values": [
+          7.342
+        ],
+        "reference_only": true
+      }
+    },
+    "seesaw": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0007",
+        "display": [
+          "8.264"
+        ],
+        "values": [
+          8.264
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0015",
+        "display": [
+          "11.745"
+        ],
+        "values": [
+          11.745
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0023",
+        "display": [
+          "5.234"
+        ],
+        "values": [
+          5.234
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0033",
+        "display": [
+          "32.219"
+        ],
+        "values": [
+          32.219
+        ]
+      },
+      "icm_vae": {
+        "source_cell": "tables-unified-cf-tex-c0026",
+        "display": [
+          "9.753"
+        ],
+        "values": [
+          9.753
+        ],
+        "reference_only": true
+      }
+    },
+    "causalworld": {
+      "ours": {
+        "source_cell": "tables-unified-cf-tex-c0008",
+        "display": [
+          "5.261"
+        ],
+        "values": [
+          5.261
+        ]
+      },
+      "causalvae": {
+        "source_cell": "tables-unified-cf-tex-c0016",
+        "display": [
+          "7.761"
+        ],
+        "values": [
+          7.761
+        ]
+      },
+      "ilcm": {
+        "source_cell": "tables-unified-cf-tex-c0024",
+        "display": [
+          "9.664"
+        ],
+        "values": [
+          9.664
+        ]
+      },
+      "no_graph": {
+        "source_cell": "tables-unified-cf-tex-c0034",
+        "display": [
+          "19.281"
+        ],
+        "values": [
+          19.281
+        ]
+      },
+      "icm_vae": null
+    }
+  },
+  "calibration": [
+    {
+      "name": "Uncalibrated",
+      "ours": false,
+      "reference_only": false,
+      "cells": [
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0001",
+          "display": [
+            "22.367",
+            "3.941"
+          ],
+          "values": [
+            22.367,
+            3.941
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0002",
+          "display": [
+            "5.463",
+            "0.946"
+          ],
+          "values": [
+            5.463,
+            0.946
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0003",
+          "display": [
+            "6.858",
+            "1.290"
+          ],
+          "values": [
+            6.858,
+            1.29
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0004",
+          "display": [
+            "1.085",
+            "0.066"
+          ],
+          "values": [
+            1.085,
+            0.066
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0005",
+          "display": [
+            "0.874",
+            "0.046"
+          ],
+          "values": [
+            0.874,
+            0.046
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fully fitted affine",
+      "ours": false,
+      "reference_only": false,
+      "cells": [
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0006",
+          "display": [
+            "14.721",
+            "1.177"
+          ],
+          "values": [
+            14.721,
+            1.177
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0007",
+          "display": [
+            "4.763",
+            "0.142"
+          ],
+          "values": [
+            4.763,
+            0.142
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0008",
+          "display": [
+            "6.656",
+            "0.531"
+          ],
+          "values": [
+            6.656,
+            0.531
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0009",
+          "display": [
+            "1.043",
+            "0.065"
+          ],
+          "values": [
+            1.043,
+            0.065
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0010",
+          "display": [
+            "0.856",
+            "0.034"
+          ],
+          "values": [
+            0.856,
+            0.034
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nonlinear (ours)",
+      "ours": true,
+      "reference_only": false,
+      "cells": [
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0011",
+          "display": [
+            "12.864",
+            "0.830"
+          ],
+          "values": [
+            12.864,
+            0.83
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0012",
+          "display": [
+            "4.968",
+            "0.123"
+          ],
+          "values": [
+            4.968,
+            0.123
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0013",
+          "display": [
+            "6.515",
+            "0.418"
+          ],
+          "values": [
+            6.515,
+            0.418
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0014",
+          "display": [
+            "1.065",
+            "0.063"
+          ],
+          "values": [
+            1.065,
+            0.063
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0015",
+          "display": [
+            "0.878",
+            "0.036"
+          ],
+          "values": [
+            0.878,
+            0.036
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ordinary joint updating (reference)",
+      "ours": false,
+      "reference_only": true,
+      "cells": [
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0016",
+          "display": [
+            "11.361",
+            "5.044"
+          ],
+          "values": [
+            11.361,
+            5.044
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0017",
+          "display": [
+            "9.985",
+            "1.611"
+          ],
+          "values": [
+            9.985,
+            1.611
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0018",
+          "display": [
+            "20.449",
+            "3.725"
+          ],
+          "values": [
+            20.449,
+            3.725
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0019",
+          "display": [
+            "1.058",
+            "0.080"
+          ],
+          "values": [
+            1.058,
+            0.08
+          ]
+        },
+        {
+          "source_cell": "tables-calibration-controlled-tex-c0020",
+          "display": [
+            "0.851",
+            "0.053"
+          ],
+          "values": [
+            0.851,
+            0.053
+          ]
+        }
+      ]
+    }
+  ],
+  "completed_runs": {
+    "domino_scm": {
+      "source_cell": "tables-unified-graph-tex-c0025",
+      "display": [
+        "8",
+        "8"
+      ],
+      "values": [
+        8.0,
+        8.0
+      ]
+    },
+    "domino_physical": {
+      "source_cell": "tables-unified-graph-tex-c0026",
+      "display": [
+        "7",
+        "8"
+      ],
+      "values": [
+        7.0,
+        8.0
+      ]
+    },
+    "pnp": {
+      "source_cell": "tables-unified-graph-tex-c0027",
+      "display": [
+        "8",
+        "8"
+      ],
+      "values": [
+        8.0,
+        8.0
+      ]
+    },
+    "balance": {
+      "source_cell": "tables-unified-graph-tex-c0028",
+      "display": [
+        "7",
+        "8"
+      ],
+      "values": [
+        7.0,
+        8.0
+      ]
+    },
+    "gears": {
+      "source_cell": "tables-unified-graph-tex-c0029",
+      "display": [
+        "8",
+        "8"
+      ],
+      "values": [
+        8.0,
+        8.0
+      ]
+    },
+    "spring": {
+      "source_cell": "tables-unified-graph-tex-c0030",
+      "display": [
+        "8",
+        "8"
+      ],
+      "values": [
+        8.0,
+        8.0
+      ]
+    },
+    "seesaw": {
+      "source_cell": "tables-unified-graph-tex-c0031",
+      "display": [
+        "6",
+        "8"
+      ],
+      "values": [
+        6.0,
+        8.0
+      ]
+    },
+    "causalworld": {
+      "source_cell": "tables-unified-graph-tex-c0032",
+      "display": [
+        "7",
+        "8"
+      ],
+      "values": [
+        7.0,
+        8.0
+      ]
+    }
+  },
+  "source": {
+    "numeric_sha256": "7447b5e7bbccfaca78acaf4fbdc9bb3d5f93b707333db373e7b8d21b0c4f3ffb",
+    "paper_sha256": "55967f485557e1496d6b63b358ab6cc16e3af9a9a5ba69b32671ed6b9ad4c2f9",
+    "method_pdf_sha256": "e95da0a2e9c94ad60eff767542c3a9b0c1053726fbae18534a5309d779f95faa",
+    "importer_sha256": "9dca0dd492a3d6ffd82f4e3d987035cb75cd5e161cee4f200d727bc787ccab9c"
+  }
+}

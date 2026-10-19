@@ -1,0 +1,360 @@
+{
+  "physical_contact_checks": {
+    "threshold_mm": 0.5,
+    "original_balance_cases": 6,
+    "original_balance_max_mm": 1.9234989298481173,
+    "repaired_balance_cases": 6,
+    "repaired_balance_max_mm": 0.213286091321651,
+    "unchanged_pnp_cases": 3,
+    "unchanged_pnp_max_mm": 0.3574252979009744,
+    "unexpected_contacts_after_repair": 0,
+    "all_repaired_replays_match_new_discovery_data": true,
+    "sampling": "all external 480 Hz physics steps for contacts; 30 Hz closest-point geometry checks; 8 internal solver substeps in repaired Balance",
+    "scope": "finite checked trajectories, not a proof of zero numerical penetration in all possible states"
+  },
+  "balance_graph": {
+    "nodes": [
+      "载荷差",
+      "横梁倾角",
+      "球的位置",
+      "目标位置",
+      "匹配程度"
+    ],
+    "source_trace_sha256": "dfbe5fd272a76213a8b3d7ad15e844e94c4cc9dc2a3822d65f68ce19828a5847",
+    "reference_scope": "task mechanism specification, not certified ground-truth DAG of a feedback dynamical system",
+    "reference_comparison": [
+      {
+        "from": "载荷差",
+        "to": "横梁倾角",
+        "status": "same_direction"
+      },
+      {
+        "from": "横梁倾角",
+        "to": "球的位置",
+        "status": "unoriented"
+      },
+      {
+        "from": "球的位置",
+        "to": "匹配程度",
+        "status": "missing"
+      },
+      {
+        "from": "目标位置",
+        "to": "匹配程度",
+        "status": "same_direction"
+      }
+    ],
+    "extra_skeleton_pairs": [
+      {
+        "pair": [
+          "载荷差",
+          "球的位置"
+        ],
+        "algorithm_direction": [
+          0,
+          2
+        ]
+      }
+    ],
+    "stage_invariants": [
+      {
+        "stage": "observations",
+        "round": null,
+        "shape": true,
+        "skeleton_symmetric": true,
+        "no_self_edges": true,
+        "arrows_in_skeleton": true,
+        "no_opposite_arrow_pair": true,
+        "undirected_set_exact": true,
+        "acyclic_directed_part": true,
+        "reported_valid": true
+      },
+      {
+        "stage": "intervention_update",
+        "round": 1,
+        "shape": true,
+        "skeleton_symmetric": true,
+        "no_self_edges": true,
+        "arrows_in_skeleton": true,
+        "no_opposite_arrow_pair": true,
+        "undirected_set_exact": true,
+        "acyclic_directed_part": true,
+        "reported_valid": true
+      },
+      {
+        "stage": "intervention_update",
+        "round": 2,
+        "shape": true,
+        "skeleton_symmetric": true,
+        "no_self_edges": true,
+        "arrows_in_skeleton": true,
+        "no_opposite_arrow_pair": true,
+        "undirected_set_exact": true,
+        "acyclic_directed_part": true,
+        "reported_valid": true
+      }
+    ],
+    "video_graph_matches_log": [
+      {
+        "round": 1,
+        "adjacency_exact": true,
+        "arrows_exact": true
+      },
+      {
+        "round": 2,
+        "adjacency_exact": true,
+        "arrows_exact": true
+      }
+    ],
+    "limitations": [
+      "载荷通过横梁影响球；单目标总效应检验不能排除模型提出的载荷→球实际上是祖先效应。",
+      "横梁与球存在接触反馈，静态五节点 DAG 只是一份任务机制参考，不是整个动力系统的认证真图。",
+      "匹配程度是水平距离的高斯读数，确实由球和目标位置共同计算；它不是机械吸引力。"
+    ],
+    "exact_graph_recovery_verified": false
+  },
+  "pnp_graph": {
+    "nodes": [
+      "夹爪位置",
+      "夹爪间距",
+      "目标位置",
+      "物体位置",
+      "物体高度",
+      "匹配程度"
+    ],
+    "source_trace_sha256": "0ce5ea26cf085a0a489060fb280c993ecd007122036359bc982e0cf863f9c0f5",
+    "reference_scope": "task mechanism specification, not certified ground-truth DAG of a feedback dynamical system",
+    "reference_comparison": [
+      {
+        "from": "夹爪位置",
+        "to": "物体位置",
+        "status": "same_direction"
+      },
+      {
+        "from": "夹爪间距",
+        "to": "物体位置",
+        "status": "same_direction"
+      },
+      {
+        "from": "夹爪间距",
+        "to": "物体高度",
+        "status": "same_direction"
+      },
+      {
+        "from": "物体位置",
+        "to": "匹配程度",
+        "status": "missing"
+      },
+      {
+        "from": "目标位置",
+        "to": "匹配程度",
+        "status": "unoriented"
+      }
+    ],
+    "extra_skeleton_pairs": [],
+    "stage_invariants": [
+      {
+        "stage": "observations",
+        "round": null,
+        "shape": true,
+        "skeleton_symmetric": true,
+        "no_self_edges": true,
+        "arrows_in_skeleton": true,
+        "no_opposite_arrow_pair": true,
+        "undirected_set_exact": true,
+        "acyclic_directed_part": true,
+        "reported_valid": true
+      },
+      {
+        "stage": "intervention_update",
+        "round": 1,
+        "shape": true,
+        "skeleton_symmetric": true,
+        "no_self_edges": true,
+        "arrows_in_skeleton": true,
+        "no_opposite_arrow_pair": true,
+        "undirected_set_exact": true,
+        "acyclic_directed_part": true,
+        "reported_valid": true
+      },
+      {
+        "stage": "intervention_update",
+        "round": 2,
+        "shape": true,
+        "skeleton_symmetric": true,
+        "no_self_edges": true,
+        "arrows_in_skeleton": true,
+        "no_opposite_arrow_pair": true,
+        "undirected_set_exact": true,
+        "acyclic_directed_part": true,
+        "reported_valid": true
+      }
+    ],
+    "video_graph_matches_log": [
+      {
+        "round": 1,
+        "adjacency_exact": true,
+        "arrows_exact": true
+      },
+      {
+        "round": 2,
+        "adjacency_exact": true,
+        "arrows_exact": true
+      }
+    ],
+    "limitations": [
+      "夹爪位置和间距是测量状态而非命令变量，夹持反馈不支持把二者无条件视为外生根节点。",
+      "图读数在搬运姿态采样；放回和撤回只是完整操作轨迹，不计为额外学图数据。",
+      "匹配程度只表示水平对齐，不等同于放置成功概率。"
+    ],
+    "exact_graph_recovery_verified": false
+  },
+  "paired_mechanics": [
+    {
+      "case": "load_pair",
+      "same_context": true,
+      "same_mass": true,
+      "labels": [
+        [
+          -0.09954103082418442,
+          -0.4438624382019043,
+          0.2732035517692566,
+          0.3584596514701843,
+          0.13278067111968994
+        ],
+        [
+          0.09954103082418442,
+          0.43921104073524475,
+          0.6470685005187988,
+          0.3584596514701843,
+          8.943349533163669e-11
+        ]
+      ],
+      "matching_readout_formula_error_max": 4.531419764419731e-08,
+      "beam_and_ball_follow_loaded_side": true
+    },
+    {
+      "case": "target_pair",
+      "same_context": true,
+      "same_mass": true,
+      "labels": [
+        [
+          -0.09926299005746841,
+          -0.4415520131587982,
+          0.2730678915977478,
+          0.27215704321861267,
+          0.9997695684432983
+        ],
+        [
+          -0.09926299005746841,
+          -0.4415520131587982,
+          0.2730678915977478,
+          0.6481204628944397,
+          1.0730313464671596e-17
+        ]
+      ],
+      "matching_readout_formula_error_max": 1.2293561724163737e-09,
+      "beam_angle_delta_rad": 0.0,
+      "ball_x_delta_m": 0.0,
+      "only_target_position_changes": true
+    }
+  ],
+  "replay_checks": [
+    {
+      "case": "load_pair",
+      "value": -1,
+      "context": 84010001,
+      "round": 1,
+      "source_row": 2,
+      "exact_pixels_labels_match": true,
+      "physical_gates": {
+        "weight_supported": true,
+        "robot_did_not_touch_beam_ball": true,
+        "contact_penetration_below_2mm": true,
+        "finite_labels": true,
+        "beam_settled": true,
+        "weight_dual_finger_carry": true,
+        "load_side_realized": true,
+        "full_contact_penetration_below_0p5mm": true,
+        "no_unexpected_robot_environment_contact": true
+      },
+      "max_penetration_mm": 0.2131299606257517,
+      "frames": 454
+    },
+    {
+      "case": "load_pair",
+      "value": 1,
+      "context": 84010001,
+      "round": 1,
+      "source_row": 3,
+      "exact_pixels_labels_match": true,
+      "physical_gates": {
+        "weight_supported": true,
+        "robot_did_not_touch_beam_ball": true,
+        "contact_penetration_below_2mm": true,
+        "finite_labels": true,
+        "beam_settled": true,
+        "weight_dual_finger_carry": true,
+        "load_side_realized": true,
+        "full_contact_penetration_below_0p5mm": true,
+        "no_unexpected_robot_environment_contact": true
+      },
+      "max_penetration_mm": 0.2131299606257517,
+      "frames": 454
+    },
+    {
+      "case": "target_pair",
+      "value": 0.28,
+      "context": 84020001,
+      "round": 2,
+      "source_row": 3,
+      "exact_pixels_labels_match": true,
+      "physical_gates": {
+        "weight_supported": true,
+        "robot_did_not_touch_beam_ball": true,
+        "contact_penetration_below_2mm": true,
+        "finite_labels": true,
+        "beam_settled": true,
+        "weight_dual_finger_carry": true,
+        "marker_dual_finger_carry": true,
+        "target_does_not_move_ball": true,
+        "target_does_not_tilt_beam": true,
+        "target_realized": true,
+        "full_contact_penetration_below_0p5mm": true,
+        "no_unexpected_robot_environment_contact": true
+      },
+      "max_penetration_mm": 0.213286091321651,
+      "frames": 736
+    },
+    {
+      "case": "target_pair",
+      "value": 0.64,
+      "context": 84020001,
+      "round": 2,
+      "source_row": 5,
+      "exact_pixels_labels_match": true,
+      "physical_gates": {
+        "weight_supported": true,
+        "robot_did_not_touch_beam_ball": true,
+        "contact_penetration_below_2mm": true,
+        "finite_labels": true,
+        "beam_settled": true,
+        "weight_dual_finger_carry": true,
+        "marker_dual_finger_carry": true,
+        "target_does_not_move_ball": true,
+        "target_does_not_tilt_beam": true,
+        "target_realized": true,
+        "full_contact_penetration_below_0p5mm": true,
+        "no_unexpected_robot_environment_contact": true
+      },
+      "max_penetration_mm": 0.213286091321651,
+      "frames": 736
+    }
+  ],
+  "external_cross_family_audit": {
+    "status": "unavailable",
+    "reason": "available read-only GPT-family reviewer timed out; required cross-family reviewer not available",
+    "not_a_PASS": true
+  },
+  "no_new_paper_results": true
+}

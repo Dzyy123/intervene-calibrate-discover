@@ -1,0 +1,278 @@
+{
+  "new_measurements": 0,
+  "videos": [
+    {
+      "id": "domino_hold_middle",
+      "video": "library-domino_hold_middle.mp4",
+      "poster": "library-domino_hold_middle.png",
+      "kind": "frozen_graph_check",
+      "nodes": [],
+      "en": {
+        "title": "Domino · hold the middle",
+        "question": "Can holding domino 4 stop an upstream cascade?",
+        "description": "A recorded physical operation checked against an existing frozen six-node graph and encoder. Descendant highlights are not fresh graph learning or fitted predictions.",
+        "scope": "A recorded physical operation checked against an existing frozen six-node graph and encoder. Descendant highlights are not fresh graph learning or fitted predictions.",
+        "badge": "Frozen-graph physical check"
+      },
+      "zh": {
+        "title": "多米诺 · 夹住中间骨牌",
+        "question": "夹住第 4 块骨牌，能否阻止上游倾倒继续传播？",
+        "description": "记录的物理操作对应已有冻结六节点图与编码器。后代高亮不是新学图结果，也不是拟合预测。",
+        "scope": "记录的物理操作对应已有冻结六节点图与编码器。后代高亮不是新学图结果，也不是拟合预测。",
+        "badge": "冻结图下的物理检查"
+      }
+    },
+    {
+      "id": "domino_push_middle",
+      "video": "library-domino_push_middle.mp4",
+      "poster": "library-domino_push_middle.png",
+      "kind": "frozen_graph_check",
+      "nodes": [],
+      "en": {
+        "title": "Domino · push the middle",
+        "question": "Does pushing domino 4 affect only its downstream dominoes?",
+        "description": "A qualitative recorded operation with a frozen graph, not a counterfactual decoder or OOD benchmark.",
+        "scope": "A qualitative recorded operation with a frozen graph, not a counterfactual decoder or OOD benchmark.",
+        "badge": "Frozen-graph physical check"
+      },
+      "zh": {
+        "title": "多米诺 · 推动中间骨牌",
+        "question": "推动第 4 块骨牌，是否只影响下游骨牌？",
+        "description": "基于冻结图的定性操作记录，不是反事实解码器或 OOD 基准。",
+        "scope": "基于冻结图的定性操作记录，不是反事实解码器或 OOD 基准。",
+        "badge": "冻结图下的物理检查"
+      }
+    },
+    {
+      "id": "domino_push_last",
+      "video": "library-domino_push_last.mp4",
+      "poster": "library-domino_push_last.png",
+      "kind": "frozen_graph_check",
+      "nodes": [],
+      "en": {
+        "title": "Domino · push the final piece",
+        "question": "Does operating the final domino leave upstream pieces unchanged?",
+        "description": "An endpoint physical check using the original frozen graph and encoder. It is not a new fitted state predictor.",
+        "scope": "An endpoint physical check using the original frozen graph and encoder. It is not a new fitted state predictor.",
+        "badge": "Frozen-graph physical check"
+      },
+      "zh": {
+        "title": "多米诺 · 推动末端骨牌",
+        "question": "操作最后一块骨牌，上游是否保持不变？",
+        "description": "使用原冻结图与编码器的最终状态物理检查，不是新拟合的状态预测器。",
+        "scope": "使用原冻结图与编码器的最终状态物理检查，不是新拟合的状态预测器。",
+        "badge": "冻结图下的物理检查"
+      }
+    },
+    {
+      "id": "domino_frozen_operations",
+      "video": "library-domino_frozen_operations.mp4",
+      "poster": "library-domino_frozen_operations.png",
+      "kind": "frozen_graph_check",
+      "nodes": [],
+      "en": {
+        "title": "Domino · three frozen-graph operations",
+        "question": "Hold, middle push, and final push: which consequences are observed?",
+        "description": "The same three physical operations in a compiled static-graph presentation; simulator outcomes are not model predictions.",
+        "scope": "The same three physical operations in a compiled static-graph presentation; simulator outcomes are not model predictions.",
+        "badge": "Frozen-graph physical check"
+      },
+      "zh": {
+        "title": "多米诺 · 冻结图下三种操作",
+        "question": "夹住、推动中间、推动末端：观察到哪些后果？",
+        "description": "三种操作的静态图汇编展示；仿真结果不是模型预测。",
+        "scope": "三种操作的静态图汇编展示；仿真结果不是模型预测。",
+        "badge": "冻结图下的物理检查"
+      }
+    },
+    {
+      "id": "tool_hook_pull",
+      "video": "library-tool_hook_pull.mp4",
+      "poster": "library-tool_hook_pull.png",
+      "kind": "mechanical_preview",
+      "nodes": [],
+      "en": {
+        "title": "Tool use · hook and pull",
+        "question": "Does successful tool contact move the cube?",
+        "description": "Contact-checked mechanical preview. No learned causal graph or model-generated image is supplied for this clip.",
+        "scope": "Contact-checked mechanical preview. No learned causal graph or model-generated image is supplied for this clip.",
+        "badge": "Mechanical preview · no learned graph"
+      },
+      "zh": {
+        "title": "工具使用 · 挂钩拉动",
+        "question": "工具成功接触后，方块是否被拉动？",
+        "description": "经过接触检查的物理预览。这段没有学到的因果图或模型生成图像。",
+        "scope": "经过接触检查的物理预览。这段没有学到的因果图或模型生成图像。",
+        "badge": "物理预览 · 无学图输出"
+      }
+    },
+    {
+      "id": "tool_miss_cube",
+      "video": "library-tool_miss_cube.mp4",
+      "poster": "library-tool_miss_cube.png",
+      "kind": "mechanical_preview",
+      "nodes": [],
+      "en": {
+        "title": "Tool use · miss the cube",
+        "question": "What happens when the pulling tool does not contact the cube?",
+        "description": "A physical negative control, not a causal-discovery or predictor evaluation.",
+        "scope": "A physical negative control, not a causal-discovery or predictor evaluation.",
+        "badge": "Mechanical preview · no learned graph"
+      },
+      "zh": {
+        "title": "工具使用 · 未碰到方块",
+        "question": "拉动工具没有接触方块时，会发生什么？",
+        "description": "物理负对照，不是因果发现或预测器评测。",
+        "scope": "物理负对照，不是因果发现或预测器评测。",
+        "badge": "物理预览 · 无学图输出"
+      }
+    },
+    {
+      "id": "tool_open_gripper",
+      "video": "library-tool_open_gripper.mp4",
+      "poster": "library-tool_open_gripper.png",
+      "kind": "mechanical_preview",
+      "nodes": [],
+      "en": {
+        "title": "Tool use · open gripper",
+        "question": "Does the object move when the robot fails to grasp the tool?",
+        "description": "Mechanical preview of an open-gripper control, without a learned graph. No object attachment constraint is used in the recorded source.",
+        "scope": "Mechanical preview of an open-gripper control, without a learned graph. No object attachment constraint is used in the recorded source.",
+        "badge": "Mechanical preview · no learned graph"
+      },
+      "zh": {
+        "title": "工具使用 · 夹爪张开",
+        "question": "机械臂没有握住工具，物体是否仍会移动？",
+        "description": "未学图的夹爪张开物理对照；记录来源没有使用物体附着约束。",
+        "scope": "未学图的夹爪张开物理对照；记录来源没有使用物体附着约束。",
+        "badge": "物理预览 · 无学图输出"
+      }
+    },
+    {
+      "id": "env_pickplace_1d",
+      "video": "library-env_pickplace_1d.mp4",
+      "poster": "library-env_pickplace_1d.png",
+      "kind": "environment_preview",
+      "nodes": [],
+      "en": {
+        "title": "One-dimensional pick-and-place · environment overview",
+        "question": "Inspect the saved basic simulation and its variables.",
+        "description": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "badge": "Basic environment overview"
+      },
+      "zh": {
+        "title": "一维机械臂放置 · 环境概览",
+        "question": "查看已保存的基础模拟及其变量。",
+        "description": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "scope": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "badge": "基础环境概览"
+      }
+    },
+    {
+      "id": "env_pickplace_2d",
+      "video": "library-env_pickplace_2d.mp4",
+      "poster": "library-env_pickplace_2d.png",
+      "kind": "environment_preview",
+      "nodes": [],
+      "en": {
+        "title": "Two-dimensional pick-and-place · environment overview",
+        "question": "Inspect the saved basic simulation and its variables.",
+        "description": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "badge": "Basic environment overview"
+      },
+      "zh": {
+        "title": "二维放置 · 环境概览",
+        "question": "查看已保存的基础模拟及其变量。",
+        "description": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "scope": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "badge": "基础环境概览"
+      }
+    },
+    {
+      "id": "env_billiards",
+      "video": "library-env_billiards.mp4",
+      "poster": "library-env_billiards.png",
+      "kind": "environment_preview",
+      "nodes": [],
+      "en": {
+        "title": "Billiards · environment overview",
+        "question": "Inspect the saved basic simulation and its variables.",
+        "description": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "badge": "Basic environment overview"
+      },
+      "zh": {
+        "title": "台球 · 环境概览",
+        "question": "查看已保存的基础模拟及其变量。",
+        "description": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "scope": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "badge": "基础环境概览"
+      }
+    },
+    {
+      "id": "env_balance",
+      "video": "library-env_balance.mp4",
+      "poster": "library-env_balance.png",
+      "kind": "environment_preview",
+      "nodes": [],
+      "en": {
+        "title": "Balance environment · environment overview",
+        "question": "Inspect the saved basic simulation and its variables.",
+        "description": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "badge": "Basic environment overview"
+      },
+      "zh": {
+        "title": "天平环境 · 环境概览",
+        "question": "查看已保存的基础模拟及其变量。",
+        "description": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "scope": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "badge": "基础环境概览"
+      }
+    },
+    {
+      "id": "env_domino",
+      "video": "library-env_domino.mp4",
+      "poster": "library-env_domino.png",
+      "kind": "environment_preview",
+      "nodes": [],
+      "en": {
+        "title": "Domino environment · environment overview",
+        "question": "Inspect the saved basic simulation and its variables.",
+        "description": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "badge": "Basic environment overview"
+      },
+      "zh": {
+        "title": "多米诺环境 · 环境概览",
+        "question": "查看已保存的基础模拟及其变量。",
+        "description": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "scope": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "badge": "基础环境概览"
+      }
+    },
+    {
+      "id": "env_gears",
+      "video": "library-env_gears.mp4",
+      "poster": "library-env_gears.png",
+      "kind": "environment_preview",
+      "nodes": [],
+      "en": {
+        "title": "Gears environment · environment overview",
+        "question": "Inspect the saved basic simulation and its variables.",
+        "description": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "scope": "Saved environment/illustrative material. It is not independently source-bound to the paper's main results and is not used as new graph, calibration, OOD, or counterfactual evidence.",
+        "badge": "Basic environment overview"
+      },
+      "zh": {
+        "title": "齿轮环境 · 环境概览",
+        "question": "查看已保存的基础模拟及其变量。",
+        "description": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "scope": "已保存的环境／示意素材，没有独立绑定到论文主结果，不作为新增图发现、校准、OOD 或反事实证据。",
+        "badge": "基础环境概览"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "module": "chain",
+  "fps": 20,
+  "frames": 655,
+  "duration": 32.75,
+  "chapters": [
+    {
+      "id": "question",
+      "label": "要回答的问题",
+      "time": 0.0
+    },
+    {
+      "id": "calibration",
+      "label": "对齐操作值",
+      "time": 3.5
+    },
+    {
+      "id": "round1",
+      "label": "操作入口",
+      "time": 7.0
+    },
+    {
+      "id": "update1",
+      "label": "第 1 批结束后更新图",
+      "time": 17.25
+    },
+    {
+      "id": "graph",
+      "label": "学到的图",
+      "time": 22.25
+    },
+    {
+      "id": "query",
+      "label": "查看冻结后的查询",
+      "time": 25.75
+    }
+  ],
+  "video_sha256": "f9a1647b17b47644cc1a96604c6c0d3164558098f58d53d6ad55bb17efcb5ac7"
+}

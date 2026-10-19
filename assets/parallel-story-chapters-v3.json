@@ -1,0 +1,49 @@
+{
+  "module": "parallel",
+  "fps": 20,
+  "frames": 990,
+  "duration": 49.5,
+  "chapters": [
+    {
+      "id": "question",
+      "label": "The question",
+      "time": 0.0
+    },
+    {
+      "id": "calibration",
+      "label": "Align the values",
+      "time": 3.5
+    },
+    {
+      "id": "round1",
+      "label": "Operate Entry A",
+      "time": 7.0
+    },
+    {
+      "id": "update1",
+      "label": "Update after batch 1",
+      "time": 17.25
+    },
+    {
+      "id": "round2",
+      "label": "Operate Entry B",
+      "time": 23.75
+    },
+    {
+      "id": "update2",
+      "label": "Update after batch 2",
+      "time": 34.0
+    },
+    {
+      "id": "graph",
+      "label": "The learned graph",
+      "time": 39.0
+    },
+    {
+      "id": "query",
+      "label": "Inspect a frozen query",
+      "time": 42.5
+    }
+  ],
+  "video_sha256": "7e4424ff842d114374bbf79a0d150516c92d23769ba5dd899cd7a36b7c2f68c6"
+}

@@ -1,0 +1,78 @@
+{
+  "seconds": 40.666666666666664,
+  "fps": 30,
+  "timeline": [
+    {
+      "stage": "all_candidates",
+      "start": 0.0
+    },
+    {
+      "stage": "CI_order_0",
+      "start": 1.4
+    },
+    {
+      "stage": "CI_order_1",
+      "start": 3.4
+    },
+    {
+      "stage": "observational_graph",
+      "start": 5.4
+    },
+    {
+      "stage": "round1_select",
+      "target": 1,
+      "start": 7.4
+    },
+    {
+      "stage": "round1_act",
+      "start": 8.566666666666666
+    },
+    {
+      "stage": "round1_commit",
+      "start": 15.166666666666666
+    },
+    {
+      "stage": "reset",
+      "start": 21.466666666666665
+    },
+    {
+      "stage": "round2_select",
+      "target": 0,
+      "start": 23.266666666666666
+    },
+    {
+      "stage": "round2_act",
+      "start": 24.433333333333334
+    },
+    {
+      "stage": "round2_commit",
+      "start": 31.033333333333335
+    },
+    {
+      "stage": "final",
+      "start": 37.333333333333336
+    }
+  ],
+  "trace_sha256": "0ce5ea26cf085a0a489060fb280c993ecd007122036359bc982e0cf863f9c0f5",
+  "video_sha256": "1ce84c2d9cbdb531701600414f67de6c6ba2cc1507b4f6892bf8c3a0a88dca26",
+  "actual_graph_states_only": true,
+  "no_claim_of_complete_recovery": true,
+  "replays": [
+    {
+      "round": 1,
+      "target": 1,
+      "context": 84010000,
+      "value": 0.04,
+      "exact_pixel_label_match": true,
+      "frames": 303
+    },
+    {
+      "round": 2,
+      "target": 0,
+      "context": 84020000,
+      "value": 0.65,
+      "exact_pixel_label_match": true,
+      "frames": 303
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+[
+  {
+    "stage": "observations",
+    "samples": 256,
+    "graph": {
+      "directed": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    "CI": "KCI"
+  },
+  {
+    "stage": "intervention_update",
+    "round": 1,
+    "target": 0,
+    "selection": "maximum unresolved incident-edge coverage among implemented, not-yet-used targets; smallest index tie break",
+    "selection_scores": {
+      "0": 2,
+      "3": 1
+    },
+    "rows": 64,
+    "contexts": 32,
+    "graph": {
+      "directed": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    "evidence": [
+      {
+        "engine": "direct_do",
+        "edge": [
+          0,
+          1
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 64,
+        "n_do_j": 0,
+        "score_i_to_j": 0.9989938136030837,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          0,
+          2
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 64,
+        "n_do_j": 0,
+        "score_i_to_j": 0.9557915247472278,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          1,
+          2
+        ],
+        "orientation": 0,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 0,
+        "n_do_j": 0,
+        "score_i_to_j": null,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": "threshold_or_margin_ambiguous",
+        "accepted": false,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          3,
+          4
+        ],
+        "orientation": 0,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 0,
+        "n_do_j": 0,
+        "score_i_to_j": null,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": "threshold_or_margin_ambiguous",
+        "accepted": false,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      }
+    ],
+    "all_physical_gates_pass": true,
+    "replay_context": 84010000,
+    "replay_values": [
+      -1,
+      1
+    ]
+  },
+  {
+    "stage": "intervention_update",
+    "round": 2,
+    "target": 3,
+    "selection": "maximum unresolved incident-edge coverage among implemented, not-yet-used targets; smallest index tie break",
+    "selection_scores": {
+      "3": 1
+    },
+    "rows": 96,
+    "contexts": 32,
+    "graph": {
+      "directed": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          1,
+          2
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    "evidence": [
+      {
+        "engine": "direct_do",
+        "edge": [
+          0,
+          1
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 64,
+        "n_do_j": 0,
+        "score_i_to_j": 0.9989938136030828,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          0,
+          2
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 64,
+        "n_do_j": 0,
+        "score_i_to_j": 0.9557915247472275,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          1,
+          2
+        ],
+        "orientation": 0,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 0,
+        "n_do_j": 0,
+        "score_i_to_j": null,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": "threshold_or_margin_ambiguous",
+        "accepted": false,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          3,
+          4
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 96,
+        "n_do_j": 0,
+        "score_i_to_j": 0.5640513166051201,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      }
+    ],
+    "all_physical_gates_pass": true,
+    "replay_context": 84020000,
+    "replay_values": [
+      0.28,
+      0.46,
+      0.64
+    ]
+  }
+]

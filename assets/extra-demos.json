@@ -1,0 +1,122 @@
+{
+  "source_manifest": "extra-source-manifest.json",
+  "consistency_report": "extra-physics-graph-scope.json",
+  "new_measurements": 0,
+  "videos": [
+    {
+      "id": "balance_learning",
+      "video": "extra-balance_learning.mp4",
+      "poster": "extra-balance_learning.png",
+      "kind": "candidate_graph",
+      "learned_calibration": false,
+      "checks": "extra-balance-video-checks.json",
+      "trace": "extra-balance-graph-trace.json",
+      "nodes": [
+        {"en":"Load difference","zh":"载荷差"}, {"en":"Beam angle","zh":"横梁倾角"}, {"en":"Ball position","zh":"球的位置"}, {"en":"Target position","zh":"目标位置"}, {"en":"Match readout","zh":"匹配程度"}
+      ],
+      "en": {
+        "title": "Balance · five-node graph learning",
+        "question": "Which candidate directions gain support when the robot changes the load or target?",
+        "description": "Watch candidate initialization, observational tests, target selection, two recorded operations, and the resulting graph updates.",
+        "scope": "An exploratory task-level graph from a frozen visual interface without learned calibration. Beam–ball feedback remains; the load-to-ball link can reflect an ancestor effect. Some relations are missing or unresolved. This is not certified full-DAG recovery or an ACC benchmark.",
+        "badge": "Candidate graph · recorded evidence"
+      },
+      "zh": {
+        "title": "平衡模组 · 五节点图学习",
+        "question": "机械臂改变载荷或目标后，哪些候选方向得到证据支持？",
+        "description": "从候选关系、观察检验和目标选择开始，展示两轮真实操作及其后的图更新。",
+        "scope": "这是未加入学习型校准的冻结视觉接口得到的任务层候选图。横梁与球仍有反馈；载荷到球的关系可能是祖先效应。部分关系漏检或未定向，不等于认证的完整 DAG 恢复或 ACC 基准结果。",
+        "badge": "候选图 · 真实证据更新"
+      }
+    },
+    {
+      "id": "balance_load_pair",
+      "video": "extra-balance_load_pair.mp4",
+      "poster": "extra-balance_load_pair.png",
+      "kind": "paired_operation",
+      "nodes": [],
+      "en": {
+        "title": "Balance · left/right load pair",
+        "question": "With the same mass and initial context, what changes when the load is placed on the other side?",
+        "description": "Two matched simulation trials show opposite load placements and the resulting beam and ball response. The robot performs the relocation.",
+        "scope": "Recorded simulator outcomes, not decoder predictions. The pair holds context and mass fixed; it illustrates a physical intervention contrast, not a model counterfactual accuracy result.",
+        "badge": "Paired physical operations"
+      },
+      "zh": {
+        "title": "平衡模组 · 左右载荷配对",
+        "question": "保持质量与初始情境相同，将载荷换到另一侧会怎样？",
+        "description": "两场匹配的仿真试验对比左右载荷放置，以及横梁和球的响应；机械臂负责搬运。",
+        "scope": "这是记录的仿真结果，不是解码器预测。配对保持情境和质量一致，展示物理干预对照，不代表模型反事实准确率。",
+        "badge": "真实物理操作配对"
+      }
+    },
+    {
+      "id": "balance_target_pair",
+      "video": "extra-balance_target_pair.mp4",
+      "poster": "extra-balance_target_pair.png",
+      "kind": "paired_operation",
+      "nodes": [],
+      "en": {
+        "title": "Balance · target-position pair",
+        "question": "Does moving the goal change the physical scene, or only its match readout?",
+        "description": "The robot relocates the target marker between matched trials. Moving the target is distinguished from changing the beam or ball dynamics.",
+        "scope": "The match variable is a horizontal-distance readout, not a mechanical attraction or success probability. These are simulator replays, not model-generated images.",
+        "badge": "Target and outcome disentangled"
+      },
+      "zh": {
+        "title": "平衡模组 · 目标位置配对",
+        "question": "移动目标，改变的是物理状态，还是与目标的匹配读数？",
+        "description": "机械臂在配对试验间搬动目标标记，区分“目标变化”与“横梁或球的动力学变化”。",
+        "scope": "匹配变量是水平距离读数，不是机械吸引力或成功概率。画面是仿真重放，不是模型生成图像。",
+        "badge": "区分目标与物理响应"
+      }
+    },
+    {
+      "id": "pnp_six_learning",
+      "video": "extra-pnp_six_learning.mp4",
+      "poster": "extra-pnp_six_learning.png",
+      "kind": "candidate_graph",
+      "learned_calibration": false,
+      "checks": "extra-pnp-video-checks.json",
+      "trace": "extra-pnp-graph-trace.json",
+      "nodes": [
+        {"en":"Gripper position","zh":"夹爪位置"}, {"en":"Gripper spacing","zh":"夹爪间距"}, {"en":"Target position","zh":"目标位置"}, {"en":"Object position","zh":"物体位置"}, {"en":"Object height","zh":"物体高度"}, {"en":"Match readout","zh":"匹配程度"}
+      ],
+      "en": {
+        "title": "Pick-and-place · six-node graph learning",
+        "question": "Which object-state relations are supported by gripper and transport operations?",
+        "description": "The recorded process compares observational candidates with two intervention batches while the robot grasps, carries, places, and withdraws.",
+        "scope": "This frozen visual-interface run does not include learned calibration. The graph is a task-level candidate output, not a certified dynamics DAG. Gripper coordinates are measured states rather than automatically exogenous commands. Missing and unresolved relations remain visible; match denotes horizontal alignment, not placement success.",
+        "badge": "Candidate graph · contact-checked replays"
+      },
+      "zh": {
+        "title": "抓取放置 · 六节点图学习",
+        "question": "夹爪和搬运操作，为哪些物体状态关系提供了证据？",
+        "description": "记录的过程将观察候选图与两批干预证据比较；机械臂完成抓取、搬运、放置和撤回。",
+        "scope": "这组冻结视觉接口运行未加入学习型校准。图是任务层候选输出，不是认证的动力学 DAG。夹爪坐标是测量状态，不能自动当作外生命令。漏检和未定向关系保留；匹配程度指水平对齐，不等于放置成功。",
+        "badge": "候选图 · 接触检查的重放"
+      }
+    },
+    {
+      "id": "pnp_grasp_pair",
+      "video": "extra-pnp_grasp_pair.mp4",
+      "poster": "extra-pnp_grasp_pair.png",
+      "kind": "paired_operation",
+      "nodes": [],
+      "en": {
+        "title": "Pick-and-place · open/closed gripper pair",
+        "question": "Under a matched arm operation, how does gripper closure change the object's response?",
+        "description": "Compare physical trials with different gripper spacing and inspect whether the object follows the transporting arm.",
+        "scope": "A paired simulation-operation demonstration with contact checks. It is not a separately trained baseline or a decoder-generated counterfactual.",
+        "badge": "Grasp intervention contrast"
+      },
+      "zh": {
+        "title": "抓取放置 · 夹爪开合配对",
+        "question": "在匹配的机械臂操作中，夹爪闭合如何改变物体响应？",
+        "description": "比较不同夹爪间距的真实物理试验，观察物体是否随搬运中的机械臂移动。",
+        "scope": "这是经过接触检查的配对仿真操作，不是独立训练的基线，也不是解码器生成的反事实图像。",
+        "badge": "夹持操作对照"
+      }
+    }
+  ]
+}

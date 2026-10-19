@@ -1,0 +1,472 @@
+[
+  {
+    "stage": "observations",
+    "samples": 256,
+    "graph": {
+      "directed": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    "CI": "KCI"
+  },
+  {
+    "stage": "intervention_update",
+    "round": 1,
+    "target": 1,
+    "selection": "maximum unresolved incident-edge coverage among implemented, not-yet-used targets; smallest index tie break",
+    "selection_scores": {
+      "0": 0,
+      "1": 1
+    },
+    "rows": 64,
+    "contexts": 32,
+    "graph": {
+      "directed": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          2,
+          5
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    "evidence": [
+      {
+        "engine": "direct_do",
+        "edge": [
+          1,
+          4
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 64,
+        "n_do_j": 0,
+        "score_i_to_j": 0.9716199472414068,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          2,
+          5
+        ],
+        "orientation": 0,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 0,
+        "n_do_j": 0,
+        "score_i_to_j": null,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": "threshold_or_margin_ambiguous",
+        "accepted": false,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      }
+    ],
+    "all_physical_gates_pass": true,
+    "replay_context": 84010000,
+    "replay_values": [
+      0.018,
+      0.04
+    ]
+  },
+  {
+    "stage": "intervention_update",
+    "round": 2,
+    "target": 0,
+    "selection": "maximum unresolved incident-edge coverage among implemented, not-yet-used targets; smallest index tie break",
+    "selection_scores": {
+      "0": 0
+    },
+    "rows": 64,
+    "contexts": 32,
+    "graph": {
+      "directed": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          2,
+          5
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    "evidence": [
+      {
+        "engine": "direct_do",
+        "edge": [
+          1,
+          4
+        ],
+        "orientation": 1,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 64,
+        "n_do_j": 0,
+        "score_i_to_j": 0.971619947241407,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": null,
+        "accepted": true,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      },
+      {
+        "engine": "direct_do",
+        "edge": [
+          2,
+          5
+        ],
+        "orientation": 0,
+        "orientation_source": "marginal_single_target_dependence",
+        "uses_meek": false,
+        "n_do_i": 0,
+        "n_do_j": 0,
+        "score_i_to_j": null,
+        "score_j_to_i": null,
+        "config": {
+          "do_thr": 0.15,
+          "do_margin": 0.05,
+          "dep": "poly"
+        },
+        "abstain_reason": "threshold_or_margin_ambiguous",
+        "accepted": false,
+        "immutable_observational_edge": false,
+        "meek_propagated": []
+      }
+    ],
+    "all_physical_gates_pass": true,
+    "replay_context": 84020000,
+    "replay_values": [
+      0.32,
+      0.65
+    ]
+  }
+]

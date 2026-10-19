@@ -1,0 +1,19 @@
+{
+  "website_public": true,
+  "code_public": false,
+  "training_data_public": false,
+  "weights_public": false,
+  "manuscript": "r62 with project website link; research content unchanged",
+  "files": [
+    {
+      "path": "assets/paper.pdf",
+      "bytes": 1012808,
+      "sha256": "145b8624146554a0d0febae57be5c00fe0b0a3e58e0b330034e7f69df5da5094"
+    },
+    {
+      "path": "assets/paper-zh.pdf",
+      "bytes": 1247757,
+      "sha256": "811581301fb27572d06f209473fc57b65d4764c0dc50fdae38efab2e775ad8f2"
+    }
+  ]
+}

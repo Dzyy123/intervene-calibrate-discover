@@ -1,0 +1,240 @@
+{
+  "source_trace_sha256": "f01e6f61837adbc4a0a732f9cd766889274d691135550d886c4375722efebb13",
+  "initial_graph_sha256": "fe48e1fb3d80ef21607d412962c97c8666cacea9d5ff2467493a9c69cf2c3364",
+  "video_sha256": "7e4424ff842d114374bbf79a0d150516c92d23769ba5dd899cd7a36b7c2f68c6",
+  "new_measurements": 0,
+  "graphs": [
+    {
+      "directed": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    {
+      "directed": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "undirected": [
+        [
+          2,
+          3
+        ]
+      ],
+      "valid": true,
+      "failure_reasons": []
+    },
+    {
+      "directed": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "skeleton": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "undirected": [],
+      "valid": true,
+      "failure_reasons": []
+    }
+  ],
+  "chapters": [
+    {
+      "id": "question",
+      "label": "The question",
+      "time": 0.0
+    },
+    {
+      "id": "calibration",
+      "label": "Align the values",
+      "time": 3.5
+    },
+    {
+      "id": "round1",
+      "label": "Operate Entry A",
+      "time": 7.0
+    },
+    {
+      "id": "update1",
+      "label": "Update after batch 1",
+      "time": 17.25
+    },
+    {
+      "id": "round2",
+      "label": "Operate Entry B",
+      "time": 23.75
+    },
+    {
+      "id": "update2",
+      "label": "Update after batch 2",
+      "time": 34.0
+    },
+    {
+      "id": "graph",
+      "label": "The learned graph",
+      "time": 39.0
+    },
+    {
+      "id": "query",
+      "label": "Inspect a frozen query",
+      "time": 42.5
+    }
+  ],
+  "calibration_calls": 32,
+  "graph_calls": 128,
+  "query_context_seed": 98410001,
+  "query_context_index": 1,
+  "source_scope": "existing single-seed static graph replay; no additional inference or graph repair"
+}

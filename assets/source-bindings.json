@@ -1,0 +1,51 @@
+{
+  "videos": {
+    "chain": {
+      "video_sha256": "8b820d2faf7b73be8f27072cb5ef14e72057a14bd348f9d114d4d339c056e0b7",
+      "encoder_sha256": "8da797fe13159f05b1beafd9775250cffe66f35aa8f7fa08122b22a7c8d7a81f",
+      "T_sha256": "9a45d2b4ba5e837ccd7dacae68ec4c9932b4bef41acf4cbf91c1780170e5af06",
+      "graph_sha256": "e0883005a03e024ba2cd0b5485609190bd76ba3aa925c4b2e704d1d85ae64616",
+      "calibration_calls": 16,
+      "graph_calls": 64,
+      "total_environment_calls": 80,
+      "learned_calibration": true,
+      "nodes": 4
+    },
+    "parallel": {
+      "video_sha256": "a6c4946a31077bfa7353cf1e8bd56ed96a67c74317b5ede0c5c5014c7bad7763",
+      "encoder_sha256": "b9fa569035989bbf55d1f1dd732243073f43c1846512530aa11d87448a255db7",
+      "T_sha256": "ad7f1d97825b9f27e9bb267901252664645451c36f23346adfed1e5bd15dc74d",
+      "graph_sha256": "55585e4efba29e1a992a73fffef9283bc87d761b49842026e741de27394dfa73",
+      "calibration_calls": 32,
+      "graph_calls": 128,
+      "total_environment_calls": 160,
+      "learned_calibration": true,
+      "nodes": 4
+    },
+    "domino": {
+      "video_sha256": "89ffbad9d9d433f2e4ea244e97c89e4af1e9a2fbe4dcc0bd4b91239f8191a2f8",
+      "nodes": 6,
+      "learned_calibration": false,
+      "scope": "separate graph-discovery illustration; not calibration benefit evidence"
+    }
+  },
+  "query_source": {
+    "exporter_sha256": "3e5d2362f848b994623883322543928290c8e082e2abdb7db52984d63054578d",
+    "export_summary_sha256": "dc03b44c92a23fba89578db5119e83665035cf6f77796bee61cfa385b59f573d",
+    "original_mechanisms": "LinearMechanisms, ridge=1e-3, factual residual propagation",
+    "fit_inputs": "observational RGB readouts only",
+    "display_contexts": "first four in each recorded batch",
+    "gt_images_as_prediction_inputs": false,
+    "new_environment_calls": 0,
+    "independent_integrity_audit": "unavailable; no scientific PASS"
+  },
+  "heatmap": {
+    "palette": "white to blue",
+    "value": "per-pixel mean absolute RGB error",
+    "fixed_range": [
+      0,
+      0.25
+    ]
+  },
+  "scope": "single-seed, shared graph-discovery replay contexts, imperfect linear-additive mechanisms on binary states; not exact counterfactual identification or published baseline ranking"
+}
