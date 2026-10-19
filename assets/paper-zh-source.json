@@ -1,10 +1,10 @@
 {
   "file": "paper-zh.pdf",
   "source_filename": "main_zh.pdf",
-  "source_release": "r62 + project website link",
-  "sha256": "811581301fb27572d06f209473fc57b65d4764c0dc50fdae38efab2e775ad8f2",
+  "source_release": "preprint-20261019",
+  "sha256": "f09e935e131caa5405fe7906450581ebff2bd5b6c3470e859ed406a264b9dc12",
   "language": "zh-CN",
   "total_pages": 44,
   "manuscript_content_changed": false,
-  "presentation_change": "Added vector website icon and clickable URL to title page"
+  "presentation_change": "Non-anonymous author block, five affiliations, Preprint header, no review ruler, website icon and URL"
 }

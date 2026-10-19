@@ -13,4 +13,6 @@ their own access restrictions. Public demonstrations and paper measurements
 are distinguished on the website; no new measurements are introduced by this
 publication step.
 
-The paper PDFs currently retain the manuscript's existing anonymous author line.
+The paper PDFs are non-anonymous preprints with the supplied seven authors and
+five affiliations. Review line numbers and conference-review headers have been
+removed. Website publication does not mean the paper has been submitted to arXiv.

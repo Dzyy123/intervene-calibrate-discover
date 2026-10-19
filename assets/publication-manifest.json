@@ -3,17 +3,17 @@
   "code_public": false,
   "training_data_public": false,
   "weights_public": false,
-  "manuscript": "r62 with project website link; research content unchanged",
+  "manuscript": "Non-anonymous preprint with author affiliations and project-website link; r62 research content unchanged",
   "files": [
     {
       "path": "assets/paper.pdf",
-      "bytes": 1012808,
-      "sha256": "145b8624146554a0d0febae57be5c00fe0b0a3e58e0b330034e7f69df5da5094"
+      "bytes": 997093,
+      "sha256": "cbe7feff59850cae9e78c1b6b6988b80f538fc0fe0422f4523e35025fabcb4a2"
     },
     {
       "path": "assets/paper-zh.pdf",
-      "bytes": 1247757,
-      "sha256": "811581301fb27572d06f209473fc57b65d4764c0dc50fdae38efab2e775ad8f2"
+      "bytes": 1233514,
+      "sha256": "f09e935e131caa5405fe7906450581ebff2bd5b6c3470e859ed406a264b9dc12"
     }
   ]
 }

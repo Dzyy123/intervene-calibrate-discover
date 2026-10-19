@@ -330,4 +330,10 @@ h3 { font-size: 21px; }
 .curated-path button{font:inherit;font-size:17px;border:0;border-bottom:1px solid #9eb6b8;background:none;color:#356a83;padding:5px 0;margin:5px 24px 5px 0;cursor:pointer}
 .curated-path p{margin:0 0 6px}
 .release-reading-link{font-size:16px;margin-top:24px;line-height:1.7}.resource-links{row-gap:14px}
+.paper-authors { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 18px; margin:0 auto 12px; max-width:950px; font-size:17px; }
+.paper-authors > span, .paper-affiliations > span { white-space:nowrap; }
+.paper-authors a { text-decoration:none; }
+.paper-authors sup, .paper-affiliations sup { margin-left:2px; margin-right:3px; font-size:10px; }
+.paper-affiliations { display:flex; justify-content:center; flex-wrap:wrap; gap:3px 16px; max-width:900px; margin:0 auto 26px; font-size:14px; line-height:1.8; color:var(--muted); }
+@media(max-width:560px) { .paper-authors {font-size:16px; gap:5px 14px;} .paper-affiliations > span {white-space:normal;} }
 @media(max-width:760px){.case-guide{padding:18px 16px}.case-guide h3{font-size:22px}.case-explanation>div{display:block}.case-explanation dt{margin-bottom:4px}.case-explanation dd{font-size:17px}.case-media{grid-template-columns:1fr}.case-graph{max-width:470px;width:100%;margin:auto}.case-step-buttons{gap:8px}.case-controls{gap:12px}}
