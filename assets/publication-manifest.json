@@ -7,13 +7,13 @@
   "files": [
     {
       "path": "assets/paper.pdf",
-      "bytes": 997093,
-      "sha256": "cbe7feff59850cae9e78c1b6b6988b80f538fc0fe0422f4523e35025fabcb4a2"
+      "bytes": 998465,
+      "sha256": "f448531c30e4f99407a4410198c0395461932010129535b75dfab126088bee8a"
     },
     {
       "path": "assets/paper-zh.pdf",
-      "bytes": 1233514,
-      "sha256": "f09e935e131caa5405fe7906450581ebff2bd5b6c3470e859ed406a264b9dc12"
+      "bytes": 1234356,
+      "sha256": "4c5b8b50c15012e925843034876826cc47296fa6a5c91bfdfb2eb015b66dc010"
     }
   ]
 }

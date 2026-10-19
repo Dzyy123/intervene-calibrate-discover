@@ -333,6 +333,7 @@ h3 { font-size: 21px; }
 .paper-authors { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 18px; margin:0 auto 12px; max-width:950px; font-size:17px; }
 .paper-authors > span, .paper-affiliations > span { white-space:nowrap; }
 .paper-authors a { text-decoration:none; }
+.paper-author-notes { font-size:14px; color:var(--muted); line-height:1.7; margin:-12px auto 24px; display:flex; flex-wrap:wrap; justify-content:center; gap:2px 12px; }
 .paper-authors sup, .paper-affiliations sup { margin-left:2px; margin-right:3px; font-size:10px; }
 .paper-affiliations { display:flex; justify-content:center; flex-wrap:wrap; gap:3px 16px; max-width:900px; margin:0 auto 26px; font-size:14px; line-height:1.8; color:var(--muted); }
 @media(max-width:560px) { .paper-authors {font-size:16px; gap:5px 14px;} .paper-affiliations > span {white-space:normal;} }

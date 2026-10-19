@@ -29,6 +29,7 @@
     ['.site-header nav a[href="#experiment-setup"]','实验'], ['.site-header nav a[href="#related"]','相关工作'], ['.site-header nav a[href="#more-demos"]','全部演示'],
     ['.intro .eyebrow','研究项目 · 从干预中学习'], ['h1 span:nth-child(1)','干预。'], ['h1 span:nth-child(2)','校准。'], ['h1 span:nth-child(3)','发现。'],
     ['.paper-title','从像素学习因果结构'],
+    ['.paper-author-notes','<span>* 共同第一作者。</span> <span>† 通讯作者：<a href="mailto:xpzhang@ieee.org">xpzhang@ieee.org</a>；<a href="mailto:jiayuc@hku.hk">jiayuc@hku.hk</a>。</span>'],
     ['.lead','让从像素得到的变量，能够按真实环境中的操作值执行查询。用可核验数值校准视觉读数，选择实验来消除因果方向歧义，再预测状态和图像后果。'],
     ['.resource-links a:nth-child(1)','观看图学习过程'], ['.resource-links a:nth-child(2)','阅读论文（中文）'], ['.resource-links a:nth-child(3)','项目代码'],
     ['#discovery .section-heading .eyebrow','因果发现过程'], ['#discovery-heading','操作环境，逐步确定因果图。'],
