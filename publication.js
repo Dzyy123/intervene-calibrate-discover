@@ -3,10 +3,8 @@
   const zh=window.ICD_L10N?.zh===true;
   const links=[
     ['assets/paper.pdf','Paper · English','英文论文'],
-    ['assets/paper-zh.pdf','Paper · 中文','中文论文'],
     ['#demos','Demonstrations','演示视频']
   ];
-  if(zh)[links[0],links[1]]=[links[1],links[0]];
   const resources=document.querySelector('.resource-links');resources.replaceChildren();
   for(const[href,en,cn]of links){const a=document.createElement('a');a.href=href;a.textContent=zh?cn:en;a.className='button'+(href===links[0][0]?' primary':'');if(!href.startsWith('#')){a.target='_blank';a.rel='noopener';}resources.append(a);}
   const reference=document.createElement('p');reference.className='release-reading-link';

@@ -1,0 +1,204 @@
+{
+  "file": "featured-pickplace.mp4",
+  "poster": "featured-pickplace.jpg",
+  "video_sha256": "007a21ce1de286cd461a15ed13723d1dde3b68252eb0736ff420aa900773f674",
+  "poster_sha256": "98d9071678611efabbbd53e194488639374e61b83c37ea8e2d86612e8c248403",
+  "duration": 39.7,
+  "fps": 30,
+  "width": 1600,
+  "height": 1000,
+  "stages": [
+    {
+      "start": 0.0,
+      "name": "Question",
+      "zh": "夹爪开合与横向移动，如何改变物体状态？",
+      "en": "How do gripper opening and position affect the object?"
+    },
+    {
+      "start": 2.5,
+      "name": "Observational graph",
+      "zh": "从 256 张观测图像得到候选图；虚线保留方向不确定性。",
+      "en": "256 observation images produce this candidate graph; dashed directions remain open."
+    },
+    {
+      "start": 5.0,
+      "name": "Select 1",
+      "zh": "操作 1：改变夹爪开合，观察是否带动物体升高。",
+      "en": "Operation 1: change the opening; observe the object height."
+    },
+    {
+      "start": 6.5,
+      "name": "initial",
+      "zh": "操作 1：改变夹爪开合，观察是否带动物体升高。",
+      "en": "Operation 1: change the opening; observe the object height."
+    },
+    {
+      "start": 13.1,
+      "name": "Update 1",
+      "zh": "整批证据新增：夹爪间距 → 物体高度。",
+      "en": "Batch evidence adds: opening → object height."
+    },
+    {
+      "start": 16.1,
+      "name": "lower_after_measurement",
+      "zh": "测量已结束；放下物体并撤回机械臂。",
+      "en": "Measurement complete; put down the object and retreat."
+    },
+    {
+      "start": 19.6,
+      "name": "Reset",
+      "zh": "重置为下一次独立操作的初态。",
+      "en": "Reset to the initial state of the next independent trial."
+    },
+    {
+      "start": 21.1,
+      "name": "Select 2",
+      "zh": "操作 2：改变夹爪横向位置，观察物体位置。",
+      "en": "Operation 2: change gripper position; observe object position."
+    },
+    {
+      "start": 22.6,
+      "name": "initial",
+      "zh": "操作 2：改变夹爪横向位置，观察物体位置。",
+      "en": "Operation 2: change gripper position; observe object position."
+    },
+    {
+      "start": 29.2,
+      "name": "Update 2",
+      "zh": "第二轮没有新增方向；保留原图，不强行补边。",
+      "en": "Round 2 adds no direction; retain the graph without inventing edges."
+    },
+    {
+      "start": 32.2,
+      "name": "lower_after_measurement",
+      "zh": "测量已结束；放下物体并撤回机械臂。",
+      "en": "Measurement complete; put down the object and retreat."
+    },
+    {
+      "start": 35.7,
+      "name": "Result",
+      "zh": "学到 3 条方向，目标—匹配仍未定向；不等于完整真图。",
+      "en": "Three directed edges; target—alignment remains open. This is not complete recovery."
+    }
+  ],
+  "final_graph": {
+    "directed": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "skeleton": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "undirected": [
+      [
+        2,
+        5
+      ]
+    ],
+    "valid": true,
+    "failure_reasons": []
+  },
+  "graph_source_sha256": [
+    "0ce5ea26cf085a0a489060fb280c993ecd007122036359bc982e0cf863f9c0f5",
+    "d6893ff244bed56b033df19ac243860ac5e8c9a31c40e9e07fef833d710e359f"
+  ],
+  "input_manifest_sha256": "dac24091d8adbda71a34ed5c79c8b7913cfab5bf68f3619192dadbac63ae5949",
+  "input_frame_count": 606,
+  "new_measurements": 0,
+  "learned_calibration": false,
+  "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",
+  "presentation": "Recomposited original robot frames; fixed cameras; bilingual captions; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
+}

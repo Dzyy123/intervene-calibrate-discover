@@ -1,0 +1,188 @@
+{
+  "file": "featured-domino.mp4",
+  "poster": "featured-domino.jpg",
+  "video_sha256": "aea0579d7b6a5d916f22b6c7dfe666ce9a9c85dc77c1e42670b80afcb51d3504",
+  "poster_sha256": "04bde9de21a2289fc8d9f4d285849b6ffb3b3dbdd5adc5004a72d2fe0d1b2c8b",
+  "duration": 30.733333333333334,
+  "fps": 30,
+  "width": 1600,
+  "height": 1000,
+  "stages": [
+    {
+      "start": 0.0,
+      "name": "Question",
+      "zh": "夹住第二块骨牌，会阻断后面的倒牌吗？",
+      "en": "Does holding domino 2 stop the cascade?"
+    },
+    {
+      "start": 2.5,
+      "name": "Observational skeleton",
+      "zh": "观测只留下相邻骨牌的关系，虚线还没有方向。",
+      "en": "Observations give a chain; dashed edges have no direction yet."
+    },
+    {
+      "start": 5.0,
+      "name": "initial",
+      "zh": "夹住第二块骨牌：观察倒牌传递是否被阻断。",
+      "en": "Hold domino 2: watch whether the cascade is blocked."
+    },
+    {
+      "start": 10.0,
+      "name": "Held readout",
+      "zh": "夹持期间保存读数：随后与同情境下的推倒读数比较。",
+      "en": "Readout while held: compare with the push trial in the same context."
+    },
+    {
+      "start": 12.0,
+      "name": "release_after_measurement",
+      "zh": "读数已采集；松开并撤回不再用于本次图更新。",
+      "en": "Readout collected; release and retreat are not new graph evidence."
+    },
+    {
+      "start": 14.133333333333333,
+      "name": "Paired reset",
+      "zh": "保持同一配对情境，重置后改为直接推倒第二块。",
+      "en": "Reset the matched context; now push domino 2 instead."
+    },
+    {
+      "start": 15.633333333333333,
+      "name": "initial",
+      "zh": "直接推倒第二块骨牌：观察哪些后续骨牌响应。",
+      "en": "Push domino 2: watch which downstream dominoes respond."
+    },
+    {
+      "start": 20.733333333333334,
+      "name": "Direct evidence",
+      "zh": "整批干预证据先确定 1→2 和 2→3。",
+      "en": "The intervention batch first orients 1→2 and 2→3."
+    },
+    {
+      "start": 23.733333333333334,
+      "name": "Graph-rule propagation",
+      "zh": "再用图规则传播其余方向；绿色不是新增操作。",
+      "en": "Graph rules propagate the remaining directions; green means rule-derived."
+    },
+    {
+      "start": 26.733333333333334,
+      "name": "Result",
+      "zh": "得到当前六节点链：干预证据与图规则各有来源。",
+      "en": "Current six-node chain: intervention evidence plus graph-rule propagation."
+    }
+  ],
+  "final_graph": {
+    "directed": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "skeleton": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "undirected": [],
+    "valid": true,
+    "failure_reasons": []
+  },
+  "graph_source_sha256": [
+    "1a651988e6acaee840298b6e063c8abf4429fb90c8f68a6a825d1d5b5ea62579",
+    "2a762c7d6ab72692f480747fdee9918520c113bec481cfa0a640b9240ff9f687",
+    "69edf99ad74c16e3f0d24e79678cfe2611284d33b11ff1be94a98c37d54fa2dc"
+  ],
+  "input_manifest_sha256": "3a64c762e1e64594b264e62780b4c13da19cdf440eebf84fdc5297fda71eef14",
+  "input_frame_count": 245,
+  "new_measurements": 0,
+  "learned_calibration": false,
+  "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",
+  "presentation": "Recomposited original robot frames; fixed cameras; bilingual captions; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
+}

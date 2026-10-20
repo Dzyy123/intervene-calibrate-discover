@@ -9,11 +9,6 @@
       "path": "assets/paper.pdf",
       "bytes": 991305,
       "sha256": "f545c627750a1f29eb97e3989c42124b3e159ab41c247eaf5e26b0c25e9fd429"
-    },
-    {
-      "path": "assets/paper-zh.pdf",
-      "bytes": 1228685,
-      "sha256": "903d386a1d046d0a66c645a40553e676c356bd0faf0758cf1caf45db56880b5d"
     }
   ]
 }

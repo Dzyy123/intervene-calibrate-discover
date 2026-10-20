@@ -31,7 +31,7 @@
     ['.paper-title','从像素学习因果结构'],
     ['.paper-author-notes','<span>* 共同第一作者。</span> <span>† 通讯作者：<a href="mailto:xpzhang@ieee.org">xpzhang@ieee.org</a>；<a href="mailto:jiayuc@hku.hk">jiayuc@hku.hk</a>。</span>'],
     ['.lead','让从像素得到的变量，能够按真实环境中的操作值执行查询。用可核验数值校准视觉读数，选择实验来消除因果方向歧义，再预测状态和图像后果。'],
-    ['.resource-links a:nth-child(1)','观看图学习过程'], ['.resource-links a:nth-child(2)','阅读论文（中文）'], ['.resource-links a:nth-child(3)','项目代码'],
+    ['.resource-links a:nth-child(1)','观看图学习过程'], ['.resource-links a:nth-child(2)','阅读英文论文'], ['.resource-links a:nth-child(3)','项目代码'],
     ['#discovery .section-heading .eyebrow','因果发现过程'], ['#discovery-heading','操作环境，逐步确定因果图。'],
     ['#discovery .section-heading>p','左侧是记录的场景；右侧是学到的结构。'],
     ['#discovery .demo-label','机械模组中的已记录流程演示，与前述论文基准比较分开呈现。'],
@@ -143,7 +143,7 @@
   ];
   for(const [selector,name,value] of attrs){const element=document.querySelector(selector);if(element)element.setAttribute(name,value);else window.ICD_L10N.missing.push(selector);}
   document.querySelector('#evidence .evidence-links a:first-child').href='assets/story-source-bindings-zh.json';
-  for(const link of document.querySelectorAll('a[href^="assets/paper.pdf"]'))link.href='assets/paper-zh.pdf';
+  for(const link of document.querySelectorAll('a[href^="assets/paper.pdf"]'))link.textContent='英文论文';
   document.querySelector('#paper-calibration-table').closest('.table-scroll').setAttribute('aria-label','论文的受控校准表格');
   document.querySelector('#paper-result-table').closest('.table-scroll').setAttribute('aria-label','论文报告的基准结果表');
   document.documentElement.dataset.i18nMissing=String(window.ICD_L10N.missing.length);
