@@ -59,4 +59,5 @@
   video.addEventListener('timeupdate',update);video.addEventListener('play',()=>{for(const v of document.querySelectorAll('video'))if(v!==video)v.pause();update();});
   await choose(scenes[0]);
   for(const a of document.querySelectorAll('.resource-links a[href="#demos"]'))a.href='#featured-demos';
+  if(location.hash==='#featured-demos')section.scrollIntoView({block:'start'});
 })();
