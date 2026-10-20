@@ -29,7 +29,7 @@
     if(!timeline.length){document.getElementById('extra-stage').textContent=active.kind==='candidate_graph'?t('Recorded candidate-graph video. Chapter metadata is still loading or unavailable.','候选图录制视频。章节信息正在加载或暂不可用。'):active.kind==='paired_operation'?t('The paired clip shows simulator operations and outcomes, not model predictions.','配对片段展示仿真操作及结果，不是模型预测。'):active.kind==='frozen_graph_check'?t('Existing graph highlights support a qualitative physical check; they are not fresh discovery or fitted predictions.','已有图的高亮用于定性物理检查，不是新发现结果或拟合预测。'):active.kind==='mechanical_preview'?t('Mechanical preview only, without a learned graph or model prediction.','仅为物理操作预览，没有学到的图或模型预测。'):t('Saved illustrative environment material, not quantitative evidence for the paper.','已保存的环境示意素材，不是论文定量证据。');return;}
     let current=timeline[0];for(const row of timeline)if(row.start<=video.currentTime+.03)current=row;
     if(root.dataset.current===current.stage)return;root.dataset.current=current.stage;
-    document.getElementById('extra-stage').textContent=notes[current.stage]||current.stage;
+    document.getElementById('extra-stage').textContent=window.ICD_DEMO_BRIEFS?.stage(active.id,current.stage)||notes[current.stage]||current.stage;
     for(const button of root.querySelectorAll('button'))button.setAttribute('aria-current',String(button.dataset.stage===current.stage));
   }
   function showChapters(record){
@@ -44,9 +44,11 @@
   }
   function choose(id){
     const record=records.find(r=>r.id===id);if(!record)return;active=record;const c=copy(record);
-    video.pause();video.src='assets/'+record.video;video.poster='assets/'+record.poster;video.setAttribute('aria-label',c.title);video.load();
+    video.pause();video.src=window.ICD_MEDIA_URL('assets/'+record.video);video.poster='assets/'+record.poster;video.setAttribute('aria-label',c.title);video.load();
     for(const [key,value]of Object.entries({'extra-question':c.question,'extra-title':c.title,'extra-description':c.description,'extra-scope':c.scope,'extra-badge':c.badge}))document.getElementById(key).textContent=value;
-    document.getElementById('extra-panel').setAttribute('aria-labelledby','extra-tab-'+id);document.getElementById('extra-download').href='assets/'+record.video;
+    document.getElementById('extra-panel').setAttribute('aria-labelledby','extra-tab-'+id);document.getElementById('extra-download').href=window.ICD_MEDIA_URL('assets/'+record.video);
+    window.ICD_DEMO_BRIEFS?.renderExtra(record);
+    if(record.learned_calibration===false)document.getElementById('extra-badge').textContent=t('Structure exploration · no learned calibration','结构探索参考 · 未做学习型校准');
     const nodes=document.getElementById('extra-nodes');nodes.replaceChildren();
     for(const role of record.nodes){const span=document.createElement('span');span.textContent=role[L.zh?'zh':'en'];nodes.append(span);}
     for(const button of document.querySelectorAll('[data-extra]')){const selected=button.dataset.extra===id;button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;}
@@ -89,6 +91,10 @@
     const names={all:'全部',candidate_graph:'图学习记录',frozen_graph_check:'冻结图下的操作',paired_operation:'配对物理操作',mechanical_preview:'工具使用预览',environment_preview:'基础环境概览'};
     for(const option of document.querySelectorAll('#demo-kind-filter option'))option.textContent=names[option.value];
   }
+  document.getElementById('demo-kind-filter').value='candidate_graph';
+  document.querySelector('.extra-gallery-layout').prepend(document.getElementById('extra-list'));
+  document.querySelector('.extra-question').prepend(document.getElementById('extra-badge'));
+  video.before(document.getElementById('extra-chapters'),document.getElementById('extra-stage'));
   const status=document.createElement('p');status.id='gallery-load-status';status.setAttribute('role','status');
   const retry=document.createElement('button');retry.type='button';retry.id='gallery-retry';retry.textContent=t('Retry gallery loading','重新加载演示库');retry.hidden=true;
   document.querySelector('.library-filter').after(status,retry);

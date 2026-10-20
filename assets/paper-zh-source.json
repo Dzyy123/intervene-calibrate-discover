@@ -1,10 +1,11 @@
 {
   "file": "paper-zh.pdf",
   "source_filename": "main_zh.pdf",
-  "source_release": "preprint-20261019",
-  "sha256": "4c5b8b50c15012e925843034876826cc47296fa6a5c91bfdfb2eb015b66dc010",
+  "source_release": "preprint-condensed-20261019",
+  "sha256": "903d386a1d046d0a66c645a40553e676c356bd0faf0758cf1caf45db56880b5d",
   "language": "zh-CN",
   "total_pages": 44,
-  "manuscript_content_changed": false,
-  "presentation_change": "Non-anonymous author block, five affiliations, Preprint header, no review ruler, website icon and URL"
+  "manuscript_content_changed": true,
+  "presentation_change": "Abstract mechanism clarified; repeated appendix explanations condensed; author block, preprint header and website link retained",
+  "research_results_changed": false
 }
