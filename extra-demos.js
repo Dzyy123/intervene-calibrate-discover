@@ -26,6 +26,11 @@
   function syncStage(){
     const root=document.getElementById('extra-chapters');
     if(!active)return;
+    if(video.paused&&video.currentTime<0.03){
+      root.dataset.current='preview';
+      document.getElementById('extra-stage').textContent=t('Video preview. Press play or choose a chapter to follow the operations and graph updates.','当前是视频封面。点击播放或选择章节，再跟随实际操作与图更新过程。');
+      return;
+    }
     if(!timeline.length){document.getElementById('extra-stage').textContent=active.kind==='candidate_graph'?t('Recorded candidate-graph video. Chapter metadata is still loading or unavailable.','候选图录制视频。章节信息正在加载或暂不可用。'):active.kind==='paired_operation'?t('The paired clip shows simulator operations and outcomes, not model predictions.','配对片段展示仿真操作及结果，不是模型预测。'):active.kind==='frozen_graph_check'?t('Existing graph highlights support a qualitative physical check; they are not fresh discovery or fitted predictions.','已有图的高亮用于定性物理检查，不是新发现结果或拟合预测。'):active.kind==='mechanical_preview'?t('Mechanical preview only, without a learned graph or model prediction.','仅为物理操作预览，没有学到的图或模型预测。'):t('Saved illustrative environment material, not quantitative evidence for the paper.','已保存的环境示意素材，不是论文定量证据。');return;}
     let current=timeline[0];for(const row of timeline)if(row.start<=video.currentTime+.03)current=row;
     if(root.dataset.current===current.stage)return;root.dataset.current=current.stage;
@@ -71,6 +76,7 @@
     if(visible.length)choose(visible.some(record=>record.id===active?.id)?active.id:visible[0].id);
   }
   video.addEventListener('timeupdate',syncStage);
+  video.addEventListener('play',syncStage);
   document.getElementById('extra-restart').addEventListener('click',()=>{video.currentTime=0;video.play().catch(()=>{});});
   document.getElementById('demo-kind-filter').addEventListener('change',showList);
   if(L.zh){
