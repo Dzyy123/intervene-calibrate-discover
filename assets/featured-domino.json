@@ -1,9 +1,9 @@
 {
   "file": "featured-domino.mp4",
   "poster": "featured-domino.jpg",
-  "video_sha256": "63779a39cab3b0f7e9717cb3990095a9181521366093d3786249c68a2828cb9d",
-  "poster_sha256": "9a601b7cc8f3c538d43a143f3fefccaf4d8f71a53dd080b56a0fc8c087d444d2",
-  "duration": 34.233333333333334,
+  "video_sha256": "d6e6b3e1b5ccfcb63668a515f27367f5d0646fc6eaceb61291b29882cd2f0b56",
+  "poster_sha256": "1eb615ad624bc27a7d50850f1c89a4103717f5eed3a14a94b949e98afc776869",
+  "duration": 45.7,
   "fps": 30,
   "width": 1600,
   "height": 1000,
@@ -11,68 +11,122 @@
     {
       "start": 0.0,
       "name": "Question",
-      "zh": "夹住第二块骨牌，会阻断后面的倒牌吗？",
-      "en": "Does holding domino 2 stop the cascade?"
+      "zh": "",
+      "en": "Which domino causes the next one to fall?"
     },
     {
       "start": 2.5,
+      "name": "Scene key",
+      "zh": "",
+      "en": "Four physical dominoes, four fallen-state variables: F1 to F4."
+    },
+    {
+      "start": 4.5,
       "name": "Observational skeleton",
-      "zh": "观测只留下相邻骨牌的关系，虚线还没有方向。",
-      "en": "Observations give a chain; dashed edges have no direction yet."
+      "zh": "",
+      "en": "512 observation images give a chain, but all three directions remain unresolved."
     },
     {
-      "start": 5.0,
-      "name": "initial",
-      "zh": "夹住第二块骨牌：观察倒牌传递是否被阻断。",
-      "en": "Hold domino 2: watch whether the cascade is blocked."
+      "start": 7.5,
+      "name": "Select 1",
+      "zh": "",
+      "en": "Round 1: select domino 2 to test the remaining directions."
     },
     {
-      "start": 10.0,
-      "name": "Held readout",
-      "zh": "采样：第二块被固定，第三至六块仍未倒下；松手后不再计入。",
-      "en": "Held readout: dominoes 2–6 remain upright. Release is outside this measurement."
+      "start": 9.5,
+      "name": "Fixed control 1",
+      "zh": "",
+      "en": "Control: F2 = 0, held upright by a simulator fixture\u2014not a robot grasp."
     },
     {
       "start": 12.0,
-      "name": "release_after_measurement",
-      "zh": "读数已采集；松开并撤回不再用于本次图更新。",
-      "en": "Readout collected; release and retreat are not new graph evidence."
+      "name": "Push setup 1",
+      "zh": "",
+      "en": "Separate recorded example: an initially upright target is pushed by the gripper."
     },
     {
-      "start": 14.133333333333333,
-      "name": "Paired reset",
-      "zh": "同一配对情境重新初始化，再直接推倒第二块。",
-      "en": "Reset the matched context; now push domino 2 instead."
-    },
-    {
-      "start": 16.133333333333333,
+      "start": 14.0,
       "name": "initial",
-      "zh": "直接推倒第二块骨牌：观察哪些后续骨牌响应。",
-      "en": "Push domino 2: watch which downstream dominoes respond."
+      "zh": "",
+      "en": "The gripper approaches domino 2; the target starts upright."
     },
     {
-      "start": 21.233333333333334,
-      "name": "Paired evidence",
-      "zh": "配对读数显示不同响应；箭头仍由完整 64 对情境的证据决定。",
-      "en": "This pair illustrates the response; orientations use all 64 matched contexts."
+      "start": 16.5,
+      "name": "push",
+      "zh": "",
+      "en": "Gripper contact pushes domino 2; watch the downstream response."
     },
     {
-      "start": 24.233333333333334,
+      "start": 16.7,
+      "name": "retract",
+      "zh": "",
+      "en": "The gripper withdraws. Read the settled image before updating the graph."
+    },
+    {
+      "start": 19.1,
       "name": "Direct evidence",
-      "zh": "整批干预证据先确定 1→2 和 2→3。",
-      "en": "The intervention batch first orients 1→2 and 2→3."
+      "zh": "",
+      "en": "The response evidence orients F2 \u2192 F3; F1\u2014F2 is still unresolved."
     },
     {
-      "start": 27.233333333333334,
+      "start": 22.1,
       "name": "Graph-rule propagation",
-      "zh": "再用图规则传播其余方向；绿色不是新增操作。",
-      "en": "Graph rules propagate the remaining directions; green means rule-derived."
+      "zh": "",
+      "en": "Meek propagation adds F3 \u2192 F4. It does not settle F1\u2014F2."
     },
     {
-      "start": 30.233333333333334,
+      "start": 25.1,
+      "name": "Reset",
+      "zh": "",
+      "en": "Reset for round 2; keep the graph learned in round 1."
+    },
+    {
+      "start": 27.1,
+      "name": "Select 2",
+      "zh": "",
+      "en": "Round 2: select domino 1 to test the remaining directions."
+    },
+    {
+      "start": 29.1,
+      "name": "Fixed control 2",
+      "zh": "",
+      "en": "Control: F1 = 0, held upright by a simulator fixture\u2014not a robot grasp."
+    },
+    {
+      "start": 31.6,
+      "name": "Push setup 2",
+      "zh": "",
+      "en": "Separate recorded example: an initially upright target is pushed by the gripper."
+    },
+    {
+      "start": 33.6,
+      "name": "initial",
+      "zh": "",
+      "en": "The gripper approaches domino 1; the target starts upright."
+    },
+    {
+      "start": 36.1,
+      "name": "push",
+      "zh": "",
+      "en": "Gripper contact pushes domino 1; watch the downstream response."
+    },
+    {
+      "start": 36.3,
+      "name": "retract",
+      "zh": "",
+      "en": "The gripper withdraws. Read the settled image before updating the graph."
+    },
+    {
+      "start": 38.7,
+      "name": "Update 2",
+      "zh": "",
+      "en": "The second batch resolves F1 \u2192 F2; the previously learned directions remain."
+    },
+    {
+      "start": 41.7,
       "name": "Result",
-      "zh": "得到当前六节点链：干预证据与图规则各有来源。",
-      "en": "Current six-node chain: intervention evidence plus graph-rule propagation."
+      "zh": "",
+      "en": "Two recorded rounds: F1 \u2192 F2 \u2192 F3 \u2192 F4."
     }
   ],
   "final_graph": {
@@ -81,45 +135,21 @@
         0.0,
         1.0,
         0.0,
-        0.0,
-        0.0,
         0.0
       ],
       [
         0.0,
         0.0,
         1.0,
-        0.0,
-        0.0,
         0.0
       ],
       [
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
-      ],
-      [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0
-      ],
-      [
-        0.0,
-        0.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
       [
-        0.0,
-        0.0,
         0.0,
         0.0,
         0.0,
@@ -131,45 +161,21 @@
         0.0,
         1.0,
         0.0,
-        0.0,
-        0.0,
         0.0
       ],
       [
         1.0,
         0.0,
         1.0,
-        0.0,
-        0.0,
         0.0
       ],
       [
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
-      ],
-      [
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0
-      ],
-      [
-        0.0,
-        0.0,
         0.0,
         1.0,
         0.0,
         1.0
       ],
       [
-        0.0,
-        0.0,
         0.0,
         0.0,
         1.0,
@@ -181,14 +187,24 @@
     "failure_reasons": []
   },
   "graph_source_sha256": [
-    "1a651988e6acaee840298b6e063c8abf4429fb90c8f68a6a825d1d5b5ea62579",
-    "2a762c7d6ab72692f480747fdee9918520c113bec481cfa0a640b9240ff9f687",
-    "69edf99ad74c16e3f0d24e79678cfe2611284d33b11ff1be94a98c37d54fa2dc"
+    "cc6d020b2a3c796e40193fa530d60c3fe4a2694e1f1bd7e1546d9b9d912d7735",
+    "0a164984ca3b1da06d9078a78994b86e71624813035da6258aed4d207f183384",
+    "fd49ddb44339c03a5a653448da4a3b75da763c2dbca7fdd660cbf963dd82b7ba",
+    "8bafd1498dac8520f7b693a801583567878be627c7b8d5038ea0daad9889e2b2",
+    "6ab65ce93df01c357f9f6f7195beb483ac767ac3609427137944b0289ce81efb"
   ],
-  "input_manifest_sha256": "3a64c762e1e64594b264e62780b4c13da19cdf440eebf84fdc5297fda71eef14",
-  "input_frame_count": 245,
+  "input_manifest_sha256": "614958a0cd62422a2ab277999aa39f4b745c9eda6064c917d6e427f347dff2be",
+  "input_frame_count": 206,
   "new_measurements": 0,
   "learned_calibration": false,
-  "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",
-  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
+  "scope": "Archived four-node graph-discovery run with a frozen visual encoder; no learned calibration, new acquisitions or main-table replacement.",
+  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim.",
+  "scene": "paper_four_node_physical_domino",
+  "nodes": 4,
+  "archived_observation_images": 512,
+  "archived_intervention_images": 256,
+  "paper_relation": "Four-domino rigid-body scene used in the paper; this is an archived robot-contact discovery adaptation, not a rerun of the paper aggregate.",
+  "zero_command": "Simulator fixture holds upright; not a robot grasp",
+  "one_command": "Gripper contact pushes the initially upright target",
+  "sample_relationship": "Displayed controls and pushes are separate example contexts, not paired counterfactual predictions"
 }

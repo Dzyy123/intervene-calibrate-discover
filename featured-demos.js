@@ -1,9 +1,9 @@
 "use strict";
 (async()=>{
   const zh=false,t=(en,cn)=>en;
-  const version='20261020b';
+  const version='20261020c';
   const scenes=[
-    ['domino','Domino chain','多米诺','Hold, then push the same domino. Separate experimental evidence from rule propagation.','先夹持、再推倒同一块骨牌。区分干预证据与图规则传播。'],
+    ['domino','Paper dominoes','论文多米诺','The paper’s four-domino physical scene: first probe domino 2, then domino 1. Controls use simulator fixtures; pushes use gripper contact.','论文四骨牌物理场景：先操作第二块，再操作第一块。直立对照使用固定约束，推动由夹爪接触完成。'],
     ['balance','Balance','平衡','Move the load, then the target. Watch which directions change—and which stay uncertain.','先搬动载荷、再移动目标。看哪些方向获得证据，哪些仍然不确定。'],
     ['pickplace','Pick & place','抓取放置','Compare closed and open grasps in the same context, then probe lateral position. These are discovery probes, not a placement policy.','同一情境下比较闭合与张开，再探测横向位置。这是学图操作，不是放置策略。']
   ];
@@ -44,13 +44,17 @@
     try{
       const res=await fetch(`assets/featured-${row[0]}.json?v=${version}`);if(!res.ok)throw new Error(res.status);
       const result=await res.json();if(request!==token)return;data=result;
-      const selected=data.stages.filter(s=>/^(Question|Scene key|Observational|Select|Direct|Graph-rule|Update|Result|Paired|Held)/.test(s.name));
+      const selected=data.stages.filter(s=>/^(Question|Scene key|Observational|Select|Direct|Graph-rule|Update|Result|Paired|Held|Fixed|Push setup)/.test(s.name));
       for(const s of selected){
         const b=document.createElement('button');b.type='button';b.dataset.start=String(s.start);
         const labels={'Question':['Question','问题'],'Observational skeleton':['Observe','观测骨架'],'Observational graph':['Observe','观测图'],'Paired reset':['Paired test','配对操作'],'Direct evidence':['Evidence','干预证据'],'Graph-rule propagation':['Propagate','图规则'],'Result':['Result','结果'],'Select 1':['Operation 1','操作一'],'Select 2':['Operation 2','操作二'],'Update 1':['Update 1','更新一'],'Update 2':['Update 2','更新二']};
         labels['Held readout']=['Held readout','夹持读数'];
         labels['Paired evidence']=['Compare readouts','配对读数'];
         labels['Scene key']=['Scene key','场景说明'];
+        labels['Fixed control 1']=['Control F2','第二块固定对照'];
+        labels['Fixed control 2']=['Control F1','第一块固定对照'];
+        labels['Push setup 1']=['Push F2','推第二块'];
+        labels['Push setup 2']=['Push F1','推第一块'];
         const label=labels[s.name]||[s.name,s.name];b.textContent=t(...label);b.onclick=()=>{video.currentTime=s.start;video.play().catch(()=>{});};seek.append(b);
       }
     }catch(e){section.querySelector('.featured-caption').textContent=t('Chapter data could not load; the video remains available.','章节数据暂时未加载，可直接播放视频。');}

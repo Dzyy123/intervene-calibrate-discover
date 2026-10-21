@@ -18,6 +18,11 @@ five affiliations. Review line numbers and conference-review headers have been
 removed. Website publication does not mean the paper has been submitted to arXiv.
 
 The Chinese working manuscript is not part of the current public deployment.
-Three featured films (Domino, Balance, Pick-and-Place) use consistent bilingual
-captions and logged graph updates. They are presentation edits of recorded
+Three featured films (Domino, Balance, Pick-and-Place) use consistent
+English captions and logged graph updates. They are presentation edits of recorded
 graph-discovery runs, not new experiments or calibration comparisons.
+
+The first featured film uses the four-domino rigid-body scene from the paper
+with archived robot-contact discovery records. Upright controls use simulator
+fixtures; positive commands use gripper contact. This demonstration adaptation
+is separate from the paper's aggregate benchmark measurements.
