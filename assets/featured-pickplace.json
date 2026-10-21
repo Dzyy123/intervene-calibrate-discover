@@ -1,8 +1,8 @@
 {
   "file": "featured-pickplace.mp4",
   "poster": "featured-pickplace.jpg",
-  "video_sha256": "3192d5bf7274063d15092eda2978acbcedabafc7444008359182cbe69e679b04",
-  "poster_sha256": "fb21daca8ab691a2533497ac5f875d65948f23539b7613a3ef0fea9c5209e110",
+  "video_sha256": "6cd7a8ea80ed03593b456651c5d24c6dfe620bced9829abda3e864a2a4cda741",
+  "poster_sha256": "36afacf7b883d2500d082fe54a76dace64d351e98568eb69eab781e8a55f2d53",
   "duration": 62.3,
   "fps": 30,
   "width": 1600,
@@ -252,5 +252,5 @@
   "new_measurements": 0,
   "learned_calibration": false,
   "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",
-  "presentation": "Recomposited original robot frames; fixed cameras; bilingual captions; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
+  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
 }

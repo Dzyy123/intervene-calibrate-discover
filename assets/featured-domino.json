@@ -1,8 +1,8 @@
 {
   "file": "featured-domino.mp4",
   "poster": "featured-domino.jpg",
-  "video_sha256": "344bfabf5fefd5516ccf1182730338fcf95e4e6a692e2e7a1e83fd47804fd73f",
-  "poster_sha256": "ae4420c01c4beca8392f88df01f33fac8a3aea62d05a8ddbf20a4d7bb2289f26",
+  "video_sha256": "63779a39cab3b0f7e9717cb3990095a9181521366093d3786249c68a2828cb9d",
+  "poster_sha256": "9a601b7cc8f3c538d43a143f3fefccaf4d8f71a53dd080b56a0fc8c087d444d2",
   "duration": 34.233333333333334,
   "fps": 30,
   "width": 1600,
@@ -190,5 +190,5 @@
   "new_measurements": 0,
   "learned_calibration": false,
   "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",
-  "presentation": "Recomposited original robot frames; fixed cameras; bilingual captions; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
+  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
 }

@@ -1,8 +1,8 @@
 {
   "file": "featured-balance.mp4",
   "poster": "featured-balance.jpg",
-  "video_sha256": "a6bf92e5c700a811a70c6eb063edb60f9d1bceb06053b4fad563f1139d4fff97",
-  "poster_sha256": "fb91581e521ada7c69268fbb5fe77b7eec15da33398cc78b571312dd2fdf3b79",
+  "video_sha256": "c4b5a44f1ac42d6f00eca9622b190219375c834f85f14f324d7dfe3855db51fb",
+  "poster_sha256": "485fab894c8501ab048d5641795ed3b22ad0405a30f61e138d53c0c61374cc8b",
   "duration": 61.666666666666664,
   "fps": 30,
   "width": 1600,
@@ -188,5 +188,5 @@
   "new_measurements": 0,
   "learned_calibration": false,
   "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",
-  "presentation": "Recomposited original robot frames; fixed cameras; bilingual captions; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
+  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim."
 }

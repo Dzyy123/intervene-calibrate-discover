@@ -1,7 +1,7 @@
 "use strict";
 (async()=>{
-  const zh=window.ICD_L10N?.zh===true,t=(en,cn)=>zh?cn:en;
-  const version='20261020a';
+  const zh=false,t=(en,cn)=>en;
+  const version='20261020b';
   const scenes=[
     ['domino','Domino chain','多米诺','Hold, then push the same domino. Separate experimental evidence from rule propagation.','先夹持、再推倒同一块骨牌。区分干预证据与图规则传播。'],
     ['balance','Balance','平衡','Move the load, then the target. Watch which directions change—and which stay uncertain.','先搬动载荷、再移动目标。看哪些方向获得证据，哪些仍然不确定。'],
