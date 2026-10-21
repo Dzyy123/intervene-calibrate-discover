@@ -1,9 +1,9 @@
 {
   "file": "featured-pickplace.mp4",
   "poster": "featured-pickplace.jpg",
-  "video_sha256": "007a21ce1de286cd461a15ed13723d1dde3b68252eb0736ff420aa900773f674",
-  "poster_sha256": "98d9071678611efabbbd53e194488639374e61b83c37ea8e2d86612e8c248403",
-  "duration": 39.7,
+  "video_sha256": "3192d5bf7274063d15092eda2978acbcedabafc7444008359182cbe69e679b04",
+  "poster_sha256": "fb21daca8ab691a2533497ac5f875d65948f23539b7613a3ef0fea9c5209e110",
+  "duration": 62.3,
   "fps": 30,
   "width": 1600,
   "height": 1000,
@@ -16,66 +16,114 @@
     },
     {
       "start": 2.5,
-      "name": "Observational graph",
-      "zh": "从 256 张观测图像得到候选图；虚线保留方向不确定性。",
-      "en": "256 observation images produce this candidate graph; dashed directions remain open."
+      "name": "Scene key",
+      "zh": "这是学图用的探测操作，不是把物体放到绿色标记上的策略。",
+      "en": "These are graph-learning probes, not a policy for placing onto the green marker."
     },
     {
       "start": 5.0,
+      "name": "Observational graph",
+      "zh": "观测已给出 2 条方向；接下来用干预检验剩余虚线。",
+      "en": "Observations already orient two edges; interventions test the remaining dashed edges."
+    },
+    {
+      "start": 7.5,
       "name": "Select 1",
-      "zh": "操作 1：改变夹爪开合，观察是否带动物体升高。",
-      "en": "Operation 1: change the opening; observe the object height."
+      "zh": "操作 1：同一情境下，先闭合夹爪，再试张开。",
+      "en": "Operation 1: compare closed and open grippers in the same context."
     },
     {
-      "start": 6.5,
+      "start": 9.0,
       "name": "initial",
-      "zh": "操作 1：改变夹爪开合，观察是否带动物体升高。",
-      "en": "Operation 1: change the opening; observe the object height."
+      "zh": "闭合夹爪再抬升；观察物体是否随夹爪上升。",
+      "en": "Close the gripper and lift; observe whether the object rises with it."
     },
     {
-      "start": 13.1,
-      "name": "Update 1",
-      "zh": "整批证据新增：夹爪间距 → 物体高度。",
-      "en": "Batch evidence adds: opening → object height."
+      "start": 15.6,
+      "name": "Readout",
+      "zh": "采样定格：物体处于搬运高度。",
+      "en": "Readout pause: object is at the transport height."
     },
     {
-      "start": 16.1,
+      "start": 17.1,
       "name": "lower_after_measurement",
-      "zh": "测量已结束；放下物体并撤回机械臂。",
-      "en": "Measurement complete; put down the object and retreat."
+      "zh": "采样结束；放回物体并撤回，回程不增加学图证据。",
+      "en": "Sampling complete; put down and retreat. Return motion adds no graph evidence."
     },
     {
-      "start": 19.6,
-      "name": "Reset",
-      "zh": "重置为下一次独立操作的初态。",
-      "en": "Reset to the initial state of the next independent trial."
-    },
-    {
-      "start": 21.1,
-      "name": "Select 2",
-      "zh": "操作 2：改变夹爪横向位置，观察物体位置。",
-      "en": "Operation 2: change gripper position; observe object position."
+      "start": 20.6,
+      "name": "Paired reset",
+      "zh": "配对试验：保持同一背景，只把夹爪改为张开。",
+      "en": "Matched trial: same context and motion, now with an open gripper."
     },
     {
       "start": 22.6,
       "name": "initial",
-      "zh": "操作 2：改变夹爪横向位置，观察物体位置。",
-      "en": "Operation 2: change gripper position; observe object position."
+      "zh": "保持夹爪张开，执行相同移动；本次物体仍留在桌面。",
+      "en": "Keep the gripper open and repeat the motion; the object stays on the table."
     },
     {
       "start": 29.2,
+      "name": "Readout",
+      "zh": "采样定格：物体仍在桌面。",
+      "en": "Readout pause: object remains on the table."
+    },
+    {
+      "start": 30.7,
+      "name": "lower_after_measurement",
+      "zh": "采样结束；空爪完成回程，物体没有被放下或重新抓取。",
+      "en": "Sampling complete; the empty gripper returns. The object was never lifted."
+    },
+    {
+      "start": 34.2,
+      "name": "Paired evidence",
+      "zh": "同初态、同移动，开合改变抬升结果；整批 64 次操作用于定向。",
+      "en": "Same context and motion, different lift. All 64 operations support the orientation."
+    },
+    {
+      "start": 37.2,
+      "name": "Update 1",
+      "zh": "新增 1 条方向：夹爪间距 → 物体高度。",
+      "en": "One new direction: opening → object height."
+    },
+    {
+      "start": 40.2,
+      "name": "Reset",
+      "zh": "下一轮独立试验：重新初始化，上一轮图保留。",
+      "en": "New independent trial: reset the scene, retain the previous graph."
+    },
+    {
+      "start": 42.2,
+      "name": "Select 2",
+      "zh": "操作 2：闭合抓取后改变横向位置，观察物体位置。",
+      "en": "Operation 2: grasp and change lateral position; observe the object."
+    },
+    {
+      "start": 43.7,
+      "name": "initial",
+      "zh": "操作 2：闭合抓取后改变横向位置，观察物体位置。",
+      "en": "Operation 2: grasp and change lateral position; observe the object."
+    },
+    {
+      "start": 50.3,
+      "name": "Readout",
+      "zh": "采样定格：物体处于搬运高度。",
+      "en": "Readout pause: object is at the transport height."
+    },
+    {
+      "start": 51.8,
+      "name": "lower_after_measurement",
+      "zh": "采样结束；放回物体并撤回，回程不增加学图证据。",
+      "en": "Sampling complete; put down and retreat. Return motion adds no graph evidence."
+    },
+    {
+      "start": 55.3,
       "name": "Update 2",
       "zh": "第二轮没有新增方向；保留原图，不强行补边。",
       "en": "Round 2 adds no direction; retain the graph without inventing edges."
     },
     {
-      "start": 32.2,
-      "name": "lower_after_measurement",
-      "zh": "测量已结束；放下物体并撤回机械臂。",
-      "en": "Measurement complete; put down the object and retreat."
-    },
-    {
-      "start": 35.7,
+      "start": 58.3,
       "name": "Result",
       "zh": "学到 3 条方向，目标—匹配仍未定向；不等于完整真图。",
       "en": "Three directed edges; target—alignment remains open. This is not complete recovery."
@@ -193,10 +241,14 @@
   },
   "graph_source_sha256": [
     "0ce5ea26cf085a0a489060fb280c993ecd007122036359bc982e0cf863f9c0f5",
-    "d6893ff244bed56b033df19ac243860ac5e8c9a31c40e9e07fef833d710e359f"
+    "d6893ff244bed56b033df19ac243860ac5e8c9a31c40e9e07fef833d710e359f",
+    "9be8a72d5b9af10fc38a982278adba97e5179ebd52fff3cbb5c5a1ed0d9ee0a8",
+    "d6a71d6269cf41fd59527e90194be96a658c8e9dae7ed59ce4040a326373b544",
+    "5804674490ced08ff2e8b8d1ede3b207b17980d69a9c18ae0659e7a648e3d090",
+    "855a4ab2912d84b2c2b752e51660a4d23dd8d76ebbcaedf57261155f18d96c98"
   ],
-  "input_manifest_sha256": "dac24091d8adbda71a34ed5c79c8b7913cfab5bf68f3619192dadbac63ae5949",
-  "input_frame_count": 606,
+  "input_manifest_sha256": "ee384a1da96954ec60554116ccdf88c1c1544eaafdc46a1e554bfeee6c432509",
+  "input_frame_count": 909,
   "new_measurements": 0,
   "learned_calibration": false,
   "scope": "Recorded graph-discovery illustration, not evidence for calibration benefits or complete causal identification.",

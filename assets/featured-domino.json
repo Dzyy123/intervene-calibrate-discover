@@ -1,9 +1,9 @@
 {
   "file": "featured-domino.mp4",
   "poster": "featured-domino.jpg",
-  "video_sha256": "aea0579d7b6a5d916f22b6c7dfe666ce9a9c85dc77c1e42670b80afcb51d3504",
-  "poster_sha256": "04bde9de21a2289fc8d9f4d285849b6ffb3b3dbdd5adc5004a72d2fe0d1b2c8b",
-  "duration": 30.733333333333334,
+  "video_sha256": "344bfabf5fefd5516ccf1182730338fcf95e4e6a692e2e7a1e83fd47804fd73f",
+  "poster_sha256": "ae4420c01c4beca8392f88df01f33fac8a3aea62d05a8ddbf20a4d7bb2289f26",
+  "duration": 34.233333333333334,
   "fps": 30,
   "width": 1600,
   "height": 1000,
@@ -29,8 +29,8 @@
     {
       "start": 10.0,
       "name": "Held readout",
-      "zh": "夹持期间保存读数：随后与同情境下的推倒读数比较。",
-      "en": "Readout while held: compare with the push trial in the same context."
+      "zh": "采样：第二块被固定，第三至六块仍未倒下；松手后不再计入。",
+      "en": "Held readout: dominoes 2–6 remain upright. Release is outside this measurement."
     },
     {
       "start": 12.0,
@@ -41,29 +41,35 @@
     {
       "start": 14.133333333333333,
       "name": "Paired reset",
-      "zh": "保持同一配对情境，重置后改为直接推倒第二块。",
+      "zh": "同一配对情境重新初始化，再直接推倒第二块。",
       "en": "Reset the matched context; now push domino 2 instead."
     },
     {
-      "start": 15.633333333333333,
+      "start": 16.133333333333333,
       "name": "initial",
       "zh": "直接推倒第二块骨牌：观察哪些后续骨牌响应。",
       "en": "Push domino 2: watch which downstream dominoes respond."
     },
     {
-      "start": 20.733333333333334,
+      "start": 21.233333333333334,
+      "name": "Paired evidence",
+      "zh": "配对读数显示不同响应；箭头仍由完整 64 对情境的证据决定。",
+      "en": "This pair illustrates the response; orientations use all 64 matched contexts."
+    },
+    {
+      "start": 24.233333333333334,
       "name": "Direct evidence",
       "zh": "整批干预证据先确定 1→2 和 2→3。",
       "en": "The intervention batch first orients 1→2 and 2→3."
     },
     {
-      "start": 23.733333333333334,
+      "start": 27.233333333333334,
       "name": "Graph-rule propagation",
       "zh": "再用图规则传播其余方向；绿色不是新增操作。",
       "en": "Graph rules propagate the remaining directions; green means rule-derived."
     },
     {
-      "start": 26.733333333333334,
+      "start": 30.233333333333334,
       "name": "Result",
       "zh": "得到当前六节点链：干预证据与图规则各有来源。",
       "en": "Current six-node chain: intervention evidence plus graph-rule propagation."

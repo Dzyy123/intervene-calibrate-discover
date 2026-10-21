@@ -1,9 +1,9 @@
 {
   "file": "featured-balance.mp4",
   "poster": "featured-balance.jpg",
-  "video_sha256": "7f4611d3529c748f3ad60b1c4640fa2462863b427f7c1cebcaeffdb3dfb87071",
-  "poster_sha256": "0c2fc98fad249ec6ea161ac342453c6ac88e2342224b50470bd3c9b588e0f551",
-  "duration": 59.166666666666664,
+  "video_sha256": "a6bf92e5c700a811a70c6eb063edb60f9d1bceb06053b4fad563f1139d4fff97",
+  "poster_sha256": "fb91581e521ada7c69268fbb5fe77b7eec15da33398cc78b571312dd2fdf3b79",
+  "duration": 61.666666666666664,
   "fps": 30,
   "width": 1600,
   "height": 1000,
@@ -16,72 +16,78 @@
     },
     {
       "start": 2.5,
-      "name": "Observational graph",
-      "zh": "从 256 张观测图像得到候选图；虚线保留方向不确定性。",
-      "en": "256 observation images produce this candidate graph; dashed directions remain open."
+      "name": "Scene key",
+      "zh": "棕色块是载荷，红色是球，绿色是目标标记。",
+      "en": "Brown: load. Red: ball. Green: target marker, not an actuator."
     },
     {
-      "start": 5.0,
+      "start": 4.5,
+      "name": "Observational graph",
+      "zh": "256 张观测图像给出候选关系；虚线表示方向未定。",
+      "en": "256 observation images give candidate relations; dashed directions remain open."
+    },
+    {
+      "start": 7.0,
       "name": "Select 1",
       "zh": "操作 1：搬动载荷，观察横梁与球的响应。",
       "en": "Operation 1: move the load; observe the beam and ball."
     },
     {
-      "start": 6.5,
+      "start": 8.5,
       "name": "neutral",
       "zh": "操作 1：搬动载荷，观察横梁与球的响应。",
       "en": "Operation 1: move the load; observe the beam and ball."
     },
     {
-      "start": 21.633333333333333,
+      "start": 16.933333333333334,
+      "name": "release_weight",
+      "zh": "载荷放好后，横梁倾斜，红球向低侧滚动。",
+      "en": "After releasing the load, the beam tilts and the red ball rolls downhill."
+    },
+    {
+      "start": 23.633333333333333,
       "name": "Update 1",
       "zh": "载荷对横梁与球有响应；橙色边的直接性尚未确认。",
       "en": "Load affects the beam and ball; the orange edge is not verified as direct."
     },
     {
-      "start": 24.633333333333333,
+      "start": 26.633333333333333,
       "name": "Reset",
-      "zh": "重置为下一次独立操作的初态。",
-      "en": "Reset to the initial state of the next independent trial."
+      "zh": "下一轮独立试验：重新初始化，上一轮图保留。",
+      "en": "New independent trial: reset the scene, retain the previous graph."
     },
     {
-      "start": 26.133333333333333,
+      "start": 28.633333333333333,
       "name": "Select 2",
       "zh": "操作 2：移动目标标记，观察匹配读数。",
       "en": "Operation 2: move the target; observe the alignment readout."
     },
     {
-      "start": 27.633333333333333,
+      "start": 30.133333333333333,
       "name": "neutral",
-      "zh": "先准备本轮固定的背景载荷，再移动目标。",
-      "en": "Prepare this trial's fixed background load before moving the target."
+      "zh": "先放置本轮固定载荷；这一步不是在移动目标。",
+      "en": "Prepare this trial's fixed load; target movement has not started."
     },
     {
-      "start": 42.766666666666666,
+      "start": 45.266666666666666,
       "name": "target_approach",
-      "zh": "操作 2：移动目标标记，观察匹配读数。",
-      "en": "Operation 2: move the target; observe the alignment readout."
+      "zh": "移动绿色目标；球不被吸引，变化的是对齐读数。",
+      "en": "Move the green marker; it does not pull the ball. The alignment readout changes."
     },
     {
-      "start": 49.96666666666667,
+      "start": 52.46666666666667,
       "name": "return_home",
-      "zh": "先准备本轮固定的背景载荷，再移动目标。",
-      "en": "Prepare this trial's fixed background load before moving the target."
+      "zh": "目标已放好；机械臂撤回，等待稳定后读取状态。",
+      "en": "Target placed; retreat and read the settled state."
     },
     {
-      "start": 51.166666666666664,
-      "name": "final_settle",
-      "zh": "操作 2：移动目标标记，观察匹配读数。",
-      "en": "Operation 2: move the target; observe the alignment readout."
-    },
-    {
-      "start": 52.166666666666664,
+      "start": 54.666666666666664,
       "name": "Update 2",
       "zh": "新增：目标位置 → 匹配读数；横梁—球仍未定向。",
       "en": "Add target → alignment; beam—ball remains unoriented."
     },
     {
-      "start": 55.166666666666664,
+      "start": 57.666666666666664,
       "name": "Result",
       "zh": "当前仍是候选图：保留横梁—球，载荷→球可能经横梁传递。",
       "en": "Candidate graph: beam—ball unresolved; load→ball may be mediated by the beam."
@@ -173,9 +179,11 @@
   },
   "graph_source_sha256": [
     "dfbe5fd272a76213a8b3d7ad15e844e94c4cc9dc2a3822d65f68ce19828a5847",
-    "26b19ddf6c5ff20825414b33892ba8050786db305d476564611a999c7eaf5a7e"
+    "26b19ddf6c5ff20825414b33892ba8050786db305d476564611a999c7eaf5a7e",
+    "eaf86ae34684fcfd69ae34767489807e49f674651b4082512865cefc81f209bb",
+    "b1da7a49184f5bd6271b1c618a5ec981ad1c9a98dc07c06476cf21c42190f8f6"
   ],
-  "input_manifest_sha256": "7f200d4b540e3406675c469383c221a3e56ebd06af884166c4709c16b219864d",
+  "input_manifest_sha256": "b9889fbf5e60bdbd05000a9ff01ea5db3ca21b9a766bfbe6c3a7a2cd8d0e6a35",
   "input_frame_count": 1190,
   "new_measurements": 0,
   "learned_calibration": false,
