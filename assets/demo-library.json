@@ -2,6 +2,28 @@
   "new_measurements": 0,
   "videos": [
     {
+      "id": "paper_four_domino",
+      "video": "archive-four-domino.mp4",
+      "poster": "archive-four-domino.jpg",
+      "kind": "candidate_graph",
+      "nodes": [],
+      "learned_calibration": false,
+      "en": {
+        "title": "Four dominoes · physical graph learning",
+        "question": "Which directions are resolved by probing domino 2, then domino 1?",
+        "description": "The previous featured four-node film, preserved in full. Gripper pushes are compared with simulator-fixed upright controls.",
+        "scope": "Archived four-node experiment without learned calibration. Separate from the new seven-node physical demonstration.",
+        "badge": "Archived graph-learning trace"
+      },
+      "zh": {
+        "title": "四骨牌 · 物理图学习",
+        "question": "先操作第二块、再操作第一块，哪些方向获得证据？",
+        "description": "完整保留上一版四节点主演示。夹爪推动与仿真固定的直立对照相比较。",
+        "scope": "未使用学习型校准的四节点存档，与新七节点物理演示分别记录。",
+        "badge": "图学习存档"
+      }
+    },
+    {
       "id": "domino_hold_middle",
       "video": "library-domino_hold_middle.mp4",
       "poster": "library-domino_hold_middle.png",

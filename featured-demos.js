@@ -1,9 +1,9 @@
 "use strict";
 (async()=>{
   const zh=false,t=(en,cn)=>en;
-  const version='20261020c';
+  const version='20261024a';
   const scenes=[
-    ['domino','Paper dominoes','论文多米诺','The paper’s four-domino physical scene: first probe domino 2, then domino 1. Controls use simulator fixtures; pushes use gripper contact.','论文四骨牌物理场景：先操作第二块，再操作第一块。直立对照使用固定约束，推动由夹爪接触完成。'],
+    ['domino','Seven-node dominoes','七节点多米诺','Pusher → four dominoes → bell → light. Follow gripper interventions and two rounds of graph discovery from calibrated image readings.','推杆 → 四块骨牌 → 铃 → 灯。通过夹爪干预与校准图像读数，展示两轮图发现。'],
     ['balance','Balance','平衡','Move the load, then the target. Watch which directions change—and which stay uncertain.','先搬动载荷、再移动目标。看哪些方向获得证据，哪些仍然不确定。'],
     ['pickplace','Pick & place','抓取放置','Compare closed and open grasps in the same context, then probe lateral position. These are discovery probes, not a placement policy.','同一情境下比较闭合与张开，再探测横向位置。这是学图操作，不是放置策略。']
   ];
@@ -18,7 +18,7 @@
       <p class="featured-caption" aria-live="off"></p>
       <div class="featured-links"><a class="featured-download" download>${t('Download video','下载视频')}</a><a class="featured-evidence" target="_blank" rel="noopener">${t('Timing & graph provenance','时间线与图来源')}</a></div>
     </div>
-    <details class="technical-note"><summary>${t('What these recordings demonstrate','这些视频说明什么')}</summary><p>${t('These three recordings illustrate graph discovery, not a calibration ablation or new benchmark result. Original robot frames are recomposited with logged graph states; no experiments were rerun. Learned calibration was not used in these source runs. Dashed edges remain unresolved; the Balance load→ball response is not certified as a direct edge.','这三段展示图发现过程，不是校准消融或新的基准结果。画面来自原始机械臂重放，图来自对应日志，本次未重跑实验。这三组来源运行没有使用学习型校准。未定向边继续保留；平衡场景中的载荷→球响应不等于已确认直接因果边。')}</p></details>`;
+    <details class="technical-note"><summary>${t('What these recordings demonstrate','这些视频说明什么')}</summary><p>Seven-node dominoes is a new physical demonstration: an anchored RGB encoder, command-affine calibration, and logged graph updates from 128 intervention images (plus 280 calibration images). The bell check is a separate verification with the graph frozen. Balance and Pick &amp; Place retain their original recordings without learned calibration. Dashed edges remain unresolved; the Balance load→ball response is not certified as a direct edge. These films are not the paper’s aggregate benchmark results or a calibration ablation. The earlier four-node film is preserved in the supplementary library.</p></details>`;
   document.getElementById('discovery').before(section);
   const archiveHeading=document.getElementById('extra-gallery-heading');
   if(archiveHeading)archiveHeading.textContent=t('Original recordings & other scenes','原始记录与其他场景');
@@ -44,7 +44,7 @@
     try{
       const res=await fetch(`assets/featured-${row[0]}.json?v=${version}`);if(!res.ok)throw new Error(res.status);
       const result=await res.json();if(request!==token)return;data=result;
-      const selected=data.stages.filter(s=>/^(Question|Scene key|Observational|Select|Direct|Graph-rule|Update|Result|Paired|Held|Fixed|Push setup)/.test(s.name));
+      const selected=data.stages.filter(s=>/^(Question|Pixel|Scene key|Observational|Select|Direct|Graph.rule|Graph update|Update|Result|Learned result|Bell verification|Paired|Held|Fixed|Push setup)/.test(s.name));
       for(const s of selected){
         const b=document.createElement('button');b.type='button';b.dataset.start=String(s.start);
         const labels={'Question':['Question','问题'],'Observational skeleton':['Observe','观测骨架'],'Observational graph':['Observe','观测图'],'Paired reset':['Paired test','配对操作'],'Direct evidence':['Evidence','干预证据'],'Graph-rule propagation':['Propagate','图规则'],'Result':['Result','结果'],'Select 1':['Operation 1','操作一'],'Select 2':['Operation 2','操作二'],'Update 1':['Update 1','更新一'],'Update 2':['Update 2','更新二']};

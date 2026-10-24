@@ -4,6 +4,16 @@
   "new_model_outputs": 0,
   "videos": [
     {
+      "id": "paper_four_domino",
+      "video": "archive-four-domino.mp4",
+      "poster": "archive-four-domino.jpg",
+      "sha256": "d6e6b3e1b5ccfcb63668a515f27367f5d0646fc6eaceb61291b29882cd2f0b56",
+      "poster_sha256": "1eb615ad624bc27a7d50850f1c89a4103717f5eed3a14a94b949e98afc776869",
+      "seconds": 45.7,
+      "kind": "candidate_graph",
+      "evidence_scope": "Archived four-node discovery film; no learned calibration."
+    },
+    {
       "id": "domino_hold_middle",
       "video": "library-domino_hold_middle.mp4",
       "poster": "library-domino_hold_middle.png",
