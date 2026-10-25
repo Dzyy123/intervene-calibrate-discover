@@ -1,0 +1,551 @@
+{
+  "file": "featured-domino-full.mp4",
+  "poster": "featured-domino-full.jpg",
+  "video_sha256": "18cc7bf58bdbe2e0e7cad5e4d420c8d02acc8301d9276f4403b279832ce3c216",
+  "poster_sha256": "14da7ce75138ad986c12dad773bde665ed9e066e929c10dccb4a00b12c80beda",
+  "duration": 88.53333333333333,
+  "fps": 30,
+  "width": 1600,
+  "height": 1000,
+  "stages": [
+    {
+      "start": 0,
+      "name": "Question",
+      "zh": "",
+      "en": "Can visual observations and physical interventions reveal the causal structure?"
+    },
+    {
+      "start": 3,
+      "name": "Pixel readout and calibration",
+      "zh": "",
+      "en": "An anchored visual encoder reads seven states. Known target commands calibrate these readings."
+    },
+    {
+      "start": 7,
+      "name": "Observational graph",
+      "zh": "",
+      "en": "512 observation images produce this initial graph; 6 links remain unoriented."
+    },
+    {
+      "start": 11,
+      "name": "Select 1",
+      "zh": "",
+      "en": "Round 1: select domino 1 (F1) from the unresolved links."
+    },
+    {
+      "start": 14,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 14.5,
+      "name": "primary_approach",
+      "zh": "",
+      "en": "The gripper approaches the domino 1 (F1)."
+    },
+    {
+      "start": 16.7,
+      "name": "primary_hold",
+      "zh": "",
+      "en": "Keep the domino 1 held inactive (F1=0) during the upstream push."
+    },
+    {
+      "start": 17.2,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 19.633333333333333,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 20.366666666666667,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The pushing gripper withdraws; the target remains held."
+    },
+    {
+      "start": 22.666666666666668,
+      "name": "observe",
+      "zh": "",
+      "en": "Read the settled image before updating the graph."
+    },
+    {
+      "start": 23.2,
+      "name": "Reset",
+      "zh": "",
+      "en": "Paired trial: same initial context, opposite target command."
+    },
+    {
+      "start": 25.2,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 25.7,
+      "name": "primary_approach",
+      "zh": "",
+      "en": "The gripper approaches the domino 1 (F1)."
+    },
+    {
+      "start": 27.9,
+      "name": "primary_push",
+      "zh": "",
+      "en": "The gripper activates the domino 1 by contact."
+    },
+    {
+      "start": 28.2,
+      "name": "primary_retract",
+      "zh": "",
+      "en": "The gripper withdraws after contact."
+    },
+    {
+      "start": 30.5,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 32.93333333333333,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 33.93333333333333,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The gripper withdraws after contact."
+    },
+    {
+      "start": 36.233333333333334,
+      "name": "observe",
+      "zh": "",
+      "en": "Read the settled image before updating the graph."
+    },
+    {
+      "start": 36.766666666666666,
+      "name": "Direct evidence 1",
+      "zh": "",
+      "en": "The full batch supports 1 new edge direction, shown in blue."
+    },
+    {
+      "start": 39.766666666666666,
+      "name": "Graph update 1",
+      "zh": "",
+      "en": "Graph rules orient 4 more links. 1 link remains unresolved. Fixed readings do not determine a direction."
+    },
+    {
+      "start": 43.766666666666666,
+      "name": "Reset",
+      "zh": "",
+      "en": "Reset the physical scene; retain the graph learned so far."
+    },
+    {
+      "start": 45.766666666666666,
+      "name": "Select 2",
+      "zh": "",
+      "en": "Round 2: select pusher (P) from the unresolved links."
+    },
+    {
+      "start": 48.766666666666666,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 49.266666666666666,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 51.46666666666667,
+      "name": "root_hold",
+      "zh": "",
+      "en": "Hold the pusher at its inactive position (P=0)."
+    },
+    {
+      "start": 51.96666666666667,
+      "name": "observe",
+      "zh": "",
+      "en": "Read the settled image before updating the graph."
+    },
+    {
+      "start": 52.46666666666667,
+      "name": "Reset",
+      "zh": "",
+      "en": "Paired trial: same initial context, opposite target command."
+    },
+    {
+      "start": 54.46666666666667,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 54.96666666666667,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 57.4,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 58.4,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The gripper withdraws after contact."
+    },
+    {
+      "start": 60.7,
+      "name": "observe",
+      "zh": "",
+      "en": "Read the settled image before updating the graph."
+    },
+    {
+      "start": 61.96666666666667,
+      "name": "Direct evidence 2",
+      "zh": "",
+      "en": "The full batch supports 1 new edge direction, shown in blue."
+    },
+    {
+      "start": 64.96666666666667,
+      "name": "Graph update 2",
+      "zh": "",
+      "en": "All 6 links are now oriented."
+    },
+    {
+      "start": 68.96666666666667,
+      "name": "Learned result",
+      "zh": "",
+      "en": "The learned graph after 2 rounds and 128 intervention images."
+    },
+    {
+      "start": 72.96666666666667,
+      "name": "Reset",
+      "zh": "",
+      "en": "Extra physical verification: hold the bell striker. The learned graph remains frozen."
+    },
+    {
+      "start": 74.96666666666667,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 75.46666666666667,
+      "name": "primary_approach",
+      "zh": "",
+      "en": "The gripper approaches the bell striker (B)."
+    },
+    {
+      "start": 77.76666666666667,
+      "name": "primary_hold",
+      "zh": "",
+      "en": "Keep the bell striker held inactive (B=0) during the upstream push."
+    },
+    {
+      "start": 78.26666666666667,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 80.7,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 81.7,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The pushing gripper withdraws; the target remains held."
+    },
+    {
+      "start": 84,
+      "name": "observe",
+      "zh": "",
+      "en": "Read the settled image; the learned graph remains frozen."
+    },
+    {
+      "start": 84.53333333333333,
+      "name": "Bell verification",
+      "zh": "",
+      "en": "Image readouts with the striker held: bell B=0, lamp L=0."
+    }
+  ],
+  "final_graph": {
+    "directed": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "skeleton": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "undirected": [],
+    "valid": true,
+    "failure_reasons": [],
+    "source": "PC_from_frozen_RGB_ACC_binary_readouts",
+    "metadata": {
+      "pc": {
+        "alpha": 0.01,
+        "min_eff": 0.03,
+        "max_order": 5,
+        "n_ci_tests": 126,
+        "search_complete": true,
+        "removal_order": {
+          "0-2": 1,
+          "0-3": 1,
+          "0-4": 1,
+          "0-5": 1,
+          "0-6": 1,
+          "1-3": 1,
+          "1-4": 1,
+          "1-5": 1,
+          "1-6": 1,
+          "2-4": 1,
+          "2-5": 1,
+          "2-6": 1,
+          "3-5": 1,
+          "3-6": 1,
+          "4-6": 1
+        },
+        "edge_strength": [
+          [
+            0,
+            0.6318522908531493,
+            0.0000010085786888300224,
+            3.0584073380958412e-12,
+            2.4105312715013335e-14,
+            1.5058777738473438e-14,
+            8.120265547395317e-15
+          ],
+          [
+            0.6318522908531483,
+            0,
+            0.39115120289691124,
+            0.000001192304463771389,
+            5.623217355403788e-12,
+            8.346653834502561e-15,
+            1.6695697393931288e-15
+          ],
+          [
+            0.0000010085786900654159,
+            0.3911512028969108,
+            0,
+            0.5347878357803534,
+            0.000002531201026892316,
+            7.961513779720395e-12,
+            4.313491812103928e-15
+          ],
+          [
+            3.0581754199641507e-12,
+            0.0000011923044636747295,
+            0.5347878357803535,
+            0,
+            0.5591431474217026,
+            0.000001757873743327803,
+            1.4699983016169282e-11
+          ],
+          [
+            2.3548616095642898e-14,
+            5.623586457826407e-12,
+            0.0000025312010263854836,
+            0.5591431474217031,
+            0,
+            0.3782399816471287,
+            0.0000031637249812548364
+          ],
+          [
+            1.5438789365868748e-14,
+            8.773446562778283e-15,
+            7.961734609169142e-12,
+            0.0000017578737427225547,
+            0.37823998164712913,
+            0,
+            0.7847279911641465
+          ],
+          [
+            8.465046809160486e-15,
+            1.8894199943012872e-15,
+            4.170918397706667e-15,
+            1.4700060759460448e-11,
+            0.0000031637249809321753,
+            0.7847279911641465,
+            0
+          ]
+        ]
+      },
+      "orientation_update": "batch_fail_closed_v2",
+      "meek_closure_allowed": true,
+      "batch_rejection_reasons": [],
+      "batch_meek_propagated": [],
+      "immutable_observational_arrows": 5,
+      "orientation_engine": "direct_do",
+      "legacy_skeleton": false
+    }
+  },
+  "graph_source_sha256": [
+    "6bf3dd57426d13b8cbae06593e04284aad26e0a01f0acc951c5d27a22c6d1896",
+    "fffa357f795352939edb68e401e2807092314dac488762851e193812a6edfe6a",
+    "d0cb55bd478bfd242e4c8c99ef8db2fa7b0c75acac8084780a8950688396da8b",
+    "4a927ac3eb47ff377e51bdc95b4ff46a494dd39f1828cc1fa138ea81e0e5010f",
+    "ca404d2b46f1b55ed52fe5d032d567a089e01fc50419b026e5786b343d03db00",
+    "dc5dc875f97f8bde3e5274a9ed30abb85407906f12e8780accf5a419a3d3ef75",
+    "20774cc8404f0300efa701dfbe2fdf2d308396202a97952eb4b9e38ac10db0b4",
+    "8c3452e64d05df793c354af9033a7300e2c251494590ea4e2a7ab1c42f05c370",
+    "b85b3f946cd23d7605c76020a17262a9afb8700e8a52485c7b82bf49530bf81e",
+    "be83c4d44d37b8e40a4a5d2d217e0de193c246ad01f98c55cf16c976bb8dee05"
+  ],
+  "input_manifest_sha256": "ac37e22e1d6257379a9446cea6a2c6a830e4408002f9030136dabb4d4e2e2d82",
+  "input_frame_count": 1246,
+  "learned_calibration": true,
+  "scope": "New seven-node physical simulation demonstration. All graph snapshots come from the frozen pixel/ACC discovery run; the extra bell hold is a separate physical verification. Not the paper aggregate and not evidence of calibration superiority.",
+  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim.",
+  "nodes": 7,
+  "calibration_kind": "node-preserving command-affine",
+  "training_images": 392,
+  "validation_images": 56,
+  "independent_readout_test_images": 112,
+  "observational_images": 512,
+  "calibration_images": 280,
+  "graph_intervention_images": 128,
+  "render_only_replay_calls": 5,
+  "checkpoint_sha256": "5d972e27c552e53ba4e6a8177cdfa34b86870a8e5182fa23be29364539b1f437",
+  "calibration_sha256": "4a927ac3eb47ff377e51bdc95b4ff46a494dd39f1828cc1fa138ea81e0e5010f",
+  "scene": "seven_node_physical_domino"
+}

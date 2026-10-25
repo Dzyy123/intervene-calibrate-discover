@@ -12,4 +12,8 @@
 .featured-caption{font-size:16px;line-height:1.65;padding:0 24px;margin:14px 0;min-height:27px}
 .featured-links{display:flex;gap:24px;flex-wrap:wrap;padding:0 24px 20px;font-size:14px}
 .featured-demos>.technical-note{margin-top:16px}
+.featured-legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin:0;padding:0 24px 16px;font-size:14px;line-height:1.5}
+.featured-legend span:nth-child(1){color:#667782}.featured-legend span:nth-child(2){color:#477695}.featured-legend span:nth-child(3){color:#52857b}
+.featured-more{margin:20px 0 0;font-size:16px}
+.intro{padding-bottom:14px}
 @media(max-width:760px){.featured-tabs button{padding:10px 17px;font-size:16px}.featured-question{padding:14px 16px;font-size:17px}.featured-seek{padding:14px 16px 0}.featured-caption{padding:0 16px;font-size:15px}.featured-links{padding:0 16px 16px}.featured-demos{padding:24px 0 38px}}

@@ -1,0 +1,569 @@
+{
+  "file": "featured-fork-full.mp4",
+  "poster": "featured-fork-full.jpg",
+  "video_sha256": "86270f92de1b3ac31c9b4b6fac4bdbe5118d7cc94735ca973e462281dcd526d7",
+  "poster_sha256": "3b8e5b5e9ea138618ee14a66f95f9bf8dff420961ad70fa4ded3d4068341cb20",
+  "duration": 101.7,
+  "fps": 30,
+  "width": 1600,
+  "height": 1000,
+  "stages": [
+    {
+      "start": 0,
+      "name": "Question",
+      "zh": "",
+      "en": "Can visual observations and physical interventions reveal the causal structure?"
+    },
+    {
+      "start": 3,
+      "name": "Pixel readout and calibration",
+      "zh": "",
+      "en": "An anchored visual encoder reads seven states. Known target commands calibrate these readings."
+    },
+    {
+      "start": 7,
+      "name": "Observational graph",
+      "zh": "",
+      "en": "512 observation images produce this initial graph; 6 links remain unoriented."
+    },
+    {
+      "start": 11,
+      "name": "Select 1",
+      "zh": "",
+      "en": "Round 1: select pusher (P) from the unresolved links."
+    },
+    {
+      "start": 14,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 14.5,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 16.7,
+      "name": "root_hold",
+      "zh": "",
+      "en": "Hold the pusher at its inactive position (P=0)."
+    },
+    {
+      "start": 17.2,
+      "name": "observe",
+      "zh": "",
+      "en": "Wait for the scene to settle before collecting the readout."
+    },
+    {
+      "start": 17.7,
+      "name": "Reset",
+      "zh": "",
+      "en": "Paired trial: same initial context, opposite target command."
+    },
+    {
+      "start": 19.7,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 20.2,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 22.633333333333333,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 23.633333333333333,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The gripper withdraws after contact."
+    },
+    {
+      "start": 25.933333333333334,
+      "name": "observe",
+      "zh": "",
+      "en": "Wait for the scene to settle before collecting the readout."
+    },
+    {
+      "start": 26.466666666666665,
+      "name": "Direct evidence 1",
+      "zh": "",
+      "en": "The full batch supports 2 new edge directions, shown in blue."
+    },
+    {
+      "start": 29.466666666666665,
+      "name": "Graph update 1",
+      "zh": "",
+      "en": "Graph rules orient 4 more links. All 6 links are now oriented."
+    },
+    {
+      "start": 33.46666666666667,
+      "name": "Learned result",
+      "zh": "",
+      "en": "The learned graph after 1 round and 64 intervention images."
+    },
+    {
+      "start": 37.46666666666667,
+      "name": "Reset",
+      "zh": "",
+      "en": "Branch check: hold the near lane. The learned graph remains frozen."
+    },
+    {
+      "start": 39.46666666666667,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 39.96666666666667,
+      "name": "primary_approach",
+      "zh": "",
+      "en": "The gripper approaches the domino 1 (F1)."
+    },
+    {
+      "start": 42.166666666666664,
+      "name": "primary_hold",
+      "zh": "",
+      "en": "Keep the domino 1 held inactive (F1=0) during the upstream push."
+    },
+    {
+      "start": 42.666666666666664,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 45.1,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 45.86666666666667,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The pushing gripper withdraws; the target remains held."
+    },
+    {
+      "start": 48.166666666666664,
+      "name": "observe",
+      "zh": "",
+      "en": "Wait for the scene to settle; the learned graph remains frozen."
+    },
+    {
+      "start": 60.03333333333333,
+      "name": "Near branch verification",
+      "zh": "",
+      "en": "Frozen image readings: F1=0, F3=0 (near); F2=1, F4=1 (far)."
+    },
+    {
+      "start": 64.03333333333333,
+      "name": "Reset",
+      "zh": "",
+      "en": "Branch check: hold the far lane. The learned graph remains frozen."
+    },
+    {
+      "start": 66.03333333333333,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 66.53333333333333,
+      "name": "primary_approach",
+      "zh": "",
+      "en": "The gripper approaches the domino 2 (F2)."
+    },
+    {
+      "start": 68.73333333333333,
+      "name": "primary_hold",
+      "zh": "",
+      "en": "Keep the domino 2 held inactive (F2=0) during the upstream push."
+    },
+    {
+      "start": 69.23333333333333,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 71.66666666666667,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 72.46666666666667,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The pushing gripper withdraws; the target remains held."
+    },
+    {
+      "start": 74.76666666666667,
+      "name": "observe",
+      "zh": "",
+      "en": "Wait for the scene to settle; the learned graph remains frozen."
+    },
+    {
+      "start": 75.3,
+      "name": "Far branch verification",
+      "zh": "",
+      "en": "Frozen image readings: F1=1, F3=1 (near); F2=0, F4=0 (far)."
+    },
+    {
+      "start": 79.3,
+      "name": "Reset",
+      "zh": "",
+      "en": "Extra physical verification: hold the bell striker. The learned graph remains frozen."
+    },
+    {
+      "start": 81.3,
+      "name": "initial",
+      "zh": "",
+      "en": "The scene starts upright, before the selected operation."
+    },
+    {
+      "start": 81.8,
+      "name": "primary_approach",
+      "zh": "",
+      "en": "The gripper approaches the bell striker (B)."
+    },
+    {
+      "start": 84.1,
+      "name": "primary_hold",
+      "zh": "",
+      "en": "Keep the bell striker held inactive (B=0) during the upstream push."
+    },
+    {
+      "start": 84.6,
+      "name": "root_approach",
+      "zh": "",
+      "en": "The upstream gripper approaches the pusher."
+    },
+    {
+      "start": 87.03333333333333,
+      "name": "root_push",
+      "zh": "",
+      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+    },
+    {
+      "start": 88.03333333333333,
+      "name": "root_retract",
+      "zh": "",
+      "en": "The pushing gripper withdraws; the target remains held."
+    },
+    {
+      "start": 90.33333333333333,
+      "name": "observe",
+      "zh": "",
+      "en": "Wait for the scene to settle; the learned graph remains frozen."
+    },
+    {
+      "start": 97.7,
+      "name": "Bell verification",
+      "zh": "",
+      "en": "Image readouts with the striker held: bell B=0, lamp L=0."
+    }
+  ],
+  "final_graph": {
+    "directed": [
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "skeleton": [
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "undirected": [],
+    "valid": true,
+    "failure_reasons": [],
+    "source": "PC_from_frozen_RGB_ACC_binary_readouts",
+    "metadata": {
+      "pc": {
+        "alpha": 0.01,
+        "min_eff": 0.03,
+        "max_order": 5,
+        "n_ci_tests": 126,
+        "search_complete": true,
+        "removal_order": {
+          "0-3": 1,
+          "0-4": 1,
+          "0-5": 1,
+          "0-6": 1,
+          "1-2": 1,
+          "1-4": 1,
+          "1-5": 1,
+          "1-6": 1,
+          "2-3": 1,
+          "2-5": 1,
+          "2-6": 1,
+          "3-4": 1,
+          "3-5": 1,
+          "3-6": 1,
+          "4-6": 1
+        },
+        "edge_strength": [
+          [
+            0,
+            0.5240328697852034,
+            0.3321781582311949,
+            0.04868061835956843,
+            0.03585185471908719,
+            0.00845751331510768,
+            0.05522828446005719
+          ],
+          [
+            0.5240328697852039,
+            0,
+            0.06335749695922405,
+            0.6755941421209017,
+            0.023452997357696466,
+            0.0012519029773661776,
+            0.08620337285406977
+          ],
+          [
+            0.3321781582311959,
+            0.06335749695922333,
+            0,
+            0.06430521878652479,
+            0.5552628987936198,
+            0.0007195571131044963,
+            0.004753620610881238
+          ],
+          [
+            0.048680618359568946,
+            0.6755941421209023,
+            0.0643052187865255,
+            0,
+            0.10154605512248897,
+            0.017069224166052603,
+            0.04033934021585065
+          ],
+          [
+            0.03585185471908863,
+            0.023452997357695356,
+            0.5552628987936199,
+            0.10154605512248842,
+            0,
+            0.41786301634379663,
+            0.0008034645116919841
+          ],
+          [
+            0.008457513315108854,
+            0.001251902977364405,
+            0.0007195571131042597,
+            0.017069224166051503,
+            0.41786301634379647,
+            0,
+            0.7751212476191713
+          ],
+          [
+            0.055228284460056246,
+            0.08620337285406815,
+            0.004753620610881362,
+            0.040339340215849416,
+            0.000803464511691746,
+            0.7751212476191718,
+            0
+          ]
+        ]
+      },
+      "orientation_update": "batch_fail_closed_v2",
+      "meek_closure_allowed": true,
+      "batch_rejection_reasons": [],
+      "batch_meek_propagated": [
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "rule": "R1"
+        },
+        {
+          "edge": [
+            2,
+            4
+          ],
+          "rule": "R1"
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "rule": "R1"
+        },
+        {
+          "edge": [
+            5,
+            6
+          ],
+          "rule": "R1"
+        }
+      ],
+      "immutable_observational_arrows": 0,
+      "orientation_engine": "direct_do",
+      "legacy_skeleton": false
+    }
+  },
+  "graph_source_sha256": [
+    "c36a410eda2c3ff55abc1df54287ea05e12d50058dc7f6a973955e700bd576f1",
+    "09222be19f471e212a1c2dd2f2eb071aa9b87fd7c2e956e4650e2f72c9beae16",
+    "20a7cb70c619b8606e0fd6810382bacf97c558bd73dfa74c6347d2d4ff4daaa5",
+    "4395916eff02d4468715cc0b83ed629348bf95153828f470be1b1062870b06f2",
+    "8984a8b48214010df4adf63f4db124555e80087472feca9661ec5cac2ef33505",
+    "ed9a19a2bdb6c8568c6a19f095b2f7cc4ea6f8ed211c20c4158cd0a01ce55443",
+    "b65de40f948bdc2de2f85c9f71e56369c1a2a79b24a247785f831d2459d2e5c0",
+    "4fe773d6acfcc2cb32483ead97a4c6cf8e5c064c9ad0b10affb41c92f48a9e1e",
+    "35b3e08986c2353cdbfc7de10455989d0149fc87ddda159055c00024faa154b3",
+    "0cb8dcfb2bf85dc95fba1b7f9fe8a0927b679e63718e070a1d42b2aba2807dde",
+    "f2198529efe8e2914065b513b87ef6715d251dfa8dbf5d460a68850d5ce5e2cf"
+  ],
+  "input_manifest_sha256": "1543f40ed7fa40bfd49ed8885a89d3cc932d3750e3a503faa0c813fa2ac57e1b",
+  "input_frame_count": 1701,
+  "learned_calibration": true,
+  "scope": "New seven-node physical fork simulation demonstration. Graph snapshots come from the frozen pixel/ACC discovery run; both branch holds and the bell hold are separate physical verifications. Not the paper aggregate or a calibration superiority experiment.",
+  "presentation": "Recomposited original robot frames; fixed cameras; English-only captions and labels; graph states from discovery logs. Static cards and explicit resets added. Timing follows original replay frame cadence, not a real-time physics claim.",
+  "scene": "seven_node_physical_fork",
+  "nodes": 7,
+  "calibration_kind": "node-preserving command-affine",
+  "training_images": 392,
+  "validation_images": 56,
+  "independent_readout_test_images": 112,
+  "observational_images": 512,
+  "calibration_images": 280,
+  "graph_intervention_images": 64,
+  "render_only_replay_calls": 5,
+  "checkpoint_sha256": "a005a5a4e14006bd55904f6a0eeb15a24ef64fa47f35adcdaa824ddf5ac20e0f",
+  "calibration_sha256": "4395916eff02d4468715cc0b83ed629348bf95153828f470be1b1062870b06f2"
+}
