@@ -34,15 +34,15 @@
     if(!timeline.length){document.getElementById('extra-stage').textContent=active.kind==='candidate_graph'?t('Recorded candidate-graph video. Chapter metadata is still loading or unavailable.','候选图录制视频。章节信息正在加载或暂不可用。'):active.kind==='paired_operation'?t('The paired clip shows simulator operations and outcomes, not model predictions.','配对片段展示仿真操作及结果，不是模型预测。'):active.kind==='frozen_graph_check'?t('Existing graph highlights support a qualitative physical check; they are not fresh discovery or fitted predictions.','已有图的高亮用于定性物理检查，不是新发现结果或拟合预测。'):active.kind==='mechanical_preview'?t('Mechanical preview only, without a learned graph or model prediction.','仅为物理操作预览，没有学到的图或模型预测。'):t('Saved illustrative environment material, not quantitative evidence for the paper.','已保存的环境示意素材，不是论文定量证据。');return;}
     let current=timeline[0];for(const row of timeline)if(row.start<=video.currentTime+.03)current=row;
     if(root.dataset.current===current.stage)return;root.dataset.current=current.stage;
-    document.getElementById('extra-stage').textContent=window.ICD_DEMO_BRIEFS?.stage(active.id,current.stage)||notes[current.stage]||current.stage;
+    document.getElementById('extra-stage').textContent=current.en?t(current.en,current.zh||current.en):window.ICD_DEMO_BRIEFS?.stage(active.id,current.stage)||notes[current.stage]||current.stage;
     for(const button of root.querySelectorAll('button'))button.setAttribute('aria-current',String(button.dataset.stage===current.stage));
   }
   function showChapters(record){
     timeline=record.timeline||[];const root=document.getElementById('extra-chapters');root.replaceChildren();delete root.dataset.current;
     for(const row of timeline){
-      if(!chapterLabels[row.stage])continue;
+      const label=row.chapterLabel||chapterLabels[row.stage];if(!label)continue;
       const button=document.createElement('button');button.type='button';button.dataset.stage=row.stage;
-      const sec=Math.floor(row.start);button.textContent=Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0')+' '+chapterLabels[row.stage];
+      const sec=Math.floor(row.start);button.textContent=Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0')+' '+label;
       button.addEventListener('click',()=>{video.currentTime=row.start;video.play().catch(()=>{});syncStage();});root.append(button);
     }
     syncStage();
@@ -88,7 +88,7 @@
       '#extra-title':'平衡模组 · 五节点图学习', '#extra-description':'从候选关系、观察检验和目标选择开始，展示两轮真实操作及其后的图更新。',
       '#extra-badge':'候选图 · 真实证据更新', '#extra-restart':'从头观看', '#extra-download':'下载这段视频', '#extra-scope-label':'这段视频能说明什么',
       '#extra-scope':'任务层候选图，不等于完整 DAG 恢复或 ACC 基准结果。',
-      '#extra-gallery-note':'每类材料保留自己的验证范围。接触检查针对有限轨迹，基础环境素材未作为主表验证证据；配对仿真重放不是模型预测。原视频的语言与图示保留，网页说明提供中英文。',
+      '#extra-gallery-note':'每类材料保留自己的验证范围。接触检查针对有限轨迹，基础环境素材未作为主表验证证据；配对仿真重放不是模型预测。平衡图学习视频采用英文字幕与节点标签，其余归档素材可能保留原有注释；网页说明提供中英文。',
       '#extra-manifest-link':'图学习与配对视频清单', '#extra-audit-link':'接触检查与图结构边界', '#extra-query-link':'查看模型查询', '#library-manifest-link':'完整库的媒体来源清单'
     };
     for(const [selector,value]of Object.entries(texts))document.querySelector(selector).textContent=value;
@@ -106,7 +106,7 @@
   document.querySelector('.library-filter').after(status,retry);
   async function jsonAsset(file){
     const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),15000);
-    try{const response=await fetch('assets/'+file,{signal:controller.signal});
+    try{const response=await fetch('assets/'+file+'?v=20261026a',{signal:controller.signal});
       if(!response.ok)throw new Error(response.status===401||response.status===403?'authentication':'asset');
       if(!response.headers.get('content-type')?.includes('json'))throw new Error('authentication');
       return await response.json();
@@ -117,13 +117,24 @@
     const bundles=await Promise.allSettled([jsonAsset('extra-demos.json'),jsonAsset('demo-library.json')]);
     const available=bundles.filter(b=>b.status==='fulfilled').flatMap(b=>b.value.videos||[]);
     if(!available.length){status.textContent=t('The scene list is unavailable. Check your site sign-in and retry; the default recorded video remains available.','场景列表暂不可用。请检查网站登录状态后重试；默认录制视频仍可播放。');retry.hidden=false;document.getElementById('more-demos').dataset.galleryState='unavailable';return;}
-    records=[...new Map(available.map(record=>[record.id,record])).values()];showList();
+    records=[...new Map(available.map(record=>[record.id,record])).values()];
+    let presentationIncomplete=false;
+    const presentationLabels={'Question':t('Question','问题'),'Observational graph':t('Observe','观察'),'Select 1':t('Operation 1','操作一'),'Update 1':t('Update 1','更新一'),'Select 2':t('Operation 2','操作二'),'Update 2':t('Update 2','更新二'),'Result':t('Result','结果')};
+    await Promise.all(records.filter(record=>record.presentation_manifest).map(async record=>{
+      try{
+        const film=await jsonAsset(record.presentation_manifest);
+        if(film.file!==record.video||film.poster!==record.poster)throw new Error('Presentation binding mismatch');
+        record.seconds=film.duration;
+        record.timeline=film.stages.map(row=>({...row,stage:row.name,chapterLabel:presentationLabels[row.name]}));
+      }catch{presentationIncomplete=true;record.timeline=[];}
+    }));
+    showList();
     const manifests=await Promise.allSettled([jsonAsset('extra-source-manifest.json'),jsonAsset('demo-library-manifest.json')]);
-    let incomplete=bundles.some(b=>b.status==='rejected')||manifests.some(b=>b.status==='rejected');
+    let incomplete=presentationIncomplete||bundles.some(b=>b.status==='rejected')||manifests.some(b=>b.status==='rejected');
     for(const record of records){const binding=manifests.filter(m=>m.status==='fulfilled').flatMap(m=>m.value.videos||[]).find(row=>row.id===record.id);
-      if(binding){if(Number.isFinite(binding.seconds))record.seconds=binding.seconds;else if(binding.stream){const [a,b]=binding.stream.r_frame_rate.split('/').map(Number);record.seconds=Number(binding.stream.nb_frames)/(a/b);}}
+      if(binding&&!record.presentation_manifest){if(Number.isFinite(binding.seconds))record.seconds=binding.seconds;else if(binding.stream){const [a,b]=binding.stream.r_frame_rate.split('/').map(Number);record.seconds=Number(binding.stream.nb_frames)/(a/b);}}
     }
-    await Promise.all(records.filter(record=>record.checks).map(async record=>{try{record.timeline=(await jsonAsset(record.checks)).timeline;}catch{incomplete=true;}}));
+    await Promise.all(records.filter(record=>record.checks&&!record.presentation_manifest).map(async record=>{try{record.timeline=(await jsonAsset(record.checks)).timeline;}catch{incomplete=true;}}));
     showList();document.getElementById('more-demos').dataset.galleryState=incomplete?'partial':'ready';
     status.textContent=incomplete?t('Some supplementary metadata did not load. Available scenes remain playable; retry to restore chapter details.','部分补充信息未加载，已有场景仍可播放；可重试恢复章节。'):'';retry.hidden=!incomplete;
   }

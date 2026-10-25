@@ -9,9 +9,9 @@
     'library-env_pickplace_1d.mp4','library-env_pickplace_2d.mp4','library-tool_hook_pull.mp4',
     'library-tool_miss_cube.mp4','library-tool_open_gripper.mp4','parallel-learning.mp4',
     'parallel-story-v3.mp4','parallel-story-zh.mp4']);
-  window.ICD_MEDIA_URL=url=>{const name=url.split('/').pop();return files.has(name)?url.slice(0,-name.length)+'display-'+name:url;};
+  window.ICD_MEDIA_URL=url=>{const name=url.split('/').pop();if(name==='extra-balance_learning.mp4')return url.slice(0,-name.length)+'featured-balance.mp4';return files.has(name)?url.slice(0,-name.length)+'display-'+name:url;};
   for(const v of document.querySelectorAll('video')){
     const source=v.querySelector('source'),raw=v.getAttribute('src')||source?.getAttribute('src');
-    if(raw){v.src=window.ICD_MEDIA_URL(raw);v.preload='metadata';v.load();}
+    if(raw){v.src=window.ICD_MEDIA_URL(raw);if(raw.endsWith('extra-balance_learning.mp4'))v.poster='assets/featured-balance.jpg';v.preload='metadata';v.load();}
   }
 })();

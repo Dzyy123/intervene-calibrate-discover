@@ -5,8 +5,9 @@
   "videos": [
     {
       "id": "balance_learning",
-      "video": "extra-balance_learning.mp4",
-      "poster": "extra-balance_learning.png",
+      "video": "featured-balance.mp4",
+      "poster": "featured-balance.jpg",
+      "presentation_manifest": "featured-balance.json",
       "kind": "candidate_graph",
       "learned_calibration": false,
       "checks": "extra-balance-video-checks.json",
