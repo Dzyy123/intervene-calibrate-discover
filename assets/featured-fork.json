@@ -1,578 +1,502 @@
 {
   "file": "featured-fork.mp4",
   "poster": "featured-fork.jpg",
-  "video_sha256": "f16c95f63d8dfb3f978812d110f897f336bc80ac6d51ee6cff7c9af813ed76c3",
-  "poster_sha256": "f174948029f95fe09149bdd7d4842973415f781324fb6bb789c41af714d2e354",
-  "duration": 65.6,
+  "video_sha256": "12c6cfd965bc9b10f3aa94fccd0cd4fb64c591b73b01bdac9559fd852e1fea63",
+  "poster_sha256": "b35a0ed26c0be92475b73cc91fe7bd6891114bd4d5b6fd92a6bc720fa505a82d",
+  "duration": 64.66666666666667,
   "fps": 30,
-  "width": 1600,
-  "height": 1000,
+  "width": 1280,
+  "height": 800,
+  "scene": "seven_node_physical_fork_revisable",
+  "nodes": 7,
+  "learned_calibration": true,
+  "rounds": 20,
+  "initial_observations": 24,
+  "graph_intervention_images": 160,
+  "pairs_per_round": 4,
+  "calibration_images_reused": 280,
+  "additional_P_calibration_images": 64,
   "stages": [
     {
       "start": 0,
-      "name": "Question",
-      "zh": "",
-      "en": "Intervene. Observe the response. Learn the graph."
+      "name": "Initial hypothesis",
+      "en": "24 observation images → a provisional graph. Its arrows can be wrong.",
+      "zh": "24 张观察图形成初始假设，箭头可能有误。"
     },
     {
-      "start": 0.5,
-      "name": "Pixel readout and calibration",
-      "zh": "",
-      "en": "Pixels → frozen encoder → calibrated node readings"
+      "start": 2,
+      "name": "Round 1 — revise",
+      "en": "Round 1 · Withdraw 4 arrow hypotheses; add 4.",
+      "zh": ""
     },
     {
-      "start": 2.1,
-      "name": "Observational graph",
-      "zh": "",
-      "en": "512 observation images → 6 links with unknown direction"
+      "start": 3.8,
+      "name": "Reset",
+      "en": "Round 2 · Prepare the next context; keep the current hypothesis.",
+      "zh": ""
     },
     {
-      "start": 3.9,
-      "name": "Select 1",
-      "zh": "",
-      "en": "Round 1 · Test the pusher with matched hold / push trials"
+      "start": 4.2,
+      "name": "Round 2 — why",
+      "en": "Round 2: test F1. Candidate directions involving P disagree.",
+      "zh": ""
     },
     {
-      "start": 4.7,
-      "name": "initial",
-      "zh": "",
-      "en": "The scene starts upright, before the selected operation."
+      "start": 5.7,
+      "name": "R2 initial",
+      "en": "Round 2 · Same starting context for commands F1=0 and 1.",
+      "zh": ""
     },
     {
-      "start": 4.966666666666667,
-      "name": "root_approach",
-      "zh": "",
-      "en": "The upstream gripper approaches the pusher."
+      "start": 5.866666666666666,
+      "name": "R2 primary_approach",
+      "en": "Round 2 · Approach domino 1 for command 0.",
+      "zh": ""
     },
     {
-      "start": 7.166666666666667,
-      "name": "root_hold",
-      "zh": "",
-      "en": "Hold the pusher at its inactive position (P=0)."
+      "start": 6.6,
+      "name": "R2 primary_hold",
+      "en": "Round 2 · Hold F1 inactive (command 0).",
+      "zh": ""
     },
     {
-      "start": 7.666666666666667,
-      "name": "observe",
-      "zh": "",
-      "en": "Wait for physical settling; graph unchanged until the batch update."
+      "start": 7.1,
+      "name": "R2 observe",
+      "en": "Round 2 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
+    },
+    {
+      "start": 7.6,
+      "name": "Reset",
+      "en": "Round 2 · Same context, opposite command: F1=1.",
+      "zh": ""
+    },
+    {
+      "start": 8,
+      "name": "R2 initial",
+      "en": "Round 2 · Same starting context for commands F1=0 and 1.",
+      "zh": ""
     },
     {
       "start": 8.166666666666666,
-      "name": "Reset",
-      "zh": "",
-      "en": "Paired trial: same initial context, opposite target command."
+      "name": "R2 primary_approach",
+      "en": "Round 2 · Approach domino 1 for command 1.",
+      "zh": ""
     },
     {
-      "start": 10.166666666666666,
-      "name": "initial",
-      "zh": "",
-      "en": "The scene starts upright, before the selected operation."
+      "start": 8.9,
+      "name": "R2 primary_push",
+      "en": "Round 2 · Activate F1 by contact (command 1).",
+      "zh": ""
     },
     {
-      "start": 10.433333333333334,
-      "name": "root_approach",
-      "zh": "",
-      "en": "The upstream gripper approaches the pusher."
+      "start": 9.2,
+      "name": "R2 primary_retract",
+      "en": "Round 2 · Withdraw after contact; do not update the graph yet.",
+      "zh": ""
     },
     {
-      "start": 12.866666666666667,
-      "name": "root_push",
-      "zh": "",
-      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+      "start": 9.966666666666667,
+      "name": "R2 observe",
+      "en": "Round 2 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
+    },
+    {
+      "start": 10.466666666666667,
+      "name": "Round 2 — evidence",
+      "en": "Round 2 · P changed in 0/4 pairs when F1 changed.",
+      "zh": ""
+    },
+    {
+      "start": 11.866666666666667,
+      "name": "Round 2 — revise",
+      "en": "Round 2 · Withdraw 3 arrow hypotheses; add 2.",
+      "zh": ""
     },
     {
       "start": 13.866666666666667,
-      "name": "root_retract",
-      "zh": "",
-      "en": "The gripper withdraws after contact."
+      "name": "Round 3 — revise",
+      "en": "Round 3 · withdraw F3→F2; add L→F1, L→F3.",
+      "zh": ""
     },
     {
-      "start": 16.166666666666668,
-      "name": "observe",
-      "zh": "",
-      "en": "Wait for physical settling; graph unchanged until the batch update."
+      "start": 15.666666666666666,
+      "name": "Round 4 — revise",
+      "en": "Round 4 · Withdraw 2 arrow hypotheses; add 3.",
+      "zh": ""
     },
     {
-      "start": 16.7,
-      "name": "Direct evidence 1",
-      "zh": "",
-      "en": "Batch evidence: P → F1 and P → F2 (blue)"
+      "start": 17.466666666666665,
+      "name": "Round 5 — revise",
+      "en": "Round 5 · withdraw F1→L.",
+      "zh": ""
     },
     {
-      "start": 18.5,
-      "name": "Graph update 1",
-      "zh": "",
-      "en": "Graph rules orient 4 more links (teal); all 6 are resolved."
+      "start": 19.266666666666666,
+      "name": "Round 6 — revise",
+      "en": "Round 6 · withdraw P→F3.",
+      "zh": ""
     },
     {
-      "start": 20.8,
-      "name": "Learned result",
-      "zh": "",
-      "en": "Learned graph · 1 round · 64 graph images"
+      "start": 21.066666666666666,
+      "name": "Post-run reference check",
+      "en": "After 12 rounds: F3 → F2 remains a false hypothesis.",
+      "zh": "12 轮之后，仍保留错误假设 F3 → F2。"
     },
     {
-      "start": 22.4,
-      "name": "Reset",
-      "zh": "",
-      "en": "Branch check: hold the near lane. The learned graph remains frozen."
-    },
-    {
-      "start": 24.4,
-      "name": "initial",
-      "zh": "",
-      "en": "The scene starts upright, before the selected operation."
-    },
-    {
-      "start": 24.666666666666668,
-      "name": "primary_approach",
-      "zh": "",
-      "en": "The gripper approaches domino 1 (F1)."
-    },
-    {
-      "start": 26.866666666666667,
-      "name": "primary_hold",
-      "zh": "",
-      "en": "Keep domino 1 held inactive (F1=0) during the upstream push."
+      "start": 23.866666666666667,
+      "name": "Initial hypothesis",
+      "en": "Eight more rounds · same encoder, ACC and learning rule.",
+      "zh": "再做 8 轮干预，encoder、ACC 和学图规则保持不变。"
     },
     {
       "start": 27.366666666666667,
-      "name": "root_approach",
-      "zh": "",
-      "en": "The upstream gripper approaches the pusher."
-    },
-    {
-      "start": 29.8,
-      "name": "root_push",
-      "zh": "",
-      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
-    },
-    {
-      "start": 30.566666666666666,
-      "name": "root_retract",
-      "zh": "",
-      "en": "The pushing gripper withdraws; the target remains held."
-    },
-    {
-      "start": 32.86666666666667,
-      "name": "observe",
-      "zh": "",
-      "en": "Settling interval compressed · 6× between normal-speed endpoints · graph frozen"
-    },
-    {
-      "start": 35.7,
-      "name": "Near branch verification",
-      "zh": "",
-      "en": "Hold F1: near lane stops; far lane, bell and lamp respond."
-    },
-    {
-      "start": 37.7,
       "name": "Reset",
-      "zh": "",
-      "en": "Branch check: hold the far lane. The learned graph remains frozen."
+      "en": "Round 14 · Prepare the next context; keep the current hypothesis.",
+      "zh": ""
     },
     {
-      "start": 39.7,
-      "name": "initial",
-      "zh": "",
-      "en": "The scene starts upright, before the selected operation."
+      "start": 27.766666666666666,
+      "name": "Round 14 — why",
+      "en": "Round 14: test F3. Candidate directions involving F2 disagree.",
+      "zh": ""
     },
     {
-      "start": 39.96666666666667,
-      "name": "primary_approach",
-      "zh": "",
-      "en": "The gripper approaches domino 2 (F2)."
+      "start": 29.266666666666666,
+      "name": "R14 initial",
+      "en": "Round 14 · Same starting context for commands F3=0 and 1.",
+      "zh": ""
     },
     {
-      "start": 42.166666666666664,
-      "name": "primary_hold",
-      "zh": "",
-      "en": "Keep domino 2 held inactive (F2=0) during the upstream push."
+      "start": 29.433333333333334,
+      "name": "R14 primary_approach",
+      "en": "Round 14 · Approach domino 3 for command 0.",
+      "zh": ""
+    },
+    {
+      "start": 30.166666666666668,
+      "name": "R14 primary_hold",
+      "en": "Round 14 · Hold F3 inactive (command 0).",
+      "zh": ""
+    },
+    {
+      "start": 30.666666666666668,
+      "name": "R14 observe",
+      "en": "Round 14 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
+    },
+    {
+      "start": 31.166666666666668,
+      "name": "Reset",
+      "en": "Round 14 · Same context, opposite command: F3=1.",
+      "zh": ""
+    },
+    {
+      "start": 31.566666666666666,
+      "name": "R14 initial",
+      "en": "Round 14 · Same starting context for commands F3=0 and 1.",
+      "zh": ""
+    },
+    {
+      "start": 31.733333333333334,
+      "name": "R14 primary_approach",
+      "en": "Round 14 · Approach domino 3 for command 1.",
+      "zh": ""
+    },
+    {
+      "start": 32.46666666666667,
+      "name": "R14 primary_push",
+      "en": "Round 14 · Activate F3 by contact (command 1).",
+      "zh": ""
+    },
+    {
+      "start": 32.766666666666666,
+      "name": "R14 primary_retract",
+      "en": "Round 14 · Withdraw after contact; do not update the graph yet.",
+      "zh": ""
+    },
+    {
+      "start": 33.53333333333333,
+      "name": "R14 observe",
+      "en": "Round 14 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
+    },
+    {
+      "start": 34.03333333333333,
+      "name": "Round 14 — evidence",
+      "en": "Round 14 · F2 changed in 0/4 pairs when F3 changed.",
+      "zh": ""
+    },
+    {
+      "start": 35.53333333333333,
+      "name": "Round 14 — revise",
+      "en": "Round 14 · withdraw F3→F2; add F1→F2.",
+      "zh": "第 14 轮：撤回 F3 → F2，但暂时新增错误假设 F1 → F2。"
+    },
+    {
+      "start": 37.53333333333333,
+      "name": "Reset",
+      "en": "Round 18 · Prepare the next context; keep the current hypothesis.",
+      "zh": ""
+    },
+    {
+      "start": 37.93333333333333,
+      "name": "Round 18 — why",
+      "en": "Round 18: test F1. Candidate directions involving F2 disagree.",
+      "zh": ""
+    },
+    {
+      "start": 39.43333333333333,
+      "name": "R18 initial",
+      "en": "Round 18 · Same starting context for commands F1=0 and 1.",
+      "zh": ""
+    },
+    {
+      "start": 39.6,
+      "name": "R18 primary_approach",
+      "en": "Round 18 · Approach domino 1 for command 0.",
+      "zh": ""
+    },
+    {
+      "start": 40.333333333333336,
+      "name": "R18 primary_hold",
+      "en": "Round 18 · Hold F1 inactive (command 0).",
+      "zh": ""
+    },
+    {
+      "start": 40.833333333333336,
+      "name": "R18 root_approach",
+      "en": "Round 18 · Apply the same background pusher input in both paired trials.",
+      "zh": ""
     },
     {
       "start": 42.666666666666664,
-      "name": "root_approach",
-      "zh": "",
-      "en": "The upstream gripper approaches the pusher."
+      "name": "R18 observe",
+      "en": "Round 18 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
     },
     {
-      "start": 45.1,
-      "name": "root_push",
-      "zh": "",
-      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
-    },
-    {
-      "start": 45.9,
-      "name": "root_retract",
-      "zh": "",
-      "en": "The pushing gripper withdraws; the target remains held."
-    },
-    {
-      "start": 48.2,
-      "name": "observe",
-      "zh": "",
-      "en": "Wait for physical settling; the learned graph stays frozen."
-    },
-    {
-      "start": 48.733333333333334,
-      "name": "Far branch verification",
-      "zh": "",
-      "en": "Hold F2: far lane, bell and lamp stop; near lane responds."
-    },
-    {
-      "start": 50.733333333333334,
+      "start": 43.2,
       "name": "Reset",
-      "zh": "",
-      "en": "Extra physical verification: hold the bell striker. The learned graph remains frozen."
+      "en": "Round 18 · Same context, opposite command: F1=1.",
+      "zh": ""
     },
     {
-      "start": 52.733333333333334,
-      "name": "initial",
-      "zh": "",
-      "en": "The scene starts upright, before the selected operation."
+      "start": 43.6,
+      "name": "R18 initial",
+      "en": "Round 18 · Same starting context for commands F1=0 and 1.",
+      "zh": ""
     },
     {
-      "start": 53,
-      "name": "primary_approach",
-      "zh": "",
-      "en": "The gripper approaches the bell striker (B)."
+      "start": 43.766666666666666,
+      "name": "R18 primary_approach",
+      "en": "Round 18 · Approach domino 1 for command 1.",
+      "zh": ""
+    },
+    {
+      "start": 44.5,
+      "name": "R18 primary_push",
+      "en": "Round 18 · Activate F1 by contact (command 1).",
+      "zh": ""
+    },
+    {
+      "start": 44.8,
+      "name": "R18 primary_retract",
+      "en": "Round 18 · Withdraw after contact; do not update the graph yet.",
+      "zh": ""
+    },
+    {
+      "start": 45.56666666666667,
+      "name": "R18 root_approach",
+      "en": "Round 18 · Apply the same background pusher input in both paired trials.",
+      "zh": ""
+    },
+    {
+      "start": 47.46666666666667,
+      "name": "R18 observe",
+      "en": "Round 18 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
+    },
+    {
+      "start": 48,
+      "name": "Round 18 — evidence",
+      "en": "Round 18 · F2 changed in 0/4 pairs when F1 changed.",
+      "zh": ""
+    },
+    {
+      "start": 49.5,
+      "name": "Round 18 — revise",
+      "en": "Round 18 · withdraw F1→F2.",
+      "zh": "第 18 轮：撤回 F1 → F2，当前图与仿真参考图一致。"
+    },
+    {
+      "start": 51.5,
+      "name": "Reset",
+      "en": "Round 20 · Prepare the next context; keep the current hypothesis.",
+      "zh": ""
+    },
+    {
+      "start": 51.9,
+      "name": "Round 20 — why",
+      "en": "Round 20: test F2. Candidate directions involving F1 disagree.",
+      "zh": ""
+    },
+    {
+      "start": 53.4,
+      "name": "R20 initial",
+      "en": "Round 20 · Same starting context for commands F2=0 and 1.",
+      "zh": ""
+    },
+    {
+      "start": 53.56666666666667,
+      "name": "R20 primary_approach",
+      "en": "Round 20 · Approach domino 2 for command 0.",
+      "zh": ""
+    },
+    {
+      "start": 54.3,
+      "name": "R20 primary_hold",
+      "en": "Round 20 · Hold F2 inactive (command 0).",
+      "zh": ""
+    },
+    {
+      "start": 54.8,
+      "name": "R20 observe",
+      "en": "Round 20 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
     },
     {
       "start": 55.3,
-      "name": "primary_hold",
-      "zh": "",
-      "en": "Keep the bell striker held inactive (B=0) during the upstream push."
+      "name": "Reset",
+      "en": "Round 20 · Same context, opposite command: F2=1.",
+      "zh": ""
     },
     {
-      "start": 55.8,
-      "name": "root_approach",
-      "zh": "",
-      "en": "The upstream gripper approaches the pusher."
+      "start": 55.7,
+      "name": "R20 initial",
+      "en": "Round 20 · Same starting context for commands F2=0 and 1.",
+      "zh": ""
     },
     {
-      "start": 58.233333333333334,
-      "name": "root_push",
-      "zh": "",
-      "en": "The upstream gripper pushes the pusher; observe how the scene responds."
+      "start": 55.86666666666667,
+      "name": "R20 primary_approach",
+      "en": "Round 20 · Approach domino 2 for command 1.",
+      "zh": ""
     },
     {
-      "start": 59.233333333333334,
-      "name": "root_retract",
-      "zh": "",
-      "en": "The pushing gripper withdraws; the target remains held."
+      "start": 56.6,
+      "name": "R20 primary_push",
+      "en": "Round 20 · Activate F2 by contact (command 1).",
+      "zh": ""
     },
     {
-      "start": 61.53333333333333,
-      "name": "observe",
-      "zh": "",
-      "en": "Settling interval compressed · 6× between normal-speed endpoints · graph frozen"
+      "start": 56.9,
+      "name": "R20 primary_retract",
+      "en": "Round 20 · Withdraw after contact; do not update the graph yet.",
+      "zh": ""
     },
     {
-      "start": 63.6,
-      "name": "Bell verification",
-      "zh": "",
-      "en": "Hold the striker: dominoes fall, but bell and lamp stay off."
+      "start": 57.666666666666664,
+      "name": "R20 observe",
+      "en": "Round 20 · Wait for settling; hypothesis unchanged.",
+      "zh": ""
+    },
+    {
+      "start": 58.166666666666664,
+      "name": "Round 20 — evidence",
+      "en": "Round 20 · F1 changed in 0/4 pairs when F2 changed.",
+      "zh": ""
+    },
+    {
+      "start": 59.666666666666664,
+      "name": "Round 20 — revise",
+      "en": "Round 20 · Best graph unchanged; candidate support is re-evaluated.",
+      "zh": ""
+    },
+    {
+      "start": 60.666666666666664,
+      "name": "Post-run reference check",
+      "en": "All six links correct · unchanged through rounds 19 and 20.",
+      "zh": "六条边全部正确，第 19、20 轮继续验证后保持不变。"
     }
   ],
-  "final_graph": {
-    "directed": [
-      [
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    ],
-    "skeleton": [
-      [
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      [
-        1,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
-    ],
-    "undirected": [],
-    "valid": true,
-    "failure_reasons": [],
-    "source": "PC_from_frozen_RGB_ACC_binary_readouts",
-    "metadata": {
-      "pc": {
-        "alpha": 0.01,
-        "min_eff": 0.03,
-        "max_order": 5,
-        "n_ci_tests": 126,
-        "search_complete": true,
-        "removal_order": {
-          "0-3": 1,
-          "0-4": 1,
-          "0-5": 1,
-          "0-6": 1,
-          "1-2": 1,
-          "1-4": 1,
-          "1-5": 1,
-          "1-6": 1,
-          "2-3": 1,
-          "2-5": 1,
-          "2-6": 1,
-          "3-4": 1,
-          "3-5": 1,
-          "3-6": 1,
-          "4-6": 1
-        },
-        "edge_strength": [
-          [
-            0,
-            0.5240328697852034,
-            0.3321781582311949,
-            0.04868061835956843,
-            0.03585185471908719,
-            0.00845751331510768,
-            0.05522828446005719
-          ],
-          [
-            0.5240328697852039,
-            0,
-            0.06335749695922405,
-            0.6755941421209017,
-            0.023452997357696466,
-            0.0012519029773661776,
-            0.08620337285406977
-          ],
-          [
-            0.3321781582311959,
-            0.06335749695922333,
-            0,
-            0.06430521878652479,
-            0.5552628987936198,
-            0.0007195571131044963,
-            0.004753620610881238
-          ],
-          [
-            0.048680618359568946,
-            0.6755941421209023,
-            0.0643052187865255,
-            0,
-            0.10154605512248897,
-            0.017069224166052603,
-            0.04033934021585065
-          ],
-          [
-            0.03585185471908863,
-            0.023452997357695356,
-            0.5552628987936199,
-            0.10154605512248842,
-            0,
-            0.41786301634379663,
-            0.0008034645116919841
-          ],
-          [
-            0.008457513315108854,
-            0.001251902977364405,
-            0.0007195571131042597,
-            0.017069224166051503,
-            0.41786301634379647,
-            0,
-            0.7751212476191713
-          ],
-          [
-            0.055228284460056246,
-            0.08620337285406815,
-            0.004753620610881362,
-            0.040339340215849416,
-            0.000803464511691746,
-            0.7751212476191718,
-            0
-          ]
-        ]
-      },
-      "orientation_update": "batch_fail_closed_v2",
-      "meek_closure_allowed": true,
-      "batch_rejection_reasons": [],
-      "batch_meek_propagated": [
-        {
-          "edge": [
-            1,
-            3
-          ],
-          "rule": "R1"
-        },
-        {
-          "edge": [
-            2,
-            4
-          ],
-          "rule": "R1"
-        },
-        {
-          "edge": [
-            4,
-            5
-          ],
-          "rule": "R1"
-        },
-        {
-          "edge": [
-            5,
-            6
-          ],
-          "rule": "R1"
-        }
-      ],
-      "immutable_observational_arrows": 0,
-      "orientation_engine": "direct_do",
-      "legacy_skeleton": false
+  "chapters": [
+    {
+      "start": 0,
+      "name": "Initial hypotheses",
+      "en": "Initial hypotheses",
+      "zh": "初始假设"
+    },
+    {
+      "start": 4.2,
+      "name": "Paired test",
+      "en": "Paired test",
+      "zh": "配对干预"
+    },
+    {
+      "start": 23.866666666666667,
+      "name": "Continue testing",
+      "en": "Continue testing",
+      "zh": "追加干预"
+    },
+    {
+      "start": 27.766666666666666,
+      "name": "Test F3",
+      "en": "Test F3",
+      "zh": "干预 F3"
+    },
+    {
+      "start": 37.93333333333333,
+      "name": "Test F1",
+      "en": "Test F1",
+      "zh": "干预 F1"
+    },
+    {
+      "start": 60.666666666666664,
+      "name": "Final graph",
+      "en": "Final graph",
+      "zh": "最终图"
     }
-  },
-  "graph_source_sha256": [
-    "c36a410eda2c3ff55abc1df54287ea05e12d50058dc7f6a973955e700bd576f1",
-    "09222be19f471e212a1c2dd2f2eb071aa9b87fd7c2e956e4650e2f72c9beae16",
-    "20a7cb70c619b8606e0fd6810382bacf97c558bd73dfa74c6347d2d4ff4daaa5",
-    "4395916eff02d4468715cc0b83ed629348bf95153828f470be1b1062870b06f2",
-    "8984a8b48214010df4adf63f4db124555e80087472feca9661ec5cac2ef33505",
-    "ed9a19a2bdb6c8568c6a19f095b2f7cc4ea6f8ed211c20c4158cd0a01ce55443",
-    "b65de40f948bdc2de2f85c9f71e56369c1a2a79b24a247785f831d2459d2e5c0",
-    "4fe773d6acfcc2cb32483ead97a4c6cf8e5c064c9ad0b10affb41c92f48a9e1e",
-    "35b3e08986c2353cdbfc7de10455989d0149fc87ddda159055c00024faa154b3",
-    "0cb8dcfb2bf85dc95fba1b7f9fe8a0927b679e63718e070a1d42b2aba2807dde",
-    "f2198529efe8e2914065b513b87ef6715d251dfa8dbf5d460a68850d5ce5e2cf"
   ],
-  "input_manifest_sha256": "1543f40ed7fa40bfd49ed8885a89d3cc932d3750e3a503faa0c813fa2ac57e1b",
-  "input_frame_count": 1701,
-  "learned_calibration": true,
-  "scope": "New seven-node physical fork simulation demonstration. Graph snapshots come from the frozen pixel/ACC discovery run; both branch holds and the bell hold are separate physical verifications. Not the paper aggregate or a calibration superiority experiment.",
-  "presentation": "English-only concise viewing cut. Original contact motion and graph pixels preserved; shortened explanation cards; explicit independent resets retained; long settling intervals labeled 6x. Not a real-time physics claim.",
-  "scene": "seven_node_physical_fork",
-  "nodes": 7,
-  "calibration_kind": "node-preserving command-affine",
-  "training_images": 392,
-  "validation_images": 56,
-  "independent_readout_test_images": 112,
-  "observational_images": 512,
-  "calibration_images": 280,
-  "graph_intervention_images": 64,
-  "render_only_replay_calls": 5,
-  "checkpoint_sha256": "a005a5a4e14006bd55904f6a0eeb15a24ef64fa47f35adcdaa824ddf5ac20e0f",
-  "calibration_sha256": "4395916eff02d4468715cc0b83ed629348bf95153828f470be1b1062870b06f2",
-  "presentation_edit": {
-    "source_video_sha256": "86270f92de1b3ac31c9b4b6fac4bdbe5118d7cc94735ca973e462281dcd526d7",
-    "original_duration": 101.7,
-    "frame_map_sha256": "a988d398ca7c6c9202474a7abeeaf6fe387258766e56e003a1411a9a4998ada4",
-    "original_cadence_contact": true,
-    "graph_unchanged": true,
-    "version": "20261025-concise-v2"
+  "colors": {
+    "green": "Correct directed edge against simulator reference",
+    "red": "Incorrect current hypothesis",
+    "withdrawn": "Removed from the current graph"
   },
-  "original_recording": "featured-fork-full.mp4"
+  "presentation": "English-only. Chronological highlights retain every structural revision, including setbacks. Motion and repetitive trials are visibly condensed; trial resets remain explicit. One setup-selected pair is shown per displayed batch; every update uses all four pairs.",
+  "scope": "One exploratory simulation run with revisable graph scoring; not the original single-batch fork film, a paper benchmark score, or a calibration-benefit comparison.",
+  "changes": [
+    {
+      "round": 14,
+      "withdrawn": [
+        "F3→F2"
+      ],
+      "added": [
+        "F1→F2"
+      ]
+    },
+    {
+      "round": 18,
+      "withdrawn": [
+        "F1→F2"
+      ],
+      "added": []
+    }
+  ],
+  "final_reference_check": {
+    "round": 20,
+    "shd": 0,
+    "missing": [],
+    "extra": [],
+    "exact": true,
+    "also_exact_at_rounds": [
+      18,
+      19
+    ]
+  },
+  "execution_note": "An initial continuation stopped when an F1 hold did not attain its target. A 5 mm inward grasp correction passed fixed physical checks; all eight extra rounds were rerun from round12. Encoder, ACC, learning rules and thresholds stayed frozen. The failed attempt is preserved privately.",
+  "integrity_note": "Reference edges are used only for post-run checking and display colors, not action selection or graph fitting. No edges were manually removed. Internal data-binding checks and 16 source-exact representative replays passed; no independent cross-model audit is claimed.",
+  "research_code_public": false,
+  "weights_public": false,
+  "raw_data_public": false
 }

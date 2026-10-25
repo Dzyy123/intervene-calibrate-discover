@@ -10,19 +10,28 @@ model weights and runnable source archives are not published here.
 
 The private research repository and private website working repository retain
 their own access restrictions. Public demonstrations and paper measurements
-are distinguished on the website; no new measurements are introduced by this
-publication step.
+are distinguished on the website; this update adds a recorded demonstration
+without changing the paper's benchmark tables.
 
 The English paper is a non-anonymous preprint with the supplied seven authors and
 five affiliations. Review line numbers and conference-review headers have been
 removed. Website publication does not mean the paper has been submitted to arXiv.
 
 The Chinese working manuscript is not part of the current public deployment.
-Three featured films (Domino, Balance, Pick-and-Place) use consistent
-English captions and logged graph updates. They are presentation edits of recorded
-graph-discovery runs, not new experiments or calibration comparisons.
+The first featured film is the 65-second seven-node physical fork with genuine
+multi-round, revisable graph hypotheses. Green arrows match the simulator
+reference; red arrows are incorrect current hypotheses. Withdrawn edges disappear.
+The recorded run reaches the six-link reference graph in round 18 and retains it
+through rounds 19–20. Reference coloring is display-only, never a learner input.
 
-The first featured film uses the four-domino rigid-body scene from the paper
-with archived robot-contact discovery records. Upright controls use simulator
-fixtures; positive commands use gripper contact. This demonstration adaptation
-is separate from the paper's aggregate benchmark measurements.
+The fork is an exploratory extension, not a paper benchmark result. Its frozen
+encoder and ACC are followed by revisable graph scoring. A failed F1 hold was
+addressed by moving the grasp inward 5 mm, then rerunning all eight additional
+rounds from round 12; learning rules and thresholds were unchanged. Accelerated
+motion, summarized trials and the actuator correction are disclosed.
+
+The seven-node chain remains the second featured film. Balance, Pick-and-Place
+and the earlier four-domino version remain in the supplementary library.
+All featured films have English in-video captions; the page interface supports
+English and Chinese. Only the approved video, cover and sanitized chapter/scope
+metadata are added here—not research scripts, raw acquisitions or checkpoints.
