@@ -1,6 +1,9 @@
 {
   "website_public": true,
-  "code_public": false,
+  "code_public": true,
+  "code_scope": "Standalone chain/fork demos and recorded graph acquisitions only",
+  "demo_code_repository": "https://github.com/Dzyy123/icd-physical-demos",
+  "main_research_repository_public": false,
   "training_data_public": false,
   "weights_public": false,
   "manuscript": "Non-anonymous preprint with clarified abstract and condensed appendix (2026-10-19); numerical results unchanged",

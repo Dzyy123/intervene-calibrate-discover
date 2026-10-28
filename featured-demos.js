@@ -19,7 +19,7 @@
       <div class="featured-links"><a class="featured-download" download>${t('Download concise film','下载精简视频')}</a><a class="featured-full" target="_blank" rel="noopener">${t('Full-length recording','完整记录')}</a><a class="featured-evidence" target="_blank" rel="noopener">${t('Timing & demo scope','时间线与演示说明')}</a></div>
     </div>
     <p class="featured-more"><a href="#more-demos">${t('More scenes: Balance, Pick & Place, and the complete library →','更多场景：平衡、抓取放置及完整演示库 →')}</a></p>
-    <details class="technical-note"><summary>${t('What this recording demonstrates','这段视频说明什么')}</summary><p class="featured-scope"></p><p class="featured-edit-note"></p><p>${t('These are simulation demonstrations, not the paper’s aggregate benchmark scores or a calibration-benefit comparison. Research code, training data and weights remain private.','这些是仿真演示，不代表论文基准的汇总分数，也不是校准收益的对照实验。研究代码、训练数据和权重继续保持私有。')}</p></details>`;
+    <details class="technical-note"><summary>${t('What this recording demonstrates','这段视频说明什么')}</summary><p class="featured-scope"></p><p class="featured-edit-note"></p><p>${t('These are simulation demonstrations, not aggregate benchmark scores or a calibration-benefit comparison. Demo code and run records are public; the main research repository, training images and weights remain private.','这些是仿真演示，不代表基准汇总分数，也不是校准收益对照。演示代码与运行记录已公开；主研究仓库、训练图像和权重继续保持私有。')}</p><a href="https://github.com/Dzyy123/icd-physical-demos" target="_blank" rel="noopener">${t('Code, run instructions & complete graph histories','代码、运行方法与完整图学习记录')}</a></details>`;
   document.getElementById('motivation').before(section);
   // Prioritize the approved physical films without removing older evidence.
   document.querySelector('.report-lead-figure')?.remove();

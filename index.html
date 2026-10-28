@@ -19,9 +19,9 @@
   <script src="editorial.js?v=20261019d" defer></script>
   <script src="reading.js?v=20261019d" defer></script>
   <script src="case-guide.js?v=20261019d" defer></script>
-  <script src="publication.js?v=20261019e" defer></script>
+  <script src="publication.js?v=20261028a" defer></script>
   <script src="paper-narrative.js?v=20261019d" defer></script>
-  <script src="featured-demos.js?v=20261025c" defer></script>
+  <script src="featured-demos.js?v=20261028a" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#discovery">Skip to the demos</a>
@@ -53,7 +53,7 @@
       </div>
       <p class="paper-author-notes"><span>* Equal contribution.</span> <span>† Corresponding authors: <a href="mailto:xpzhang@ieee.org">xpzhang@ieee.org</a>; <a href="mailto:jiayuc@hku.hk">jiayuc@hku.hk</a>.</span></p>
       <p class="lead">Make pixel-derived variables queryable in real intervention units. Calibrate visual readouts against verified values, choose experiments to resolve causal directions, then predict state and image consequences.</p>
-      <div class="resource-links"><a class="button primary" href="#discovery">Watch the graph emerge</a><a class="button" href="assets/paper.pdf" target="_blank" rel="noopener">Read the paper</a><span class="button" aria-disabled="true">Code · not yet public</span></div>
+      <div class="resource-links"><a class="button primary" href="#discovery">Watch the graph emerge</a><a class="button" href="assets/paper.pdf" target="_blank" rel="noopener">Read the paper</a><a class="button" href="https://github.com/Dzyy123/icd-physical-demos" target="_blank" rel="noopener">Code · Demos</a></div>
       <figure class="report-lead-figure"><a href="#discovery" aria-label="Explore the recorded graph-learning demonstration"><img src="assets/parallel-cover.png" width="1600" height="1000" alt="Recorded independent-channel robot scene beside its discovered four-node graph"></a><figcaption>Recorded simulation and its discovered graph. This is a single-seed calibrated workflow demonstration, not the paper's benchmark cohort. Original image annotations are in Chinese.</figcaption></figure>
     </section>
     <section class="container problem-section" id="motivation" aria-labelledby="motivation-heading"><p class="eyebrow">01 · Introduction</p><h2 id="motivation-heading">Recognizing a state is not the same as setting it.</h2><div class="problem-columns"><div><p class="section-intro">An encoder can recognize a domino's state while its numerical readout still differs from the value used to intervene in the environment. Setting that readout directly can answer the wrong query—even when the graph's directions are correct.</p><p>There are two distinct questions: <strong>which variables influence which others?</strong> And <strong>what model setting corresponds to a verified environment value?</strong> Intervention responses inform the first; calibration addresses the second.</p></div><aside class="central-claim"><p class="eyebrow">Our focus</p><p>Let variables obtained from pixels support queries expressed in the environment's intervention values.</p><span>Known node semantics · Unknown graph and mechanisms</span></aside></div></section>
