@@ -1,9 +1,9 @@
 "use strict";
 (async()=>{
   const zh=new URLSearchParams(location.search).get('lang')==='zh',t=(en,cn)=>zh?cn:en;
-  const version='20261029a';
+  const version='20261029b';
   const scenes=[
-    ['fork','Fork · all 20 rounds · 3:47','分叉 · 完整 20 轮 · 3分47秒','Start upright. Operate, observe, then update the graph — follow all 20 rounds.','从竖直初态开始，依次看清操作、观察与图更新——完整呈现 20 轮。'],
+    ['fork','Fork · 20 rounds · 2:30 · 1080p','分叉 · 20 轮 · 2分30秒 · 1080p','Start upright. Follow all 20 rounds in a faster, clearer full-process replay.','从竖直初态开始，用更快、更清晰的画面看完全部 20 轮。'],
     ['domino','Seven-node chain','七节点链式','Pusher → four dominoes → bell → light. Two rounds resolve the causal directions.','推杆 → 四块骨牌 → 铃 → 灯。两轮干预解析因果方向。']
   ];
   const section=document.createElement('section');section.id='featured-demos';section.className='container featured-demos';
@@ -51,19 +51,20 @@
     panel.dataset.scene=row[0];
     section.querySelector('.featured-scope').textContent=notes[row[0]];
     section.querySelector('.featured-edit-note').textContent=row[0]==='fork'
-      ?t('All 20 rounds and both operations of each shown pair are retained, with labeled speed changes and explicit resets. All 40 shown trials start without a preset domino tilt. Rounds 5 and 7 use existing upright pairs selected after the run for presentation; their images and readout captions were updated together. Every graph update still uses the original four-pair batch, including contexts not shown. Learning results are unchanged. This is one recorded run, not a guarantee of convergence.','完整保留20轮及每对展示样本的两种操作，加速与独立复位均明确标示。展示的40次试验都没有预设骨牌倾斜。第5、7轮在运行结束后换用已采集的竖直初态样本，对应图片与读数说明同步更新。图更新仍使用原始完整4对数据，包括未展示的情境；学习结果不变。这是一条实测轨迹，并不保证所有场景都能收敛。')
+      ?t('All 20 rounds and both operations of each shown pair are retained. This edit is approximately 1.5× faster than the previous film; displayed motion-rate labels reflect the new timing. Physical scenes were re-rendered at 2080×1170 and composed at 1920×1080, without AI-generated detail. All 40 shown trials start without a preset domino tilt. Rounds 5 and 7 use existing upright pairs selected after the run for presentation; images and readout captions correspond to those pairs. Every graph update still uses the original four-pair batch, including contexts not shown. Physical audits, model inputs and learning results are unchanged.','完整保留20轮及每对展示样本的两种操作。节奏约为上一版的1.5倍，动作倍速标记已同步更新。物理场景以2080×1170重新渲染，输出1920×1080，不使用AI补细节。展示的40次试验都没有预设骨牌倾斜。第5、7轮在运行结束后换用已采集的竖直初态样本，图片与读数说明对应这些样本。图更新仍使用原始完整4对数据，包括未展示的情境；物理记录、模型输入和学习结果不变。')
       :t('The concise chain film shortens explanation pauses and labels accelerated settling; contact motion and independent-trial resets are preserved. The final bell hold is a separate verification with the graph frozen.','链式精简片缩短解释停顿，并标明沉降加速；保留接触动作与独立试验复位。最后的夹铃操作是在图冻结后的独立验证。');
     section.querySelector('.featured-legend').innerHTML=row[0]==='fork'
       ?`<span class="legend-correct">${t('Green: correct vs reference','绿色：与参考图一致')}</span><span class="legend-incorrect">${t('Red: incorrect hypothesis','红色：错误假设')}</span><span class="legend-withdrawn">${t('Withdrawn: removed','撤回：箭头消失')}</span>`
       :`<span>${t('Gray dashed: unresolved','灰色虚线：方向未定')}</span><span>${t('Blue: intervention evidence','蓝色：干预证据')}</span><span>${t('Teal: graph rules','青绿：图规则')}</span>`;
     const address=new URL(location.href);address.searchParams.set('demo',row[0]);history.replaceState(null,'',address);
     section.querySelector('.featured-question').textContent=t(row[3],row[4]);
-    const stem=row[0]==='fork'?'featured-fork-upright-20261029':`featured-${row[0]}`;
+    const stem=row[0]==='fork'?'featured-fork-hq-fast-20261029':`featured-${row[0]}`;
     video.poster=`assets/${stem}.${row[0]==='fork'?'png':'jpg'}?v=${version}`;video.src=`assets/${stem}.mp4?v=${version}`;video.load();
     const download=section.querySelector('.featured-download');download.href=video.src;
     download.textContent=row[0]==='fork'?t('Download complete film','下载完整视频'):t('Download concise film','下载精简视频');
-    const fullLink=section.querySelector('.featured-full');fullLink.hidden=row[0]==='fork';
-    if(row[0]==='fork')fullLink.removeAttribute('href');else fullLink.href=`assets/featured-${row[0]}-full.mp4`;
+    const fullLink=section.querySelector('.featured-full');fullLink.hidden=false;
+    fullLink.href=row[0]==='fork'?'assets/featured-fork-upright-20261029.mp4':`assets/featured-${row[0]}-full.mp4`;
+    fullLink.textContent=row[0]==='fork'?t('Slower version · 3:47','较慢版本 · 3分47秒'):t('Full-length recording','完整记录');
     section.querySelector('.featured-evidence').href=`assets/${stem}.json?v=${version}`;
     seek.replaceChildren();
     section.querySelector('.featured-caption').textContent=t('Press play to follow the recorded operations and graph updates.','点击播放，跟着实际操作看图的变化。');

@@ -18,7 +18,7 @@ five affiliations. Review line numbers and conference-review headers have been
 removed. Website publication does not mean the paper has been submitted to arXiv.
 
 The Chinese working manuscript is not part of the current public deployment.
-The first featured film is the 226.6-second seven-node physical fork, retaining
+The first featured film is the approximately 150-second, 1080p seven-node physical fork, retaining
 all 20 rounds with Operate → Observe → Update stages and upright starts for
 all 40 displayed trials. Green arrows match the simulator
 reference; red arrows are incorrect current hypotheses. Withdrawn edges disappear.
@@ -37,6 +37,12 @@ All graph updates still use the original four-pair batches and graph history;
 this is not a new upright-only learning experiment. The other 18 displayed
 pairs are unchanged. New media use versioned URLs; earlier video URLs remain
 available for compatibility with the previously released demo package.
+
+The current edit is approximately 1.5× faster than the preceding 226.6-second
+film, which remains available through the slower-version link. Physical scenes
+were re-rendered at 2080×1170; the output is 1920×1080 with reduced compression
+loss. All 40 model-input images and physical audits match the recorded trials.
+No AI-generated image enhancement or new learning result is introduced.
 
 The seven-node chain remains the second featured film. Balance, Pick-and-Place
 and the earlier four-domino version remain in the supplementary library.
