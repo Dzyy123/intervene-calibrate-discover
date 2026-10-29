@@ -1,9 +1,9 @@
 "use strict";
 (async()=>{
   const zh=new URLSearchParams(location.search).get('lang')==='zh',t=(en,cn)=>zh?cn:en;
-  const version='20261025c';
+  const version='20261029a';
   const scenes=[
-    ['fork','Fork · learning from mistakes · 65 s','分叉 · 从错误假设到正确图 · 65 秒','Wrong hypotheses are tested, withdrawn and corrected — 20 rounds in 65 seconds.','错误假设经过干预、撤回和修正：用 65 秒看完 20 轮学习过程。'],
+    ['fork','Fork · all 20 rounds · 3:47','分叉 · 完整 20 轮 · 3分47秒','Start upright. Operate, observe, then update the graph — follow all 20 rounds.','从竖直初态开始，依次看清操作、观察与图更新——完整呈现 20 轮。'],
     ['domino','Seven-node chain','七节点链式','Pusher → four dominoes → bell → light. Two rounds resolve the causal directions.','推杆 → 四块骨牌 → 铃 → 灯。两轮干预解析因果方向。']
   ];
   const section=document.createElement('section');section.id='featured-demos';section.className='container featured-demos';
@@ -16,10 +16,10 @@
       <div class="featured-seek" aria-label="${t('Video chapters','视频章节')}"></div>
       <p class="featured-caption" aria-live="off"></p>
       <p class="featured-legend"><span>Gray dashed: unresolved</span><span>Blue: intervention evidence</span><span>Teal: graph rules</span></p>
-      <div class="featured-links"><a class="featured-download" download>${t('Download concise film','下载精简视频')}</a><a class="featured-full" target="_blank" rel="noopener">${t('Full-length recording','完整记录')}</a><a class="featured-evidence" target="_blank" rel="noopener">${t('Timing & demo scope','时间线与演示说明')}</a></div>
+      <div class="featured-links"><a class="featured-download" download>${t('Download film','下载视频')}</a><a class="featured-full" target="_blank" rel="noopener">${t('Full-length recording','完整记录')}</a><a class="featured-evidence" target="_blank" rel="noopener">${t('Timing & demo scope','时间线与演示说明')}</a></div>
     </div>
     <p class="featured-more"><a href="#more-demos">${t('More scenes: Balance, Pick & Place, and the complete library →','更多场景：平衡、抓取放置及完整演示库 →')}</a></p>
-    <details class="technical-note"><summary>${t('What this recording demonstrates','这段视频说明什么')}</summary><p class="featured-scope"></p><p class="featured-edit-note"></p><p>${t('These are simulation demonstrations, not aggregate benchmark scores or a calibration-benefit comparison. Demo code and run records are public; the main research repository, training images and weights remain private.','这些是仿真演示，不代表基准汇总分数，也不是校准收益对照。演示代码与运行记录已公开；主研究仓库、训练图像和权重继续保持私有。')}</p><a href="https://github.com/Dzyy123/icd-physical-demos" target="_blank" rel="noopener">${t('Code, run instructions & complete graph histories','代码、运行方法与完整图学习记录')}</a></details>`;
+    <details class="technical-note"><summary>${t('What this recording demonstrates','这段视频说明什么')}</summary><p class="featured-scope"></p><p class="featured-edit-note"></p><p>${t('These are simulation demonstrations, not aggregate benchmark scores or a calibration-benefit comparison. The previously released demo package is linked below. The new presentation scripts, main research repository, training images and weights remain private.','这些是仿真演示，不代表基准汇总分数，也不是校准收益对照。下方链接指向此前已公开的演示包；本次新版制作脚本、主研究仓库、训练图像和权重继续保持私有。')}</p><a href="https://github.com/Dzyy123/icd-physical-demos" target="_blank" rel="noopener">${t('Previously released demo code & graph histories','此前已公开的演示代码与图学习记录')}</a></details>`;
   document.getElementById('motivation').before(section);
   // Prioritize the approved physical films without removing older evidence.
   document.querySelector('.report-lead-figure')?.remove();
@@ -51,22 +51,24 @@
     panel.dataset.scene=row[0];
     section.querySelector('.featured-scope').textContent=notes[row[0]];
     section.querySelector('.featured-edit-note').textContent=row[0]==='fork'
-      ?t('The 65-second cut retains every structural revision, including setbacks. Repetitive trials and motion are visibly condensed; resets stay explicit. Each displayed round shows one setup-selected pair, while its update uses all four pairs. This is one recorded run, not a guarantee of convergence.','65秒精简版保留全部结构修订，包括中途的错误。重复试验与部分动作已明确加速或压缩，复位仍单独显示。每个展示轮次选取一对代表操作，但图更新使用完整4对数据。这是一条实测轨迹，并不保证所有场景都能收敛。')
+      ?t('All 20 rounds and both operations of each shown pair are retained, with labeled speed changes and explicit resets. All 40 shown trials start without a preset domino tilt. Rounds 5 and 7 use existing upright pairs selected after the run for presentation; their images and readout captions were updated together. Every graph update still uses the original four-pair batch, including contexts not shown. Learning results are unchanged. This is one recorded run, not a guarantee of convergence.','完整保留20轮及每对展示样本的两种操作，加速与独立复位均明确标示。展示的40次试验都没有预设骨牌倾斜。第5、7轮在运行结束后换用已采集的竖直初态样本，对应图片与读数说明同步更新。图更新仍使用原始完整4对数据，包括未展示的情境；学习结果不变。这是一条实测轨迹，并不保证所有场景都能收敛。')
       :t('The concise chain film shortens explanation pauses and labels accelerated settling; contact motion and independent-trial resets are preserved. The final bell hold is a separate verification with the graph frozen.','链式精简片缩短解释停顿，并标明沉降加速；保留接触动作与独立试验复位。最后的夹铃操作是在图冻结后的独立验证。');
     section.querySelector('.featured-legend').innerHTML=row[0]==='fork'
       ?`<span class="legend-correct">${t('Green: correct vs reference','绿色：与参考图一致')}</span><span class="legend-incorrect">${t('Red: incorrect hypothesis','红色：错误假设')}</span><span class="legend-withdrawn">${t('Withdrawn: removed','撤回：箭头消失')}</span>`
       :`<span>${t('Gray dashed: unresolved','灰色虚线：方向未定')}</span><span>${t('Blue: intervention evidence','蓝色：干预证据')}</span><span>${t('Teal: graph rules','青绿：图规则')}</span>`;
     const address=new URL(location.href);address.searchParams.set('demo',row[0]);history.replaceState(null,'',address);
     section.querySelector('.featured-question').textContent=t(row[3],row[4]);
-    video.poster=`assets/featured-${row[0]}.jpg?v=${version}`;video.src=`assets/featured-${row[0]}.mp4?v=${version}`;video.load();
-    section.querySelector('.featured-download').href=video.src;
+    const stem=row[0]==='fork'?'featured-fork-upright-20261029':`featured-${row[0]}`;
+    video.poster=`assets/${stem}.${row[0]==='fork'?'png':'jpg'}?v=${version}`;video.src=`assets/${stem}.mp4?v=${version}`;video.load();
+    const download=section.querySelector('.featured-download');download.href=video.src;
+    download.textContent=row[0]==='fork'?t('Download complete film','下载完整视频'):t('Download concise film','下载精简视频');
     const fullLink=section.querySelector('.featured-full');fullLink.hidden=row[0]==='fork';
     if(row[0]==='fork')fullLink.removeAttribute('href');else fullLink.href=`assets/featured-${row[0]}-full.mp4`;
-    section.querySelector('.featured-evidence').href=`assets/featured-${row[0]}.json?v=${version}`;
+    section.querySelector('.featured-evidence').href=`assets/${stem}.json?v=${version}`;
     seek.replaceChildren();
     section.querySelector('.featured-caption').textContent=t('Press play to follow the recorded operations and graph updates.','点击播放，跟着实际操作看图的变化。');
     try{
-      const res=await fetch(`assets/featured-${row[0]}.json?v=${version}`);if(!res.ok)throw new Error(res.status);
+      const res=await fetch(`assets/${stem}.json?v=${version}`);if(!res.ok)throw new Error(res.status);
       const result=await res.json();if(request!==token)return;data=result;
       const selected=data.chapters||data.stages.filter(s=>/^(Question|Pixel|Scene key|Observational|Select|Direct|Graph.rule|Graph update|Update|Result|Learned result|Paired|Held|Fixed|Push setup)/.test(s.name)||(s.name==='Reset'&&/Branch check|Extra physical verification/.test(s.en)));
       for(const s of selected){

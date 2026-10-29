@@ -6,6 +6,7 @@
 .featured-player{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:white}
 .featured-question{margin:0;padding:18px 24px;font-size:19px;line-height:1.6;background:var(--blue-soft);color:var(--ink)}
 .featured-player video{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:contain;background:#f7f8fa}
+.featured-player[data-scene="fork"] video{aspect-ratio:16/9}
 .featured-seek{display:flex;flex-wrap:wrap;gap:8px;padding:18px 24px 0}
 .featured-seek button{border:1px solid var(--line);border-radius:4px;background:#f7f8fa;color:var(--blue);padding:8px 12px;font-size:14px;cursor:pointer}
 .featured-seek button[aria-current=true]{background:var(--blue);color:white;border-color:var(--blue)}

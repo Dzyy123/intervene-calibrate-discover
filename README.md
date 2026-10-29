@@ -18,8 +18,9 @@ five affiliations. Review line numbers and conference-review headers have been
 removed. Website publication does not mean the paper has been submitted to arXiv.
 
 The Chinese working manuscript is not part of the current public deployment.
-The first featured film is the 65-second seven-node physical fork with genuine
-multi-round, revisable graph hypotheses. Green arrows match the simulator
+The first featured film is the 226.6-second seven-node physical fork, retaining
+all 20 rounds with Operate → Observe → Update stages and upright starts for
+all 40 displayed trials. Green arrows match the simulator
 reference; red arrows are incorrect current hypotheses. Withdrawn edges disappear.
 The recorded run reaches the six-link reference graph in round 18 and retains it
 through rounds 19–20. Reference coloring is display-only, never a learner input.
@@ -28,7 +29,14 @@ The fork is an exploratory extension, not a paper benchmark result. Its frozen
 encoder and ACC are followed by revisable graph scoring. A failed F1 hold was
 addressed by moving the grasp inward 5 mm, then rerunning all eight additional
 rounds from round 12; learning rules and thresholds were unchanged. Accelerated
-motion, summarized trials and the actuator correction are disclosed.
+motion, the displayed-pair selection and the actuator correction are disclosed.
+
+Rounds 5 and 7 now show existing upright pairs selected after the run for
+presentation, with their corresponding endpoint images and readout captions.
+All graph updates still use the original four-pair batches and graph history;
+this is not a new upright-only learning experiment. The other 18 displayed
+pairs are unchanged. New media use versioned URLs; earlier video URLs remain
+available for compatibility with the previously released demo package.
 
 The seven-node chain remains the second featured film. Balance, Pick-and-Place
 and the earlier four-domino version remain in the supplementary library.
