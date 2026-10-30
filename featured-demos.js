@@ -1,11 +1,11 @@
 "use strict";
 (async()=>{
   const zh=new URLSearchParams(location.search).get('lang')==='zh',t=(en,cn)=>zh?cn:en;
-  const version='20261030b';
+  const version='20261030c';
   const scenes=[
     ['fork','Fork · 20 rounds · 2:30 · 1080p','分叉 · 20 轮 · 2分30秒 · 1080p','Start upright. Follow all 20 rounds in a faster, clearer full-process replay.','从竖直初态开始，用更快、更清晰的画面看完全部 20 轮。'],
     ['domino','Seven-node chain','七节点链式','Pusher → four dominoes → bell → light. Two rounds resolve the causal directions.','推杆 → 四块骨牌 → 铃 → 灯。两轮干预解析因果方向。'],
-    ['balance','Balance · graph-learning trace · 31 s','平衡模组 · 图学习记录 · 31秒','Move the load, then the target. Follow the beam, ball and recorded graph updates.','先搬动载荷，再移动目标；观察横梁、小球和候选图怎样变化。']
+    ['balance','Balance · 12 rounds · 89 s · 1080p','平衡模组 · 12轮 · 89秒 · 1080p','Test load, tilt, ball and target. Watch provisional links revised and withdrawn across 12 rounds.','测试载荷、横梁、小球和目标，查看12轮中候选边如何修订、撤回并形成最终图。']
   ];
   const section=document.createElement('section');section.id='featured-demos';section.className='container featured-demos';
   section.innerHTML=`<p class="eyebrow">${t('Three physical scenes · recorded graph discovery','三个物理场景 · 真实图发现记录')}</p>
@@ -36,7 +36,7 @@
   const notes={
     domino:t('Seven-node chain: an anchored RGB encoder and frozen command-affine calibration, with graph updates from 128 intervention images in two rounds. Calibration uses 280 separate images. In the F1 comparison, the pusher is active in both trials: one holds F1, the other directly activates F1. The final bell hold is a separate physical verification with the graph frozen. Bell contact activates a lamp relay; this is not sound-triggered lighting.','七节点链式场景使用节点已锚定的 RGB 编码器和冻结的命令仿射校准，通过两轮、共128张干预图像更新图；校准另使用280张图像。F1对照的两次试验中推杆均处于激活状态：一次夹持F1，另一次直接激活F1。最后的夹铃操作是在图冻结后的独立物理验证。撞铃接触激活灯的继电器，并非声音触发灯。'),
     fork:t('An exploratory extension with revisable graph scoring: 24 observation images, then 20 intervention batches of 4 matched pairs. The encoder and ACC remain frozen. Round 14 replaces F3→F2 with another incorrect hypothesis, F1→F2; round 18 removes it. The six-link graph remains correct in rounds 19–20. Reference colors are for viewers only, never supplied to learning. A failed F1 hold prompted a 5 mm inward grasp correction, followed by a full rerun of the eight additional rounds; learning rules and thresholds were unchanged.','这是一组使用可撤回图评分的探索性扩展：从24张观察图开始，再进行20轮、每轮4对干预。encoder与ACC保持冻结。第14轮撤回F3→F2，但暂时提出错误的F1→F2；第18轮将其撤回，第19–20轮保持六条正确边。参考图仅供观众判断颜色，不参与学习。一次F1夹持失败后，夹持位置内移5毫米，并从第12轮重新跑完新增8轮；学图规则与阈值不变。'),
-    balance:t('A five-node task-level candidate graph from a frozen visual interface without learned calibration. The robot changes the load and then the target; graph updates use the complete recorded batches. Some relations remain missing or unresolved, and the load-to-ball response is not certified as a direct edge. Target position changes the alignment readout, not a force acting on the ball.','这是未加入学习型校准的冻结视觉接口得到的五节点任务层候选图。机械臂先改变载荷，再移动目标；图更新使用完整记录批次。部分关系仍漏检或未定向，载荷到小球的响应尚不能确认为直接边。目标位置改变的是匹配读数，不是作用于小球的力。'),
+    balance:t("One custom Balance task-state discovery run: supervised visual-anchor repair, operated-value affine calibration, then frozen pixel-based revisable graph scoring. 48 observations, 12 rounds and 124 intervention trials; calibration uses 88 separate trials and fresh interface confirmation uses 96 trials. Both pre- and post-calibration task-state accuracy were 100% on confirmation, so this is not a calibration-benefit comparison. Continuous beam–ball feedback is retained physically; the displayed graph uses the declared task states. Not a new paper benchmark result or independent integrity certification.","一组自建 Balance 任务状态图发现记录：监督视觉锚点修复、操作值仿射校准，再用冻结的像素接口进行可撤回图评分。48次观测、12轮共124次干预；校准另使用88次试验，独立接口确认使用96次试验。确认集上校准前后的任务状态准确率均为100%，因此不是校准收益对照。物理上的梁–球反馈仍然存在，展示的图采用已定义的任务状态；不作为新增论文基准结果或独立完整性认证。"),
     pickplace:'Original Pick & Place recording without learned calibration. The grasp and lateral-position operations are discovery probes, not an evaluated placement policy.'
   };
   function update(){
@@ -64,16 +64,16 @@
     section.querySelector('.featured-legend').innerHTML=row[0]==='fork'
       ?`<span class="legend-correct">${t('Green: correct vs reference','绿色：与参考图一致')}</span><span class="legend-incorrect">${t('Red: incorrect hypothesis','红色：错误假设')}</span><span class="legend-withdrawn">${t('Withdrawn: removed','撤回：箭头消失')}</span>`
       :`<span>${t('Gray dashed: unresolved','灰色虚线：方向未定')}</span><span>${t('Blue: intervention evidence','蓝色：干预证据')}</span><span>${t('Teal: graph rules','青绿：图规则')}</span>`;
-    if(row[0]==='balance')section.querySelector('.featured-legend').innerHTML+=`<span>${t('Amber dashed: directness unverified','琥珀色虚线：直接性未确认')}</span>`;
+    if(row[0]==='balance')section.querySelector('.featured-legend').innerHTML=`<span>${t('Blue: retained','蓝色：保留')}</span><span>${t('Green: added','绿色：新增')}</span><span>${t('Red dashed: withdrawn','红色虚线：撤回')}</span><span>${t('Faint dashed: tentative','浅色虚线：支持较低')}</span>`;
     const address=new URL(location.href);address.searchParams.set('demo',row[0]);history.replaceState(null,'',address);
     section.querySelector('.featured-question').textContent=t(row[3],row[4]);
     const stem=row[0]==='fork'?'featured-fork-hq-fast-20261029':`featured-${row[0]}`;
     video.poster=unified?.poster||`assets/${stem}.${row[0]==='fork'?'png':'jpg'}?v=${version}`;video.src=unified?.video||`assets/${stem}.mp4?v=${version}`;video.load();
     video.setAttribute('aria-label',t(row[1],row[2]));
     if(unified&&row[0]==='domino')section.querySelector('.featured-edit-note').textContent=t('The same recorded operations and graph states, re-rendered at higher resolution. Phase-based speed labels are shown; model-input pixels and learning results remain unchanged.','沿用相同操作轨迹与图状态，重新渲染更高分辨率画面；按阶段标明播放速度，模型输入像素与学习结果不变。');
-    if(row[0]==='balance')section.querySelector('.featured-edit-note').textContent=t('The existing Balance graph-learning record, presented in the same 1080p layout. Both operations, their independent reset and the recorded graph updates are retained; this placement adds no new experiment or claim.','沿用已有 Balance 图学习记录，使用相同的 1080p 版式。保留两轮操作、独立试验复位及记录中的图更新；此次只是调整展示位置，不新增实验或结论。');
+    if(row[0]==='balance')section.querySelector('.featured-edit-note').textContent=t('All 12 rounds are retained. Each round separates Operate, Observe and Update; one trial is replayed while the full paired batch informs learning. Motion is labeled 2× and settling 6×. Withdrawn links fade out before the final four-link graph. Colors show revisions, not reference correctness.','保留全部12轮，每轮分为操作、观察和更新；画面重放一次试验，学图使用完整配对批次。动作标为2倍速、等待稳定标为6倍速。最后先淡出撤回提示，再显示只含四条保留边的最终图；颜色表示修订，不是参考真图的对错。');
     const download=section.querySelector('.featured-download');download.href=video.src;
-    download.textContent=row[0]==='fork'?t('Download complete film','下载完整视频'):t('Download concise film','下载精简视频');
+    download.textContent=row[0]==='fork'||row[0]==='balance'?t('Download complete film','下载完整视频'):t('Download concise film','下载精简视频');
     const fullLink=section.querySelector('.featured-full');fullLink.hidden=row[0]==='balance';
     fullLink.href=row[0]==='fork'?'assets/featured-fork-upright-20261029.mp4':`assets/featured-${row[0]}-full.mp4`;
     fullLink.textContent=row[0]==='fork'?t('Slower version · 3:47','较慢版本 · 3分47秒'):t('Full-length recording','完整记录');

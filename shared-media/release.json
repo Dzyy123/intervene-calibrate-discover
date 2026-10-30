@@ -1,5 +1,5 @@
 {
-  "release": "20261030a",
+  "release": "20261030c",
   "videos": 24,
   "files": [
     {
@@ -386,9 +386,25 @@
       "path": "shared-media/interactive_chain-chapters-zh.json",
       "bytes": 630,
       "sha256": "5a4047f7e87c7e5d1b991881e7349682002e340227484b6b0fcd307fc392f484"
+    },
+    {
+      "path": "shared-media/balance-task-20261030.mp4",
+      "bytes": 5130971,
+      "sha256": "32f094095dc87798fe2dd220da689a3b4538c6ab49b4f056a559cefccfd19ed3"
+    },
+    {
+      "path": "shared-media/balance-task-20261030.jpg",
+      "bytes": 186943,
+      "sha256": "b34e639ccafc875322534778ccdf06136ec11d8817bbb8cf8530577f91aae38d"
+    },
+    {
+      "path": "shared-media/balance-task-20261030.json",
+      "bytes": 16743,
+      "sha256": "35a640af0132a21387a3f843f539789a7420cc5a2d49e9e8cd9d70fd1ee4a33f"
     }
   ],
   "research_code_included": false,
   "weights_included": false,
-  "raw_run_records_included": false
+  "raw_run_records_included": false,
+  "note": "The active Balance entry now uses the 12-round task-state film. Earlier media URLs remain available; research code, weights and raw run records are not included."
 }

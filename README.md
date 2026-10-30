@@ -44,8 +44,16 @@ were re-rendered at 2080×1170; the output is 1920×1080 with reduced compressio
 loss. All 40 model-input images and physical audits match the recorded trials.
 No AI-generated image enhancement or new learning result is introduced.
 
-The seven-node chain remains the second featured film. Balance, Pick-and-Place
-and the earlier four-domino version remain in the supplementary library.
+The seven-node chain remains the second featured film. Balance is the third featured film
+and also appears in the supplementary library; Pick-and-Place and the earlier four-domino
+version remain in that library.
+
+Balance now uses the approximately 89-second, 1080p task-state run with all 12 rounds.
+Its repaired visual encoder and operated-value affine calibration are frozen during graph
+acquisition. The closing withdrawal overlay fades out, leaving the four links actually
+retained in the final selected graph. Colors indicate additions and withdrawals, not
+reference correctness. This custom simulation demonstration is separate from paper
+benchmark scores; the new code, weights, raw acquisitions and complete run records remain private.
 All featured films have English in-video captions; the page interface supports
 English and Chinese. Only the approved video, cover and sanitized chapter/scope
 metadata are added here—not research scripts, raw acquisitions or checkpoints.

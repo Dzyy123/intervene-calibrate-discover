@@ -1,12 +1,12 @@
 window.ICD_UNIFORM_REGISTRY = {
   "entries": {
     "balance_learning": {
-      "video": "shared-media/shared-balance_learning.mp4",
-      "poster": "shared-media/shared-balance_learning.png",
-      "metadata": "shared-media/shared-balance_learning.json",
-      "duration": 31,
+      "video": "shared-media/balance-task-20261030.mp4",
+      "poster": "shared-media/balance-task-20261030.jpg",
+      "metadata": "shared-media/balance-task-20261030.json",
+      "duration": 89.19999999999999,
       "kind": "candidate_graph",
-      "shared_ui_version": "20261029-1"
+      "shared_ui_version": "20261030-balance-final"
     },
     "balance_load_pair": {
       "video": "shared-media/shared-balance_load_pair.mp4",

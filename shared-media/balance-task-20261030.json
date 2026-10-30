@@ -1,0 +1,403 @@
+{
+  "id": "balance_learning",
+  "file": "../shared-media/balance-task-20261030.mp4",
+  "poster": "../shared-media/balance-task-20261030.jpg",
+  "video_sha256": "32f094095dc87798fe2dd220da689a3b4538c6ab49b4f056a559cefccfd19ed3",
+  "duration": 89.19999999999999,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "kind": "candidate_graph",
+  "learned_calibration": true,
+  "stages": [
+    {
+      "start": 0,
+      "stop": 9.033333333333333,
+      "name": "Round 1 · Operate",
+      "phase": "Operate",
+      "en": "Round 1: test beam tilt. One trial is shown; all 12 trials inform the update.",
+      "zh": "第1轮：测试横梁倾斜。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 9.033333333333333,
+      "stop": 10.233333333333333,
+      "name": "Round 1 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 10.233333333333333,
+      "stop": 11.633333333333333,
+      "name": "Round 1 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 1 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回1条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 11.633333333333333,
+      "stop": 16.966666666666665,
+      "name": "Round 2 · Operate",
+      "phase": "Operate",
+      "en": "Round 2: test ball region. One trial is shown; all 12 trials inform the update.",
+      "zh": "第2轮：测试小球区域。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 16.966666666666665,
+      "stop": 18.166666666666664,
+      "name": "Round 2 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 18.166666666666664,
+      "stop": 19.566666666666666,
+      "name": "Round 2 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 19.566666666666666,
+      "stop": 21.466666666666665,
+      "name": "Round 3 · Operate",
+      "phase": "Operate",
+      "en": "Round 3: test beam tilt. One trial is shown; all 12 trials inform the update.",
+      "zh": "第3轮：测试横梁倾斜。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 21.466666666666665,
+      "stop": 22.666666666666664,
+      "name": "Round 3 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 22.666666666666664,
+      "stop": 24.066666666666666,
+      "name": "Round 3 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 1 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增1条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 24.066666666666666,
+      "stop": 29.46666666666667,
+      "name": "Round 4 · Operate",
+      "phase": "Operate",
+      "en": "Round 4: test load side. One trial is shown; all 8 trials inform the update.",
+      "zh": "第4轮：测试载荷侧。展示一次试验，图更新使用完整8次试验。"
+    },
+    {
+      "start": 29.46666666666667,
+      "stop": 30.666666666666668,
+      "name": "Round 4 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 30.666666666666668,
+      "stop": 32.06666666666666,
+      "name": "Round 4 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 32.06666666666666,
+      "stop": 36.03333333333333,
+      "name": "Round 5 · Operate",
+      "phase": "Operate",
+      "en": "Round 5: test target region. One trial is shown; all 12 trials inform the update.",
+      "zh": "第5轮：测试目标区域。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 36.03333333333333,
+      "stop": 37.233333333333334,
+      "name": "Round 5 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 37.233333333333334,
+      "stop": 38.633333333333326,
+      "name": "Round 5 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 1 links added, 1 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增1条边，撤回1条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 38.633333333333326,
+      "stop": 44.033333333333324,
+      "name": "Round 6 · Operate",
+      "phase": "Operate",
+      "en": "Round 6: test load side. One trial is shown; all 8 trials inform the update.",
+      "zh": "第6轮：测试载荷侧。展示一次试验，图更新使用完整8次试验。"
+    },
+    {
+      "start": 44.033333333333324,
+      "stop": 45.23333333333333,
+      "name": "Round 6 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 45.23333333333333,
+      "stop": 46.633333333333326,
+      "name": "Round 6 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 1 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回1条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 46.633333333333326,
+      "stop": 48.533333333333324,
+      "name": "Round 7 · Operate",
+      "phase": "Operate",
+      "en": "Round 7: test beam tilt. One trial is shown; all 12 trials inform the update.",
+      "zh": "第7轮：测试横梁倾斜。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 48.533333333333324,
+      "stop": 49.73333333333333,
+      "name": "Round 7 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 49.73333333333333,
+      "stop": 51.133333333333326,
+      "name": "Round 7 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 51.133333333333326,
+      "stop": 53.033333333333324,
+      "name": "Round 8 · Operate",
+      "phase": "Operate",
+      "en": "Round 8: test beam tilt. One trial is shown; all 12 trials inform the update.",
+      "zh": "第8轮：测试横梁倾斜。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 53.033333333333324,
+      "stop": 54.23333333333333,
+      "name": "Round 8 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 54.23333333333333,
+      "stop": 55.633333333333326,
+      "name": "Round 8 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 1 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增1条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 55.633333333333326,
+      "stop": 59.599999999999994,
+      "name": "Round 9 · Operate",
+      "phase": "Operate",
+      "en": "Round 9: test target region. One trial is shown; all 12 trials inform the update.",
+      "zh": "第9轮：测试目标区域。展示一次试验，图更新使用完整12次试验。"
+    },
+    {
+      "start": 59.599999999999994,
+      "stop": 60.8,
+      "name": "Round 9 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 60.8,
+      "stop": 62.19999999999999,
+      "name": "Round 9 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 1 links added, 1 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增1条边，撤回1条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 62.19999999999999,
+      "stop": 67.6,
+      "name": "Round 10 · Operate",
+      "phase": "Operate",
+      "en": "Round 10: test load side. One trial is shown; all 8 trials inform the update.",
+      "zh": "第10轮：测试载荷侧。展示一次试验，图更新使用完整8次试验。"
+    },
+    {
+      "start": 67.6,
+      "stop": 68.8,
+      "name": "Round 10 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 68.8,
+      "stop": 70.19999999999999,
+      "name": "Round 10 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 70.19999999999999,
+      "stop": 75.6,
+      "name": "Round 11 · Operate",
+      "phase": "Operate",
+      "en": "Round 11: test load side. One trial is shown; all 8 trials inform the update.",
+      "zh": "第11轮：测试载荷侧。展示一次试验，图更新使用完整8次试验。"
+    },
+    {
+      "start": 75.6,
+      "stop": 76.8,
+      "name": "Round 11 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 76.8,
+      "stop": 78.19999999999999,
+      "name": "Round 11 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 0 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回0条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 78.19999999999999,
+      "stop": 83.6,
+      "name": "Round 12 · Operate",
+      "phase": "Operate",
+      "en": "Round 12: test load side. One trial is shown; all 8 trials inform the update.",
+      "zh": "第12轮：测试载荷侧。展示一次试验，图更新使用完整8次试验。"
+    },
+    {
+      "start": 83.6,
+      "stop": 84.8,
+      "name": "Round 12 · Observe",
+      "phase": "Observe",
+      "en": "Compare the paired outcomes using frozen calibrated pixel readouts.",
+      "zh": "使用冻结的校准后像素读数，对比配对操作的结果。"
+    },
+    {
+      "start": 84.8,
+      "stop": 86.19999999999999,
+      "name": "Round 12 · Update",
+      "phase": "Update",
+      "en": "Recorded update: 0 links added, 1 withdrawn. Red dashed links indicate withdrawals, not retained edges.",
+      "zh": "实际图更新：新增0条边，撤回1条边。红色虚线表示撤回提示，并非保留的边。"
+    },
+    {
+      "start": 86.19999999999999,
+      "stop": 86.79999999999998,
+      "name": "Withdrawal fades",
+      "phase": "Update",
+      "en": "The last withdrawn link fades away.",
+      "zh": "最后一条已撤回的边淡出。"
+    },
+    {
+      "start": 86.79999999999998,
+      "stop": 89.19999999999999,
+      "name": "Final learned graph",
+      "phase": "Final",
+      "en": "Final selected graph: four retained links. No withdrawn edge remains on screen.",
+      "zh": "最终选定图保留四条边；画面不再显示已撤回的边。"
+    }
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "name": "Round 1",
+      "en": "Round 1: test beam tilt",
+      "zh": "第1轮：测试横梁倾斜"
+    },
+    {
+      "start": 11.633333333333333,
+      "name": "Round 2",
+      "en": "Round 2: test ball region",
+      "zh": "第2轮：测试小球区域"
+    },
+    {
+      "start": 19.566666666666666,
+      "name": "Round 3",
+      "en": "Round 3: test beam tilt",
+      "zh": "第3轮：测试横梁倾斜"
+    },
+    {
+      "start": 24.066666666666666,
+      "name": "Round 4",
+      "en": "Round 4: test load side",
+      "zh": "第4轮：测试载荷侧"
+    },
+    {
+      "start": 32.06666666666666,
+      "name": "Round 5",
+      "en": "Round 5: test target region",
+      "zh": "第5轮：测试目标区域"
+    },
+    {
+      "start": 38.633333333333326,
+      "name": "Round 6",
+      "en": "Round 6: test load side",
+      "zh": "第6轮：测试载荷侧"
+    },
+    {
+      "start": 46.633333333333326,
+      "name": "Round 7",
+      "en": "Round 7: test beam tilt",
+      "zh": "第7轮：测试横梁倾斜"
+    },
+    {
+      "start": 51.133333333333326,
+      "name": "Round 8",
+      "en": "Round 8: test beam tilt",
+      "zh": "第8轮：测试横梁倾斜"
+    },
+    {
+      "start": 55.633333333333326,
+      "name": "Round 9",
+      "en": "Round 9: test target region",
+      "zh": "第9轮：测试目标区域"
+    },
+    {
+      "start": 62.19999999999999,
+      "name": "Round 10",
+      "en": "Round 10: test load side",
+      "zh": "第10轮：测试载荷侧"
+    },
+    {
+      "start": 70.19999999999999,
+      "name": "Round 11",
+      "en": "Round 11: test load side",
+      "zh": "第11轮：测试载荷侧"
+    },
+    {
+      "start": 78.19999999999999,
+      "name": "Round 12",
+      "en": "Round 12: test load side",
+      "zh": "第12轮：测试载荷侧"
+    },
+    {
+      "start": 86.79999999999998,
+      "name": "Final learned graph",
+      "en": "Final graph · four retained links",
+      "zh": "最终图 · 四条保留边"
+    }
+  ],
+  "scope_en": "One custom Balance task-state discovery run: supervised visual-anchor repair, operated-value affine calibration, then frozen pixel-based revisable graph scoring. 48 observations, 12 rounds and 124 intervention trials; calibration uses 88 separate trials and fresh interface confirmation uses 96 trials. Both pre- and post-calibration task-state accuracy were 100% on confirmation, so this is not a calibration-benefit comparison. Continuous beam–ball feedback is retained physically; the displayed graph uses the declared task states. Not a new paper benchmark result or independent integrity certification.",
+  "scope_zh": "一组自建 Balance 任务状态图发现记录：监督视觉锚点修复、操作值仿射校准，再用冻结的像素接口进行可撤回图评分。48次观测、12轮共124次干预；校准另使用88次试验，独立接口确认使用96次试验。确认集上校准前后的任务状态准确率均为100%，因此不是校准收益对照。物理上的梁–球反馈仍然存在，展示的图采用已定义的任务状态；不作为新增论文基准结果或独立完整性认证。",
+  "legend_en": "Blue: retained; green: added; red dashed: withdrawn; faint dashed: lower relative support. Colors describe graph updates, not reference correctness.",
+  "legend_zh": "蓝色：保留；绿色：新增；红色虚线：撤回；浅色虚线：相对支持较低。颜色表示图更新，不表示与参考真图的对错。",
+  "privacy": "Public media and sanitized timing/scope only. Research code, weights, raw acquisitions and full run records remain private."
+}

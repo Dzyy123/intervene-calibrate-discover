@@ -1,34 +1,51 @@
 {
   "source_manifest": "extra-source-manifest.json",
   "consistency_report": "extra-physics-graph-scope.json",
-  "new_measurements": 0,
   "videos": [
     {
       "id": "balance_learning",
-      "video": "featured-balance.mp4",
-      "poster": "featured-balance.jpg",
-      "presentation_manifest": "featured-balance.json",
+      "video": "../shared-media/balance-task-20261030.mp4",
+      "poster": "../shared-media/balance-task-20261030.jpg",
+      "presentation_manifest": "../shared-media/balance-task-20261030.json",
       "kind": "candidate_graph",
-      "learned_calibration": false,
-      "checks": "extra-balance-video-checks.json",
-      "trace": "extra-balance-graph-trace.json",
+      "learned_calibration": true,
       "nodes": [
-        {"en":"Load difference","zh":"载荷差"}, {"en":"Beam angle","zh":"横梁倾角"}, {"en":"Ball position","zh":"球的位置"}, {"en":"Target position","zh":"目标位置"}, {"en":"Match readout","zh":"匹配程度"}
+        {
+          "en": "Load side",
+          "zh": "载荷侧"
+        },
+        {
+          "en": "Beam tilt",
+          "zh": "横梁倾斜"
+        },
+        {
+          "en": "Ball region",
+          "zh": "小球区域"
+        },
+        {
+          "en": "Target region",
+          "zh": "目标区域"
+        },
+        {
+          "en": "In target zone",
+          "zh": "是否到达目标区"
+        }
       ],
       "en": {
-        "title": "Balance · five-node graph learning",
-        "question": "Which candidate directions gain support when the robot changes the load or target?",
-        "description": "Watch candidate initialization, observational tests, target selection, two recorded operations, and the resulting graph updates.",
-        "scope": "An exploratory task-level graph from a frozen visual interface without learned calibration. Beam–ball feedback remains; the load-to-ball link can reflect an ancestor effect. Some relations are missing or unresolved. This is not certified full-DAG recovery or an ACC benchmark.",
-        "badge": "Candidate graph · recorded evidence"
+        "title": "Balance · 12-round graph discovery",
+        "question": "Which apparent effects survive controlled interventions?",
+        "description": "Follow load placement, beam control, ball relocation and target moves through 12 actual graph updates, ending with four retained links.",
+        "scope": "One custom Balance task-state discovery run: supervised visual-anchor repair, operated-value affine calibration, then frozen pixel-based revisable graph scoring. 48 observations, 12 rounds and 124 intervention trials; calibration uses 88 separate trials and fresh interface confirmation uses 96 trials. Both pre- and post-calibration task-state accuracy were 100% on confirmation, so this is not a calibration-benefit comparison. Continuous beam–ball feedback is retained physically; the displayed graph uses the declared task states. Not a new paper benchmark result or independent integrity certification.",
+        "badge": "Pixels + calibration · recorded graph updates"
       },
       "zh": {
-        "title": "平衡模组 · 五节点图学习",
-        "question": "机械臂改变载荷或目标后，哪些候选方向得到证据支持？",
-        "description": "从候选关系、观察检验和目标选择开始，展示两轮真实操作及其后的图更新。",
-        "scope": "这是未加入学习型校准的冻结视觉接口得到的任务层候选图。横梁与球仍有反馈；载荷到球的关系可能是祖先效应。部分关系漏检或未定向，不等于认证的完整 DAG 恢复或 ACC 基准结果。",
-        "badge": "候选图 · 真实证据更新"
-      }
+        "title": "平衡模组 · 12轮图发现",
+        "question": "通过受控干预后，哪些表面上的影响仍然成立？",
+        "description": "跟随载荷放置、横梁控制、小球搬运和目标移动，查看12轮实际图更新，以及最终保留的四条边。",
+        "scope": "一组自建 Balance 任务状态图发现记录：监督视觉锚点修复、操作值仿射校准，再用冻结的像素接口进行可撤回图评分。48次观测、12轮共124次干预；校准另使用88次试验，独立接口确认使用96次试验。确认集上校准前后的任务状态准确率均为100%，因此不是校准收益对照。物理上的梁–球反馈仍然存在，展示的图采用已定义的任务状态；不作为新增论文基准结果或独立完整性认证。",
+        "badge": "像素＋校准 · 实际图更新"
+      },
+      "seconds": 89.19999999999999
     },
     {
       "id": "balance_load_pair",
@@ -81,7 +98,30 @@
       "checks": "extra-pnp-video-checks.json",
       "trace": "extra-pnp-graph-trace.json",
       "nodes": [
-        {"en":"Gripper position","zh":"夹爪位置"}, {"en":"Gripper spacing","zh":"夹爪间距"}, {"en":"Target position","zh":"目标位置"}, {"en":"Object position","zh":"物体位置"}, {"en":"Object height","zh":"物体高度"}, {"en":"Match readout","zh":"匹配程度"}
+        {
+          "en": "Gripper position",
+          "zh": "夹爪位置"
+        },
+        {
+          "en": "Gripper spacing",
+          "zh": "夹爪间距"
+        },
+        {
+          "en": "Target position",
+          "zh": "目标位置"
+        },
+        {
+          "en": "Object position",
+          "zh": "物体位置"
+        },
+        {
+          "en": "Object height",
+          "zh": "物体高度"
+        },
+        {
+          "en": "Match readout",
+          "zh": "匹配程度"
+        }
       ],
       "en": {
         "title": "Pick-and-place · six-node graph learning",
@@ -119,5 +159,6 @@
         "badge": "夹持操作对照"
       }
     }
-  ]
+  ],
+  "publication_note": "Per-clip metadata identifies each recorded run; paper benchmark tables are unchanged."
 }

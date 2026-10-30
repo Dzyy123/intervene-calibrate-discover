@@ -356,5 +356,7 @@
     "reason": "available read-only GPT-family reviewer timed out; required cross-family reviewer not available",
     "not_a_PASS": true
   },
-  "no_new_paper_results": true
+  "no_new_paper_results": true,
+  "presentation_note": "This report records the earlier Balance and Pick-and-Place runs. The current 12-round Balance presentation has a different task-state interface; see shared-media/balance-task-20261030.json. Earlier results are retained, not relabeled.",
+  "current_balance_presentation": "../shared-media/balance-task-20261030.json"
 }

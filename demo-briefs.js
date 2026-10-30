@@ -3,7 +3,7 @@
   const zh=window.ICD_L10N?.zh===true;
   const t=(en,cn)=>zh?cn:en;
   const rows={
-    balance_learning:[['Relocate the load, then move the goal marker.','搬动砝码，再移动目标标记。'],['Watch beam tilt and ball motion; distinguish them from the goal-distance readout.','看横梁和球如何变化，并区分真实运动与目标距离读数。'],['Load → tilt and goal → match receive directional support; ball relations remain incomplete.','载荷→倾角、目标→匹配读数得到方向证据；球相关关系尚未完整恢复。']],
+    balance_learning:[['Test load placement, beam tilt, ball relocation and target moves.','依次测试载荷放置、横梁倾斜、小球搬运和目标移动。'],['Follow Operate → Observe → Update across all 12 rounds.','跟随全部12轮的操作、观察和图更新。'],['The final selected graph retains load → tilt → ball and ball/target → in-target-zone; withdrawn links disappear.','最终选定图保留载荷→倾斜→小球，以及小球／目标→到达目标区；撤回的边在结尾消失。']],
     pnp_six_learning:[['Change gripper spacing, then transport the gripper horizontally.','改变夹爪间距，再水平搬运夹爪。'],['Watch object position and height, not just the robot trajectory.','重点看物体的位置和高度，而不是只看机械臂运动。'],['Gripper-to-object directions gain support; the matching-readout relations remain incomplete.','夹爪到物体状态的方向得到支持；匹配读数相关关系仍未完整恢复。']],
     balance_load_pair:[['Place the same mass on opposite sides in matched resets.','在匹配复位的场景中，把同一质量放到相反两侧。'],['Compare the direction of beam tilt and the ball’s final position.','比较横梁倾斜方向和球的最终位置。'],['A physical operation contrast, with the same mass and initial context.','展示同质量、同初始情境下的物理操作差异。']],
     balance_target_pair:[['Move only the goal marker between matched trials.','在配对试验间仅改变目标标记位置。'],['The ball and beam stay fixed while the horizontal match readout changes.','球和横梁保持不变，改变的是水平匹配读数。'],['Goal position changes the score, not an attractive force on the ball.','目标位置改变评分，不是对球施加吸引力。']],
@@ -31,7 +31,7 @@
   window.ICD_DEMO_BRIEFS={renderExtra(record){
     let root=document.getElementById('demo-brief');
     if(!root){root=document.createElement('dl');root.id='demo-brief';root.className='demo-brief';document.getElementById('extra-video').after(root);}
-    const questions={balance_learning:['What changes when the robot moves the load versus the goal?','机械臂搬动砝码、移动目标，分别会改变什么？'],pnp_six_learning:['How do gripper opening and position affect the object?','夹爪的开合与位置，怎样影响物体？']};
+    const questions={balance_learning:['Which apparent effects survive controlled interventions?','通过受控干预后，哪些表面上的影响仍然成立？'],pnp_six_learning:['How do gripper opening and position affect the object?','夹爪的开合与位置，怎样影响物体？']};
     if(questions[record.id])document.getElementById('extra-question').textContent=t(...questions[record.id]);
     const overview=record.new_environment_illustration?[['Follow each scripted operation in the original environment.','跟随原环境中各项编排操作。'],['Watch the response on the left and the selected variable on the right.','左侧观察响应，右侧查看所选变量。'],['The graph is the provided SCM mechanism, not a newly learned pixel graph.','图来自环境给定的 SCM 机制，不是新学出的像素因果图。']]:[['Inspect the saved environment overview.','查看保存的环境概览。'],['Observe the scene and displayed variables.','观察场景及画面中的变量。'],['Background material only; no evaluated graph or predictor is attached.','仅作为背景素材，没有对应的评测图或预测器结果。']];
     render(root,rows[record.id]||overview);

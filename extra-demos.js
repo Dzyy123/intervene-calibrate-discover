@@ -93,7 +93,7 @@
       '#more-demos .section-heading>p':'图学习、冻结图检查、工具使用及基础环境。',
       '#extra-gallery-intro':'主报告按论文顺序展开；完整演示库集中收录额外材料。候选图、真实操作、物理预览和基础环境分别标注，不将它们混写为校准后的模型结果。',
       '.extra-question .eyebrow':'要回答的问题', '#extra-question':'机械臂改变载荷或目标后，哪些候选方向得到证据支持？',
-      '#extra-title':'平衡模组 · 五节点图学习', '#extra-description':'从候选关系、观察检验和目标选择开始，展示两轮真实操作及其后的图更新。',
+      '#extra-title':'平衡模组 · 五节点图学习', '#extra-description':'通过12轮机械臂操作，展示候选图的修订、撤回及最终保留边。',
       '#extra-badge':'候选图 · 真实证据更新', '#extra-restart':'从头观看', '#extra-download':'下载这段视频', '#extra-scope-label':'这段视频能说明什么',
       '#extra-scope':'任务层候选图，不等于完整 DAG 恢复或 ACC 基准结果。',
       '#extra-gallery-note':'全部视频使用英文字幕与节点标签，网页说明提供中英文。图学习记录、配对仿真操作和新制环境概览分别标注；环境概览展示给定机制，不作为论文定量结果。',
@@ -114,7 +114,7 @@
   document.querySelector('.library-filter').after(status,retry);
   async function jsonAsset(file){
     const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),15000);
-    try{const response=await fetch('assets/'+file+'?v=20261026a',{signal:controller.signal});
+    try{const response=await fetch('assets/'+file+'?v=20261030c',{signal:controller.signal});
       if(!response.ok)throw new Error(response.status===401||response.status===403?'authentication':'asset');
       if(!response.headers.get('content-type')?.includes('json'))throw new Error('authentication');
       return await response.json();
