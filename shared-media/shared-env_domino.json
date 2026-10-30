@@ -1,0 +1,357 @@
+{
+  "id": "env_domino",
+  "file": "../shared-media/shared-env_domino.mp4",
+  "poster": "../shared-media/shared-env_domino.png",
+  "video_sha256": "68fdbe120f8fcb141396bf2e5734e5e443a524fa38d030b8c5390a9400969290",
+  "duration": 18.2,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "kind": "environment_preview",
+  "title_en": "Domino mechanism",
+  "title_zh": "多米诺机构",
+  "scope_en": "New native-HD illustration of the original analytic SCM environment. The right-hand graph is the provided mechanism; motion is choreographed, not a new pixel/ACC experiment or contact-dynamics validation.",
+  "scope_zh": "原解析 SCM 环境的新制高清概览。右侧为环境给定的机制图；运动由脚本编排，不是新的像素／ACC 实验或接触动力学验证。",
+  "stages": [
+    {
+      "start": 0,
+      "stop": 1.4,
+      "name": "r0_Setup_0",
+      "en": "Explore the environment and its variables",
+      "zh": "多米诺机构 · 环境概览",
+      "phase": "Setup",
+      "kind": "still",
+      "speed": null,
+      "target": null,
+      "source_frame_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "start": 1.4,
+      "stop": 2.4,
+      "name": "r1_Operate_1",
+      "en": "set domino 2 directly: hold it up or tip it",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.75,
+      "target": 3,
+      "source_frame_range": [
+        12,
+        27
+      ]
+    },
+    {
+      "start": 2.4,
+      "stop": 3.6,
+      "name": "r1_Observe_2",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 3,
+      "source_frame_range": [
+        27,
+        37
+      ]
+    },
+    {
+      "start": 3.6,
+      "stop": 4.6,
+      "name": "r2_Operate_3",
+      "en": "push domino 1 — past the tipping angle the chain goes",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.9,
+      "target": 0,
+      "source_frame_range": [
+        37,
+        55
+      ]
+    },
+    {
+      "start": 4.6,
+      "stop": 5.8,
+      "name": "r2_Observe_4",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 0,
+      "source_frame_range": [
+        55,
+        65
+      ]
+    },
+    {
+      "start": 5.8,
+      "stop": 6.8,
+      "name": "r3_Operate_5",
+      "en": "set domino 3 directly: hold it up or tip it",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.15,
+      "target": 4,
+      "source_frame_range": [
+        65,
+        68
+      ]
+    },
+    {
+      "start": 6.8,
+      "stop": 8,
+      "name": "r3_Observe_6",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 4,
+      "source_frame_range": [
+        68,
+        78
+      ]
+    },
+    {
+      "start": 8,
+      "stop": 9,
+      "name": "r4_Operate_7",
+      "en": "slide the bell",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 1,
+      "target": 2,
+      "source_frame_range": [
+        78,
+        98
+      ]
+    },
+    {
+      "start": 9,
+      "stop": 10.2,
+      "name": "r4_Observe_8",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 2,
+      "source_frame_range": [
+        98,
+        108
+      ]
+    },
+    {
+      "start": 10.2,
+      "stop": 11.2,
+      "name": "r5_Operate_9",
+      "en": "shift the push sideways — off-center pushes glance off",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.5,
+      "target": 1,
+      "source_frame_range": [
+        108,
+        118
+      ]
+    },
+    {
+      "start": 11.2,
+      "stop": 12.4,
+      "name": "r5_Observe_10",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 1,
+      "source_frame_range": [
+        118,
+        128
+      ]
+    },
+    {
+      "start": 12.4,
+      "stop": 13.4,
+      "name": "r6_Operate_11",
+      "en": "set domino 4 directly: hold it up or tip it",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.15,
+      "target": 5,
+      "source_frame_range": [
+        128,
+        131
+      ]
+    },
+    {
+      "start": 13.4,
+      "stop": 14.6,
+      "name": "r6_Observe_12",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 5,
+      "source_frame_range": [
+        131,
+        141
+      ]
+    },
+    {
+      "start": 14.6,
+      "stop": 15.6,
+      "name": "r7_Operate_13",
+      "en": "reach out and drive the lamp",
+      "zh": "多米诺机构 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.45,
+      "target": 6,
+      "source_frame_range": [
+        141,
+        150
+      ]
+    },
+    {
+      "start": 15.6,
+      "stop": 16.8,
+      "name": "r7_Observe_14",
+      "en": "Observe the scripted mechanism response",
+      "zh": "多米诺机构 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 6,
+      "source_frame_range": [
+        150,
+        160
+      ]
+    },
+    {
+      "start": 16.8,
+      "stop": 18.2,
+      "name": "r7_Summary_15",
+      "en": "Environment overview complete",
+      "zh": "多米诺机构 · 概览结束",
+      "phase": "Summary",
+      "kind": "still",
+      "speed": null,
+      "target": null,
+      "source_frame_range": [
+        160,
+        183
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "en": "Setup",
+      "zh": "环境概览"
+    },
+    {
+      "start": 1.4,
+      "en": "Operate · domino 2",
+      "zh": "操作 · 骨牌2"
+    },
+    {
+      "start": 2.4,
+      "en": "Observe · domino 2",
+      "zh": "观察 · 骨牌2"
+    },
+    {
+      "start": 3.6,
+      "en": "Operate · push",
+      "zh": "操作 · 推压"
+    },
+    {
+      "start": 4.6,
+      "en": "Observe · push",
+      "zh": "观察 · 推压"
+    },
+    {
+      "start": 5.8,
+      "en": "Operate · domino 3",
+      "zh": "操作 · 骨牌3"
+    },
+    {
+      "start": 6.8,
+      "en": "Observe · domino 3",
+      "zh": "观察 · 骨牌3"
+    },
+    {
+      "start": 8,
+      "en": "Operate · bell",
+      "zh": "操作 · 铃"
+    },
+    {
+      "start": 9,
+      "en": "Observe · bell",
+      "zh": "观察 · 铃"
+    },
+    {
+      "start": 10.2,
+      "en": "Operate · offset",
+      "zh": "操作 · 侧偏"
+    },
+    {
+      "start": 11.2,
+      "en": "Observe · offset",
+      "zh": "观察 · 侧偏"
+    },
+    {
+      "start": 12.4,
+      "en": "Operate · domino 4",
+      "zh": "操作 · 骨牌4"
+    },
+    {
+      "start": 13.4,
+      "en": "Observe · domino 4",
+      "zh": "观察 · 骨牌4"
+    },
+    {
+      "start": 14.6,
+      "en": "Operate · lamp",
+      "zh": "操作 · 灯"
+    },
+    {
+      "start": 15.6,
+      "en": "Observe · lamp",
+      "zh": "观察 · 灯"
+    },
+    {
+      "start": 16.8,
+      "en": "Summary",
+      "zh": "结束"
+    }
+  ],
+  "new_environment_illustration": true,
+  "native_render_resolution": [
+    1764,
+    990
+  ],
+  "graph_source": "Provided environment mechanism, not a learned pixel graph",
+  "original_learning_records_unchanged": null,
+  "old_trajectory_reproduction_claim": false,
+  "pixel_acc_experiment": false,
+  "contact_dynamics_validation": false,
+  "model_output_enhancement": false,
+  "timing": "Same phase-based pacing as the other videos; actual motion speed is displayed. Reading pauses remain.",
+  "publication_status": "PUBLIC_WEBSITE",
+  "shared_ui_version": "20261029-1",
+  "presentation_source_sha256": "ad55e26781e3a4d93a201b71d9cf09b40cf369590aba91e85a93d7724f5b146b",
+  "scientific_panels_unchanged_before_encoding": true,
+  "presentation_exclusion": "Existing playback-speed badge: x997..1196, y220..269",
+  "all_original_timings_preserved": true
+}

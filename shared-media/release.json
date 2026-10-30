@@ -1,0 +1,394 @@
+{
+  "release": "20261030a",
+  "videos": 24,
+  "files": [
+    {
+      "path": "shared-media/shared-tool_hook_pull.png",
+      "bytes": 222667,
+      "sha256": "bf03e9b4ff79cf5c928e15fd5b8192f188dcd0165d7922a82b7fd7c91f002492"
+    },
+    {
+      "path": "shared-media/shared-env_balance.mp4",
+      "bytes": 1052612,
+      "sha256": "a462ee22466dc15410b157b685f7eb840d75b04b6635aa4088926fcd2a04929e"
+    },
+    {
+      "path": "shared-media/shared-balance_target_pair.png",
+      "bytes": 202057,
+      "sha256": "e5645358a65d72ee7d10d707c7d175a0e5239f619097e679e5a3d41b550c877d"
+    },
+    {
+      "path": "shared-media/shared-env_gears.mp4",
+      "bytes": 1031638,
+      "sha256": "9f98ebe4013d01e399ae9014df7747f9f1ba0b22ac48238e8fd5d2dd9aad27af"
+    },
+    {
+      "path": "shared-media/shared-env_billiards.png",
+      "bytes": 232362,
+      "sha256": "c3756a4750631d8ec875edd47aa195adf383ffb48049e58d66bd5bd33f394afb"
+    },
+    {
+      "path": "shared-media/shared-paper_four_domino.mp4",
+      "bytes": 1066046,
+      "sha256": "f4264b25dda1d73731b98d47eb407516e00d2290e497f258e9b222eec89e902d"
+    },
+    {
+      "path": "shared-media/shared-balance_load_pair.json",
+      "bytes": 14098,
+      "sha256": "6f39483e0cda65b89c8ae3665353103490cafb61df20a52926faa16b95a34ce8"
+    },
+    {
+      "path": "shared-media/shared-balance_target_pair.mp4",
+      "bytes": 781725,
+      "sha256": "0c76d54267416b3666fc81bdc769f2756527d32f4396546a722192aad06f8bc5"
+    },
+    {
+      "path": "shared-media/shared-pnp_six_learning.mp4",
+      "bytes": 1797062,
+      "sha256": "4a2a453a788ad52fc1aea107afef842ce39bab895a55c34a00b665fd1c95ee6b"
+    },
+    {
+      "path": "shared-media/shared-domino_hold_middle.mp4",
+      "bytes": 249933,
+      "sha256": "eb78812420ce58c3885d7d9b0e527e2922693a58cb1244efbaaeb51f7a290914"
+    },
+    {
+      "path": "shared-media/shared-domino_push_last.mp4",
+      "bytes": 216862,
+      "sha256": "a9e47500219c4e15b680f0f946db3baa3247ec91ed6b2c2704235094a95b4af7"
+    },
+    {
+      "path": "shared-media/shared-balance_load_pair.mp4",
+      "bytes": 1177316,
+      "sha256": "d62bd785b5821da781b327a5fd8532805a0aeb0d2bb5af85d2fb31074b497abe"
+    },
+    {
+      "path": "shared-media/shared-tool_miss_cube.json",
+      "bytes": 8774,
+      "sha256": "2998f6f830085dd629e1463ae12c33101a9d7c484566ba831ad819fbbf81ab79"
+    },
+    {
+      "path": "shared-media/shared-interactive_chain.mp4",
+      "bytes": 741765,
+      "sha256": "55240376af734fe192b086a29f4c56c8b72ed761577cae4c409badcd91f7f822"
+    },
+    {
+      "path": "shared-media/shared-pnp_grasp_pair.json",
+      "bytes": 14771,
+      "sha256": "93c93ea702557ffd68619e790ec8ce686010e5505798e971bae352bee343c706"
+    },
+    {
+      "path": "shared-media/shared-pnp_grasp_pair.png",
+      "bytes": 211772,
+      "sha256": "b9691e236e2a8d6e41afa99da353891d4d8b0cfbc37ce2c11c8515201d63d1bd"
+    },
+    {
+      "path": "shared-media/shared-domino_push_middle.json",
+      "bytes": 6690,
+      "sha256": "ab1d4ad2dc72883f677ebbb8f162e33cbe7f1cebedb5bf316b9c71474b770854"
+    },
+    {
+      "path": "shared-media/shared-domino_push_middle.png",
+      "bytes": 192032,
+      "sha256": "fd0e616a1f855b2e5ebd6729b8da76f328c28f3dbd2f7e19af67a336854f3621"
+    },
+    {
+      "path": "shared-media/shared-balance_learning.json",
+      "bytes": 22030,
+      "sha256": "ecbde40425e082139ddaa0f099854c5d2a4ee97f8208849f519d2fac66369177"
+    },
+    {
+      "path": "shared-media/shared-featured_chain.png",
+      "bytes": 284051,
+      "sha256": "9faefec803c489a715420f8b19de00a2179829c4d321bc4eb9f334fbb67d5706"
+    },
+    {
+      "path": "shared-media/shared-env_domino.json",
+      "bytes": 8562,
+      "sha256": "e5deff4c216058203017066dea59714546c55f85ec1b1baaa01c3e6dd6d4f10b"
+    },
+    {
+      "path": "shared-media/shared-interactive_parallel.json",
+      "bytes": 20402,
+      "sha256": "b9a310bf10c19aaa449068b43de25221d23f363bab2fed508849b6ab02b3c1f6"
+    },
+    {
+      "path": "shared-media/shared-domino_frozen_operations.mp4",
+      "bytes": 669480,
+      "sha256": "832e76eaf36241dfe412d33e25f9c97cfa446e637274ab2b8708290289aedc1a"
+    },
+    {
+      "path": "shared-media/interactive_parallel-chapters-zh.json",
+      "bytes": 811,
+      "sha256": "8686c920317777d0cd6005b39d4b703d6b5f8d0105c8fb4c6e45afab88f6423d"
+    },
+    {
+      "path": "shared-media/shared-pnp_six_learning.png",
+      "bytes": 216941,
+      "sha256": "12a5a468390941e1ea4c753e068a1868fdcdb716b2c0a796f92d291cfbb270fa"
+    },
+    {
+      "path": "shared-media/shared-balance_target_pair.json",
+      "bytes": 13562,
+      "sha256": "c6d3463efafb98b8bb802971b0812c5b0bc622d26af8d0b877cbf151d4728c90"
+    },
+    {
+      "path": "shared-media/shared-six_domino_learning.json",
+      "bytes": 13164,
+      "sha256": "5d792be6685c2c23824cf71541846d4b722510ecd1b20b6bd05f6afe57245808"
+    },
+    {
+      "path": "shared-media/shared-tool_open_gripper.png",
+      "bytes": 221915,
+      "sha256": "5da01b3489d47dca05de15785a38a222365ff7d288718041c7f6f1a0642d8715"
+    },
+    {
+      "path": "shared-media/shared-domino_frozen_operations.png",
+      "bytes": 191336,
+      "sha256": "9bea88542328a8ec3fb6dc3c7bf275a24e35de2c67641a37b1803dcd653f73bc"
+    },
+    {
+      "path": "shared-media/shared-env_pickplace_2d.mp4",
+      "bytes": 2318115,
+      "sha256": "adb2b7275b6a40b9b450ab33e7221cac21ee0d3d855c37f0a8a9671a2f8e8654"
+    },
+    {
+      "path": "shared-media/shared-env_pickplace_2d.png",
+      "bytes": 286886,
+      "sha256": "b26a34a16d36e8599e59fa22ff7087799da46beefd5d6d3a7915b17d86c98c90"
+    },
+    {
+      "path": "shared-media/shared-domino_hold_middle.json",
+      "bytes": 7521,
+      "sha256": "52517b9e61f59c6f67f83445c550f069882854751ca6ab06a56441a9c63cd939"
+    },
+    {
+      "path": "shared-media/shared-env_gears.png",
+      "bytes": 246639,
+      "sha256": "0afbfa797c8267d1cf79265ec266b81a777565735753e4d579b2ce988562be2b"
+    },
+    {
+      "path": "shared-media/shared-env_billiards.json",
+      "bytes": 8314,
+      "sha256": "12413a1ee2cff0f1c81062f4e4ab1c20dfc1636f3585bf817af7554498b4f10a"
+    },
+    {
+      "path": "shared-media/shared-interactive_parallel.png",
+      "bytes": 194248,
+      "sha256": "60675ba880e0174e0aeb9bc8b255df4849b60ca53fca0a79211a57b30f0f4b99"
+    },
+    {
+      "path": "shared-media/shared-featured_fork.json",
+      "bytes": 6928,
+      "sha256": "4782d27641bf35e50b1a4f7345dd96308636e606ac6d2b7615f5c78125e0f72b"
+    },
+    {
+      "path": "shared-media/shared-paper_four_domino.png",
+      "bytes": 195066,
+      "sha256": "5e62acdcbb5333a92737ad685b0ebe503bb616ec0d0a0ad9d30c0d5dda248f6e"
+    },
+    {
+      "path": "shared-media/shared-domino_push_last.png",
+      "bytes": 193147,
+      "sha256": "5b0645925ae673bda42d2ecce78596e7c5b4ae70bb40197a52318712e2976c97"
+    },
+    {
+      "path": "shared-media/shared-tool_open_gripper.mp4",
+      "bytes": 442772,
+      "sha256": "ebeb98ebec01e8f5afdf4a9ad16f6ec1063504ea90e19441a131b33bf6b966ff"
+    },
+    {
+      "path": "shared-media/shared-interactive_parallel.mp4",
+      "bytes": 1137992,
+      "sha256": "76646968fea7fff5893547077f05e8143d571afd6c7d7b8dd03c6db218896360"
+    },
+    {
+      "path": "shared-media/shared-domino_frozen_operations.json",
+      "bytes": 17405,
+      "sha256": "65ab45a40a2bf392e4c1231447fb63a01eb1af829ef126a57f52d079ad30251d"
+    },
+    {
+      "path": "shared-media/shared-pnp_grasp_pair.mp4",
+      "bytes": 944942,
+      "sha256": "19548b3a95e7e6bac3c394dc1e9e53e122f7235b5d4fef085043a95044139f11"
+    },
+    {
+      "path": "shared-media/shared-env_balance.png",
+      "bytes": 243528,
+      "sha256": "df3cb53706dee158054df4e76d61dcebe99453b6013caa797d61b19288ea0cdf"
+    },
+    {
+      "path": "shared-media/shared-env_pickplace_1d.png",
+      "bytes": 237796,
+      "sha256": "36b486a85f4b9aa95aca09964810923d940458b4f3b76f3bb6fc61b333018916"
+    },
+    {
+      "path": "shared-media/shared-tool_miss_cube.mp4",
+      "bytes": 448109,
+      "sha256": "1ade40050d656d5966ef3d91062041d4d5672d8d27f14809dcc943068bd55caf"
+    },
+    {
+      "path": "shared-media/shared-domino_push_last.json",
+      "bytes": 6716,
+      "sha256": "116cbd6097f85535bc6796118a75aa84e58701db304ca956e5400084d108d003"
+    },
+    {
+      "path": "shared-media/shared-env_domino.mp4",
+      "bytes": 1005322,
+      "sha256": "68fdbe120f8fcb141396bf2e5734e5e443a524fa38d030b8c5390a9400969290"
+    },
+    {
+      "path": "shared-media/shared-balance_load_pair.png",
+      "bytes": 204507,
+      "sha256": "231a171de8948c00291f7057a0a7d354e7443035355d7683c372296860f37aba"
+    },
+    {
+      "path": "shared-media/shared-balance_learning.mp4",
+      "bytes": 1481694,
+      "sha256": "db06cf0037f9382ebb9ae89968b3b779110bf498cfc7a668469d98996b4983c2"
+    },
+    {
+      "path": "shared-media/shared-env_balance.json",
+      "bytes": 8424,
+      "sha256": "28f9993d45cb6d94336dfb3aa1f2eade9728429eee016ba39051aeb725bfb1b8"
+    },
+    {
+      "path": "shared-media/shared-env_gears.json",
+      "bytes": 8488,
+      "sha256": "5a7fc849316cfc7ad3b9094086c96a3b6428fb85a71d4dcd0bba053a07357d4b"
+    },
+    {
+      "path": "shared-media/shared-tool_open_gripper.json",
+      "bytes": 8831,
+      "sha256": "d44ea59d945a6169c98fbf879c94c4eab7ccedad018f7f57b546717f2820e119"
+    },
+    {
+      "path": "shared-media/shared-featured_chain.mp4",
+      "bytes": 2203990,
+      "sha256": "92ee198922ab12065be52b09ec9b008641b3b7d38b29c47193e770bfa2b8bacc"
+    },
+    {
+      "path": "shared-media/interactive_chain-chapters-en.json",
+      "bytes": 658,
+      "sha256": "5227e5f52fa65ebb9bba71ce81904f9bbd86d59ddb738b072d1075181da84938"
+    },
+    {
+      "path": "shared-media/shared-env_pickplace_1d.mp4",
+      "bytes": 1275419,
+      "sha256": "c31ef0d096fb20d31cc32cd51dd04bae8d9df9c0e3783c6b2f7fa03e98c143c8"
+    },
+    {
+      "path": "shared-media/shared-env_billiards.mp4",
+      "bytes": 1236086,
+      "sha256": "25d5e4c4bb4d403fdd561d786a2dea899b1cf111440a8000d9dcc7e369385fb5"
+    },
+    {
+      "path": "shared-media/shared-env_pickplace_2d.json",
+      "bytes": 11423,
+      "sha256": "154a3010ef563218a0343122fa08668d5e79fa24abb0931cc02890b828e1e14e"
+    },
+    {
+      "path": "shared-media/shared-domino_hold_middle.png",
+      "bytes": 190536,
+      "sha256": "a8d8c5506dcc887a001733d0e609997381225bf7a53489f5445038ded1cc524b"
+    },
+    {
+      "path": "shared-media/shared-featured_fork.png",
+      "bytes": 382570,
+      "sha256": "79ff32a27eae00f1ddbd7ac8cb66ddcbafd1dddbc8d417a9f38e4ae0b0a9ce02"
+    },
+    {
+      "path": "shared-media/parallel-case-guide.json",
+      "bytes": 3669,
+      "sha256": "b87ade9e26318783981c4faed634c652ee9873da43a4d0617543178bb69bdfad"
+    },
+    {
+      "path": "shared-media/shared-interactive_chain.json",
+      "bytes": 11493,
+      "sha256": "269ec94e88d09c8fe9da0a4701f821ed7ee3105667bef802229c4bfc9d2bc727"
+    },
+    {
+      "path": "shared-media/shared-interactive_chain.png",
+      "bytes": 194259,
+      "sha256": "0d501578d51513e35487fadbb40039d20bed12edb24139aaf6beb7e7cccd6ac6"
+    },
+    {
+      "path": "shared-media/shared-env_domino.png",
+      "bytes": 218295,
+      "sha256": "fa196880f6a5dd2f59c5c4444f0dbdc7ca00fdfd69b78b838fbec2decd6e3372"
+    },
+    {
+      "path": "shared-media/shared-pnp_six_learning.json",
+      "bytes": 25238,
+      "sha256": "e9df24da1ab3c2e613e64d762368c8325e1f89cab722588b1b002e6bb1501478"
+    },
+    {
+      "path": "shared-media/shared-featured_chain.json",
+      "bytes": 29422,
+      "sha256": "7ed596a7bcf0628fc41b28cea1fd56828c8bee56e173d70f8449480d9fec6b58"
+    },
+    {
+      "path": "shared-media/shared-env_pickplace_1d.json",
+      "bytes": 8574,
+      "sha256": "118d96d7d2d7e265051ed729614bd3a3f9cda05cc29d9febc754aabbb364c958"
+    },
+    {
+      "path": "shared-media/shared-six_domino_learning.mp4",
+      "bytes": 744670,
+      "sha256": "443944fb5bf413c8c8c0a5eb627449e3d1b3aa3d6701c2662f608d71dca0df15"
+    },
+    {
+      "path": "shared-media/shared-six_domino_learning.png",
+      "bytes": 185038,
+      "sha256": "37560466f59094c236c3555cba237b681665f134afc17ed5091eb434f4c28248"
+    },
+    {
+      "path": "shared-media/shared-paper_four_domino.json",
+      "bytes": 15544,
+      "sha256": "bc6e17837a9f1e639fc0bc4ebc2d63929675f796fa7a205973ae9e3b48c61f9f"
+    },
+    {
+      "path": "shared-media/interactive_parallel-chapters-en.json",
+      "bytes": 847,
+      "sha256": "0d449624519159df748ac6341fd41ac20ff22a2d6a4de28dfa768ea9bb16a884"
+    },
+    {
+      "path": "shared-media/shared-domino_push_middle.mp4",
+      "bytes": 208930,
+      "sha256": "952d48f506c6c57242788a266e3a92625a3bc4294eb430644a35f53fa97a62db"
+    },
+    {
+      "path": "shared-media/shared-balance_learning.png",
+      "bytes": 214334,
+      "sha256": "069a3ba6f9b207ef6b7b8d54a0511f0f137e9588f2e90a0dbb4628c65f712e24"
+    },
+    {
+      "path": "shared-media/shared-tool_hook_pull.json",
+      "bytes": 8794,
+      "sha256": "1bfe6cda388d449095a45cf4d6a7393e271c704fac4e39d12c0aee8dc5eaf538"
+    },
+    {
+      "path": "shared-media/shared-featured_fork.mp4",
+      "bytes": 17975079,
+      "sha256": "0e5143c416f13a64c2d1f73d40440c9325aa91030f9de830600e2a9981bdfe64"
+    },
+    {
+      "path": "shared-media/shared-tool_miss_cube.png",
+      "bytes": 220777,
+      "sha256": "d3569ef72ffe568ba8d7cc4a57d0bd2dc898b21362cf5d943970d4805b407b9a"
+    },
+    {
+      "path": "shared-media/shared-tool_hook_pull.mp4",
+      "bytes": 445398,
+      "sha256": "364c97fd38b9401a90b2bc13496463f3da1b7e609355e2dfadf6c2f7f6f22a32"
+    },
+    {
+      "path": "shared-media/interactive_chain-chapters-zh.json",
+      "bytes": 630,
+      "sha256": "5a4047f7e87c7e5d1b991881e7349682002e340227484b6b0fcd307fc392f484"
+    }
+  ],
+  "research_code_included": false,
+  "weights_included": false,
+  "raw_run_records_included": false
+}

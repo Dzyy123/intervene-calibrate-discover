@@ -28,32 +28,40 @@
     if(!active)return;
     if(video.paused&&video.currentTime<0.03){
       root.dataset.current='preview';
-      document.getElementById('extra-stage').textContent=t('Video preview. Press play or choose a chapter to follow the operations and graph updates.','当前是视频封面。点击播放或选择章节，再跟随实际操作与图更新过程。');
+      document.getElementById('extra-stage').textContent=active.new_environment_illustration?t('Press play or choose an operation to inspect the environment response.','点击播放或选择操作，观察环境响应。'):t('Video preview. Press play or choose a chapter to follow the operations and graph updates.','当前是视频封面。点击播放或选择章节，再跟随实际操作与图更新过程。');
       return;
     }
     if(!timeline.length){document.getElementById('extra-stage').textContent=active.kind==='candidate_graph'?t('Recorded candidate-graph video. Chapter metadata is still loading or unavailable.','候选图录制视频。章节信息正在加载或暂不可用。'):active.kind==='paired_operation'?t('The paired clip shows simulator operations and outcomes, not model predictions.','配对片段展示仿真操作及结果，不是模型预测。'):active.kind==='frozen_graph_check'?t('Existing graph highlights support a qualitative physical check; they are not fresh discovery or fitted predictions.','已有图的高亮用于定性物理检查，不是新发现结果或拟合预测。'):active.kind==='mechanical_preview'?t('Mechanical preview only, without a learned graph or model prediction.','仅为物理操作预览，没有学到的图或模型预测。'):t('Saved illustrative environment material, not quantitative evidence for the paper.','已保存的环境示意素材，不是论文定量证据。');return;}
     let current=timeline[0];for(const row of timeline)if(row.start<=video.currentTime+.03)current=row;
     if(root.dataset.current===current.stage)return;root.dataset.current=current.stage;
     document.getElementById('extra-stage').textContent=current.en?t(current.en,current.zh||current.en):window.ICD_DEMO_BRIEFS?.stage(active.id,current.stage)||notes[current.stage]||current.stage;
-    for(const button of root.querySelectorAll('button'))button.setAttribute('aria-current',String(button.dataset.stage===current.stage));
+    const select=root.querySelector('select');
+    if(select&&document.activeElement!==select){const option=[...select.options].filter(o=>o.value!==''&&Number(o.value)<=video.currentTime+.03).at(-1);select.value=option?.value||'';}
   }
   function showChapters(record){
     timeline=record.timeline||[];const root=document.getElementById('extra-chapters');root.replaceChildren();delete root.dataset.current;
+    const wrapper=document.createElement('label');wrapper.className='chapter-label';
+    const title=document.createElement('span');title.textContent=t('Jump to','跳转章节');
+    const select=document.createElement('select');select.className='chapter-select';select.setAttribute('aria-label',t('Scene chapter','场景章节'));
+    const empty=document.createElement('option');empty.value='';empty.textContent=t('Choose a chapter','选择一个章节');select.append(empty);
     for(const row of timeline){
       const label=row.chapterLabel||chapterLabels[row.stage];if(!label)continue;
-      const button=document.createElement('button');button.type='button';button.dataset.stage=row.stage;
-      const sec=Math.floor(row.start);button.textContent=Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0')+' '+label;
-      button.addEventListener('click',()=>{video.currentTime=row.start;video.play().catch(()=>{});syncStage();});root.append(button);
+      const option=document.createElement('option');option.value=String(row.start);
+      const sec=Math.floor(row.start);option.textContent=Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0')+' · '+label;select.append(option);
     }
+    wrapper.append(title,select);root.append(wrapper);root.hidden=select.options.length<2;
+    select.addEventListener('change',()=>{if(select.value==='')return;video.currentTime=Number(select.value);video.play().catch(()=>{});syncStage();});
     syncStage();
   }
   function choose(id){
     const record=records.find(r=>r.id===id);if(!record)return;active=record;const c=copy(record);
     video.pause();video.src=window.ICD_MEDIA_URL('assets/'+record.video);video.poster='assets/'+record.poster;video.setAttribute('aria-label',c.title);video.load();
+    document.getElementById('extra-panel').dataset.uniform=String(!!record.uniform);
     for(const [key,value]of Object.entries({'extra-question':c.question,'extra-title':c.title,'extra-description':c.description,'extra-scope':c.scope,'extra-badge':c.badge}))document.getElementById(key).textContent=value;
     document.getElementById('extra-panel').setAttribute('aria-labelledby','extra-tab-'+id);document.getElementById('extra-download').href=window.ICD_MEDIA_URL('assets/'+record.video);
     window.ICD_DEMO_BRIEFS?.renderExtra(record);
     if(record.learned_calibration===false)document.getElementById('extra-badge').textContent=t('Structure exploration · no learned calibration','结构探索参考 · 未做学习型校准');
+    if(record.new_environment_illustration)document.getElementById('extra-badge').textContent=t('New HD illustration · provided mechanism','新制高清概览 · 给定机制图');
     const nodes=document.getElementById('extra-nodes');nodes.replaceChildren();
     for(const role of record.nodes){const span=document.createElement('span');span.textContent=role[L.zh?'zh':'en'];nodes.append(span);}
     for(const button of document.querySelectorAll('[data-extra]')){const selected=button.dataset.extra===id;button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;}
@@ -88,7 +96,7 @@
       '#extra-title':'平衡模组 · 五节点图学习', '#extra-description':'从候选关系、观察检验和目标选择开始，展示两轮真实操作及其后的图更新。',
       '#extra-badge':'候选图 · 真实证据更新', '#extra-restart':'从头观看', '#extra-download':'下载这段视频', '#extra-scope-label':'这段视频能说明什么',
       '#extra-scope':'任务层候选图，不等于完整 DAG 恢复或 ACC 基准结果。',
-      '#extra-gallery-note':'每类材料保留自己的验证范围。接触检查针对有限轨迹，基础环境素材未作为主表验证证据；配对仿真重放不是模型预测。平衡图学习视频采用英文字幕与节点标签，其余归档素材可能保留原有注释；网页说明提供中英文。',
+      '#extra-gallery-note':'全部视频使用英文字幕与节点标签，网页说明提供中英文。图学习记录、配对仿真操作和新制环境概览分别标注；环境概览展示给定机制，不作为论文定量结果。',
       '#extra-manifest-link':'图学习与配对视频清单', '#extra-audit-link':'接触检查与图结构边界', '#extra-query-link':'查看模型查询', '#library-manifest-link':'完整库的媒体来源清单'
     };
     for(const [selector,value]of Object.entries(texts))document.querySelector(selector).textContent=value;
@@ -100,7 +108,7 @@
   document.getElementById('demo-kind-filter').value='candidate_graph';
   document.querySelector('.extra-gallery-layout').prepend(document.getElementById('extra-list'));
   document.querySelector('.extra-question').prepend(document.getElementById('extra-badge'));
-  video.before(document.getElementById('extra-chapters'),document.getElementById('extra-stage'));
+  video.after(document.getElementById('extra-stage'),document.getElementById('extra-chapters'));
   const status=document.createElement('p');status.id='gallery-load-status';status.setAttribute('role','status');
   const retry=document.createElement('button');retry.type='button';retry.id='gallery-retry';retry.textContent=t('Retry gallery loading','重新加载演示库');retry.hidden=true;
   document.querySelector('.library-filter').after(status,retry);
@@ -118,14 +126,22 @@
     const available=bundles.filter(b=>b.status==='fulfilled').flatMap(b=>b.value.videos||[]);
     if(!available.length){status.textContent=t('The scene list is unavailable. Check your site sign-in and retry; the default recorded video remains available.','场景列表暂不可用。请检查网站登录状态后重试；默认录制视频仍可播放。');retry.hidden=false;document.getElementById('more-demos').dataset.galleryState='unavailable';return;}
     records=[...new Map(available.map(record=>[record.id,record])).values()];
+    const requestedId=new URLSearchParams(location.search).get('extra');
+    const requestedRecord=records.find(record=>record.id===requestedId);
+    if(requestedRecord){active=requestedRecord;document.getElementById('demo-kind-filter').value=requestedRecord.kind;}
+    for(const record of records){const u=window.ICD_UNIFORM_REGISTRY?.entries?.[record.id];if(u){record.video='../'+u.video;record.poster='../'+u.poster;record.presentation_manifest='../'+u.metadata;record.uniform=true;record.new_environment_illustration=!!u.new_environment_illustration;}}
     let presentationIncomplete=false;
-    const presentationLabels={'Question':t('Question','问题'),'Observational graph':t('Observe','观察'),'Select 1':t('Operation 1','操作一'),'Update 1':t('Update 1','更新一'),'Select 2':t('Operation 2','操作二'),'Update 2':t('Update 2','更新二'),'Result':t('Result','结果')};
+    const presentationLabels={'Question':t('Question','问题'),'Scene key':t('Scene guide','场景说明'),'Observational graph':t('Initial graph','初始图'),'Select 1':t('Operation 1','操作一'),'Update 1':t('Update 1','更新一'),'Select 2':t('Operation 2','操作二'),'Update 2':t('Update 2','更新二'),'Result':t('Result','结果'),'Paired comparison':t('Compare endpoints','配对终态'),'Recorded batch update':t('Recorded batch update','原批次图更新'),'Frozen-graph check':t('Frozen graph check','冻结图检查')};
     await Promise.all(records.filter(record=>record.presentation_manifest).map(async record=>{
       try{
         const film=await jsonAsset(record.presentation_manifest);
         if(film.file!==record.video||film.poster!==record.poster)throw new Error('Presentation binding mismatch');
         record.seconds=film.duration;
-        record.timeline=film.stages.map(row=>({...row,stage:row.name,chapterLabel:presentationLabels[row.name]}));
+        if(film.new_environment_illustration){
+          record.en={...record.en,question:'How do operations affect the environment variables?',description:'New native-HD environment overview: operation, response, and the provided mechanism.',scope:film.scope_en,badge:'New HD illustration · provided mechanism'};
+          record.zh={...record.zh,question:'操作怎样影响环境中的变量？',description:'新制高清环境概览：操作、响应及环境给定的机制。',scope:film.scope_zh,badge:'新制高清概览 · 给定机制图'};
+        }
+        record.timeline=film.stages.map(row=>{const chapter=film.chapters?.find(c=>Math.abs(c.start-row.start)<.001);return {...row,stage:row.name,chapterLabel:presentationLabels[row.name]||(chapter?t(chapter.en,chapter.zh||chapter.en):undefined)};});
       }catch{presentationIncomplete=true;record.timeline=[];}
     }));
     showList();

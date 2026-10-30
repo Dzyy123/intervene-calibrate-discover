@@ -6,6 +6,11 @@
   "main_research_repository_public": false,
   "training_data_public": false,
   "weights_public": false,
+  "demo_presentation_release": "20261030a",
+  "demo_presentation_inventory": "shared-media/release.json",
+  "demo_presentation_count": 24,
+  "new_rendering_code_public": false,
+  "raw_experiment_records_public": false,
   "manuscript": "Non-anonymous preprint with clarified abstract and condensed appendix (2026-10-19); numerical results unchanged",
   "files": [
     {

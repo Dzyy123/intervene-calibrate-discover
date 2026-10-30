@@ -1,0 +1,47 @@
+{
+  "module": "parallel",
+  "fps": 30,
+  "duration": 27.066666666666666,
+  "chapters": [
+    {
+      "id": "question",
+      "label": "The question",
+      "time": 0
+    },
+    {
+      "id": "calibration",
+      "label": "Calibrate values",
+      "time": 1.8
+    },
+    {
+      "id": "round1",
+      "label": "Operation 1",
+      "time": 5.066666666666666
+    },
+    {
+      "id": "update1",
+      "label": "Graph update 1",
+      "time": 7.9
+    },
+    {
+      "id": "round2",
+      "label": "Operation 2",
+      "time": 13.3
+    },
+    {
+      "id": "update2",
+      "label": "Graph update 2",
+      "time": 16.133333333333333
+    },
+    {
+      "id": "graph",
+      "label": "Recorded graph",
+      "time": 19.366666666666667
+    },
+    {
+      "id": "query",
+      "label": "Counterfactual query",
+      "time": 21.566666666666666
+    }
+  ]
+}

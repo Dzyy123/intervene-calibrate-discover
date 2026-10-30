@@ -1,0 +1,191 @@
+{
+  "file": "../shared-media/shared-featured_fork.mp4",
+  "poster": "../shared-media/shared-featured_fork.png",
+  "video_sha256": "0e5143c416f13a64c2d1f73d40440c9325aa91030f9de830600e2a9981bdfe64",
+  "duration": 150.33333333333334,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "display_source_resolution": [
+    2080,
+    1170
+  ],
+  "speed_relative_to_previous_film": 1.5073170731707315,
+  "slower_version": "featured-fork-upright-20261029.mp4",
+  "rounds": 20,
+  "pairs_per_round": 4,
+  "shown_pairs_per_round": 1,
+  "all_40_shown_trials_start_without_preset_tilt": true,
+  "display_selection": "The same displayed pairs as the upright-start film. Rounds 5 and 7 use existing upright pairs selected after the run for presentation. Learning uses all four original pairs per round, including unshown contexts.",
+  "scope": "Physical display re-rendering and timing change only. Frozen encoder and ACC; unchanged model-input pixels, physical audits and graph history. The initial 12 rounds were followed by a requested eight-round continuation with the previously disclosed 5 mm F1 grasp correction. Reference colors are not learner inputs.",
+  "private_materials": "New replay/rendering scripts, research implementation, training data and model weights remain private.",
+  "chapters": [
+    {
+      "start": 0,
+      "en": "Scene & protocol",
+      "zh": "场景与流程"
+    },
+    {
+      "start": 3.3333333333333335,
+      "en": "First test",
+      "zh": "首次测试"
+    },
+    {
+      "start": 32.36666666666667,
+      "en": "Round 5 · F1",
+      "zh": "第5轮 · F1"
+    },
+    {
+      "start": 48.13333333333333,
+      "en": "Round 7 · F3",
+      "zh": "第7轮 · F3"
+    },
+    {
+      "start": 98.33333333333333,
+      "en": "Revise a wrong edge",
+      "zh": "修订错误边"
+    },
+    {
+      "start": 127.26666666666667,
+      "en": "Correct the last edge",
+      "zh": "纠正最后一条边"
+    },
+    {
+      "start": 147.66666666666666,
+      "en": "Final graph",
+      "zh": "最终图"
+    }
+  ],
+  "stages": [
+    {
+      "start": 0,
+      "en": "Seven nodes; one pair shown per round, four pairs used for each graph update.",
+      "zh": "七个节点；每轮展示一对操作，图更新使用完整四对数据。"
+    },
+    {
+      "start": 3.3333333333333335,
+      "en": "Round 1 · Test F4: operate, observe, update.",
+      "zh": "第1轮 · 测试F4：操作、观察、更新。"
+    },
+    {
+      "start": 11.266666666666667,
+      "en": "Round 2 · Test F1 with matched robot operations.",
+      "zh": "第2轮 · 对F1进行配对机械臂操作。"
+    },
+    {
+      "start": 18.133333333333333,
+      "en": "Round 3 · Test P; revisions can also introduce wrong hypotheses.",
+      "zh": "第3轮 · 测试P；修订也可能引入错误假设。"
+    },
+    {
+      "start": 25.133333333333333,
+      "en": "Round 4 · Test B and compare visual responses.",
+      "zh": "第4轮 · 测试B，对比视觉响应。"
+    },
+    {
+      "start": 32.36666666666667,
+      "en": "Round 5 · Hold versus push F1, starting upright.",
+      "zh": "第5轮 · 从竖直状态开始，夹持与推动F1。"
+    },
+    {
+      "start": 38.833333333333336,
+      "en": "Round 6 · Test F1 again and accumulate evidence.",
+      "zh": "第6轮 · 再次测试F1，积累证据。"
+    },
+    {
+      "start": 48.13333333333333,
+      "en": "Round 7 · Hold versus push F3; the graph stays unchanged.",
+      "zh": "第7轮 · 夹持与推动F3，图保持不变。"
+    },
+    {
+      "start": 56.6,
+      "en": "Round 8 · Test F2 and retain the current graph.",
+      "zh": "第8轮 · 测试F2，保留当前图。"
+    },
+    {
+      "start": 62.13333333333333,
+      "en": "Round 9 · Repeat the F3 test; no structural update.",
+      "zh": "第9轮 · 重复F3测试，没有结构更新。"
+    },
+    {
+      "start": 70.6,
+      "en": "Round 10 · Another paired F3 test.",
+      "zh": "第10轮 · 再做F3配对测试。"
+    },
+    {
+      "start": 79.06666666666666,
+      "en": "Round 11 · Test F3; the false F3→F2 edge remains.",
+      "zh": "第11轮 · 测试F3，错误边F3→F2仍存在。"
+    },
+    {
+      "start": 84.6,
+      "en": "Round 12 · Test F2. The original budget ends with one extra edge.",
+      "zh": "第12轮 · 测试F2，最初预算结束时仍多一条边。"
+    },
+    {
+      "start": 90.13333333333334,
+      "en": "Eight more rounds were requested. The actuator correction is disclosed; learning rules stay unchanged.",
+      "zh": "随后追加八轮，说明执行器修正，学图规则不变。"
+    },
+    {
+      "start": 92.8,
+      "en": "Round 13 · Test F3 from the round-12 graph.",
+      "zh": "第13轮 · 从第12轮的图继续测试F3。"
+    },
+    {
+      "start": 98.33333333333333,
+      "en": "Round 14 · Test F3 before revising the remaining hypothesis.",
+      "zh": "第14轮 · 测试F3，再修订残留假设。"
+    },
+    {
+      "start": 103.06666666666666,
+      "en": "Withdraw F3→F2, but propose the wrong F1→F2 edge.",
+      "zh": "撤回F3→F2，但又提出错误边F1→F2。"
+    },
+    {
+      "start": 105,
+      "en": "Round 15 · Test F1; the new hypothesis remains.",
+      "zh": "第15轮 · 测试F1，暂时保留新假设。"
+    },
+    {
+      "start": 113.36666666666666,
+      "en": "Round 16 · Repeat the F1 comparison.",
+      "zh": "第16轮 · 重复F1对照。"
+    },
+    {
+      "start": 121.73333333333333,
+      "en": "Round 17 · Test F4; the graph has not changed yet.",
+      "zh": "第17轮 · 测试F4，图尚未改变。"
+    },
+    {
+      "start": 127.26666666666667,
+      "en": "Round 18 · Compare F1 operations before the final correction.",
+      "zh": "第18轮 · 对比F1操作，随后完成最后一次纠正。"
+    },
+    {
+      "start": 134.86666666666667,
+      "en": "Withdraw F1→F2. All six edges match the simulator reference.",
+      "zh": "撤回F1→F2，六条边与仿真参考图一致。"
+    },
+    {
+      "start": 136.6,
+      "en": "Round 19 · Test F2; the corrected graph stays unchanged.",
+      "zh": "第19轮 · 测试F2，纠正后的图保持不变。"
+    },
+    {
+      "start": 142.13333333333333,
+      "en": "Round 20 · Test F2 again and retain the final graph.",
+      "zh": "第20轮 · 再次测试F2，保留最终图。"
+    },
+    {
+      "start": 147.66666666666666,
+      "en": "Final six-edge graph. All 20 rounds retained; reference colors were never supplied to learning.",
+      "zh": "最终六条边，完整保留20轮；参考图配色从未提供给学图过程。"
+    }
+  ],
+  "shared_ui_version": "20261029-1",
+  "presentation_source_sha256": "987c60ac96abacd8e848188bb5adf2a89b397c34d028d859c57b3ff761f345b3",
+  "scientific_panels_unchanged_before_encoding": true,
+  "presentation_exclusion": "Existing playback-speed badge: x997..1196, y220..269",
+  "all_original_timings_preserved": true
+}

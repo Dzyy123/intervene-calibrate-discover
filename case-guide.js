@@ -7,7 +7,7 @@
   const startPath=document.createElement('p');startPath.className='curated-path';
   for(const[href,en,cn]of [['#discovery','Follow one complete case','先看一个完整案例'],['#key-evidence','Inspect the calibration evidence','看校准证据'],['#queries','Inspect counterfactual outputs','看反事实输出']]){const a=document.createElement('a');a.href=href;a.textContent=t(en,cn);startPath.append(a);}
   document.querySelector('.resource-links').after(startPath);
-  let source=null, preferFocus=true, currentKey='';
+  let source=null, preferFocus=!window.ICD_UNIFORM_REGISTRY, currentKey='';
   const phases={
     question:{state:0,title:t('Begin with unresolved directions','先看方向未定的候选图'),action:t('Use the calibrated visual interface and observational data.','使用已校准的视觉接口与观察数据。'),evidence:t('The two neighboring pairs are visible, but their directions remain unresolved.','两个相邻节点对已进入候选图，但方向尚未确定。'),conclusion:t('An undirected edge is a question to test, not a discovered causal direction.','无向边表示待检验关系，不表示已经知道因果方向。')},
     calibration:{state:0,title:t('Calibrate before discovering the graph','先校准读数，再开始学图'),action:t('Use verified entry values to fit T; then freeze it.','用核验后的入口值拟合 T，随后冻结。'),evidence:t('Entry A readout NMSE: 0.00391 → 0.00124 on 128 ID images.','128 张 ID 图像中，入口 A 读数 NMSE：0.00391 → 0.00124。'),conclusion:t('This measures readout calibration, not graph accuracy or OOD performance.','这一步说明读数对齐，不等于证明图准确或 OOD 泛化。')},
@@ -51,9 +51,12 @@
     if(!on){shell.classList.remove('case-focus');movie.controls=true;currentKey='';return;}
     let chapter=source.chapters[0];for(const c of source.chapters)if(c.time<=movie.currentTime+.02)chapter=c;
     const p=phases[chapter.id]||phases.question;
-    shell.classList.toggle('case-focus',preferFocus&&chapter.id!=='query');movie.controls=!shell.classList.contains('case-focus');
+    const focused=preferFocus&&chapter.id!=='query';
+    shell.classList.toggle('case-focus',focused);movie.controls=!focused;
+    graph.hidden=!focused;row.classList.toggle('case-other',!focused);
     document.getElementById('case-view').textContent=preferFocus?t('View full recording','查看完整画面'):t('Enlarge scene and graph','放大场景与图');
     document.getElementById('case-seek').value=movie.currentTime;
+    if(Number.isFinite(movie.duration))document.getElementById('case-seek').max=movie.duration;
     document.getElementById('case-play').textContent=movie.paused?t('Play','播放'):t('Pause','暂停');
     if(currentKey===chapter.id)return;currentKey=chapter.id;
     for(const[k,v]of Object.entries({title:p.title,action:p.action,evidence:p.evidence,conclusion:p.conclusion}))document.getElementById('case-'+k).textContent=v;
@@ -67,7 +70,7 @@
   ['timeupdate','loadedmetadata','play','pause','emptied'].forEach(e=>movie.addEventListener(e,sync));
   document.querySelectorAll('[data-scene]').forEach(b=>b.addEventListener('click',sync));
   guide.hidden=true;controls.hidden=true;graph.hidden=true;explanation.hidden=true;row.classList.add('case-other');
-  fetch('assets/parallel-case-guide.json').then(r=>{if(!r.ok)throw new Error('Source-bound case unavailable');return r.json();}).then(data=>{source=data;sync();}).catch(()=>{guide.hidden=true;controls.hidden=true;graph.hidden=true;row.classList.add('case-other');movie.controls=true;});
+  fetch(window.ICD_UNIFORM_REGISTRY?.case_guide||'assets/parallel-case-guide.json').then(r=>{if(!r.ok)throw new Error('Source-bound case unavailable');return r.json();}).then(data=>{source=data;sync();}).catch(()=>{guide.hidden=true;controls.hidden=true;graph.hidden=true;row.classList.add('case-other');movie.controls=true;});
   for(const[id,questionEn,questionZh,meaningEn,meaningZh]of [
     ['results','Can environment interventions recover direct edges and their directions?','环境干预能否恢复直接边及其方向？','Read SHD and AUPRC together; completed runs are not correct-graph counts.','结合 SHD 与 AUPRC 判断；流程跑完不等于图完全正确。'],
     ['prediction-results','Can the frozen model predict mean non-target states under the listed test conditions?','冻结模型能否预测各测试条件下的非目标平均状态？','This tests conditional mean consequences, not robot task success. A/B-only results do not establish an OOD axis.','这里检验条件平均后果，不是机械臂任务成功率；仅有 A/B 标签不证明 OOD 泛化。'],

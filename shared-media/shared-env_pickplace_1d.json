@@ -1,0 +1,357 @@
+{
+  "id": "env_pickplace_1d",
+  "file": "../shared-media/shared-env_pickplace_1d.mp4",
+  "poster": "../shared-media/shared-env_pickplace_1d.png",
+  "video_sha256": "c31ef0d096fb20d31cc32cd51dd04bae8d9df9c0e3783c6b2f7fa03e98c143c8",
+  "duration": 18.2,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "kind": "environment_preview",
+  "title_en": "Pick & place · 1D",
+  "title_zh": "一维抓取放置",
+  "scope_en": "New native-HD illustration of the original analytic SCM environment. The right-hand graph is the provided mechanism; motion is choreographed, not a new pixel/ACC experiment or contact-dynamics validation.",
+  "scope_zh": "原解析 SCM 环境的新制高清概览。右侧为环境给定的机制图；运动由脚本编排，不是新的像素／ACC 实验或接触动力学验证。",
+  "stages": [
+    {
+      "start": 0,
+      "stop": 1.4,
+      "name": "r0_Setup_0",
+      "en": "Explore the environment and its variables",
+      "zh": "一维抓取放置 · 环境概览",
+      "phase": "Setup",
+      "kind": "still",
+      "speed": null,
+      "target": null,
+      "source_frame_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "start": 1.4,
+      "stop": 2.4,
+      "name": "r1_Operate_1",
+      "en": "place the object, then release (persistence = the cut)",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 1.75,
+      "target": 3,
+      "source_frame_range": [
+        12,
+        47
+      ]
+    },
+    {
+      "start": 2.4,
+      "stop": 3.6,
+      "name": "r1_Observe_2",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 3,
+      "source_frame_range": [
+        47,
+        57
+      ]
+    },
+    {
+      "start": 3.6,
+      "stop": 4.6,
+      "name": "r2_Operate_3",
+      "en": "motor command: set the gripper",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 1.7,
+      "target": 1,
+      "source_frame_range": [
+        57,
+        91
+      ]
+    },
+    {
+      "start": 4.6,
+      "stop": 5.8,
+      "name": "r2_Observe_4",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 1,
+      "source_frame_range": [
+        91,
+        101
+      ]
+    },
+    {
+      "start": 5.8,
+      "stop": 6.8,
+      "name": "r3_Operate_5",
+      "en": "hold the object at a chosen height",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 1.35,
+      "target": 4,
+      "source_frame_range": [
+        101,
+        128
+      ]
+    },
+    {
+      "start": 6.8,
+      "stop": 8,
+      "name": "r3_Observe_6",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 4,
+      "source_frame_range": [
+        128,
+        138
+      ]
+    },
+    {
+      "start": 8,
+      "stop": 9,
+      "name": "r4_Operate_7",
+      "en": "motor command: move the arm",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.9,
+      "target": 0,
+      "source_frame_range": [
+        138,
+        156
+      ]
+    },
+    {
+      "start": 9,
+      "stop": 10.2,
+      "name": "r4_Observe_8",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 0,
+      "source_frame_range": [
+        156,
+        166
+      ]
+    },
+    {
+      "start": 10.2,
+      "stop": 11.2,
+      "name": "r5_Operate_9",
+      "en": "fingertips slide the goal disc",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.65,
+      "target": 2,
+      "source_frame_range": [
+        166,
+        179
+      ]
+    },
+    {
+      "start": 11.2,
+      "stop": 12.4,
+      "name": "r5_Observe_10",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 2,
+      "source_frame_range": [
+        179,
+        189
+      ]
+    },
+    {
+      "start": 12.4,
+      "stop": 13.4,
+      "name": "r6_Operate_11",
+      "en": "reach out and drive the lamp",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 0.75,
+      "target": 5,
+      "source_frame_range": [
+        189,
+        204
+      ]
+    },
+    {
+      "start": 13.4,
+      "stop": 14.6,
+      "name": "r6_Observe_12",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 5,
+      "source_frame_range": [
+        204,
+        214
+      ]
+    },
+    {
+      "start": 14.6,
+      "stop": 15.6,
+      "name": "r7_Operate_13",
+      "en": "motor command: set the gripper",
+      "zh": "一维抓取放置 · 操作演示",
+      "phase": "Operate",
+      "kind": "motion",
+      "speed": 1.4,
+      "target": 1,
+      "source_frame_range": [
+        214,
+        242
+      ]
+    },
+    {
+      "start": 15.6,
+      "stop": 16.8,
+      "name": "r7_Observe_14",
+      "en": "Observe the scripted mechanism response",
+      "zh": "一维抓取放置 · 观察响应",
+      "phase": "Observe",
+      "kind": "still",
+      "speed": null,
+      "target": 1,
+      "source_frame_range": [
+        242,
+        252
+      ]
+    },
+    {
+      "start": 16.8,
+      "stop": 18.2,
+      "name": "r7_Summary_15",
+      "en": "Environment overview complete",
+      "zh": "一维抓取放置 · 概览结束",
+      "phase": "Summary",
+      "kind": "still",
+      "speed": null,
+      "target": null,
+      "source_frame_range": [
+        252,
+        284
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "en": "Setup",
+      "zh": "环境概览"
+    },
+    {
+      "start": 1.4,
+      "en": "Operate · object",
+      "zh": "操作 · 物体"
+    },
+    {
+      "start": 2.4,
+      "en": "Observe · object",
+      "zh": "观察 · 物体"
+    },
+    {
+      "start": 3.6,
+      "en": "Operate · grip",
+      "zh": "操作 · 夹爪"
+    },
+    {
+      "start": 4.6,
+      "en": "Observe · grip",
+      "zh": "观察 · 夹爪"
+    },
+    {
+      "start": 5.8,
+      "en": "Operate · lift",
+      "zh": "操作 · 高度"
+    },
+    {
+      "start": 6.8,
+      "en": "Observe · lift",
+      "zh": "观察 · 高度"
+    },
+    {
+      "start": 8,
+      "en": "Operate · arm",
+      "zh": "操作 · 机械臂"
+    },
+    {
+      "start": 9,
+      "en": "Observe · arm",
+      "zh": "观察 · 机械臂"
+    },
+    {
+      "start": 10.2,
+      "en": "Operate · goal",
+      "zh": "操作 · 目标"
+    },
+    {
+      "start": 11.2,
+      "en": "Observe · goal",
+      "zh": "观察 · 目标"
+    },
+    {
+      "start": 12.4,
+      "en": "Operate · lamp",
+      "zh": "操作 · 灯"
+    },
+    {
+      "start": 13.4,
+      "en": "Observe · lamp",
+      "zh": "观察 · 灯"
+    },
+    {
+      "start": 14.6,
+      "en": "Operate · grip",
+      "zh": "操作 · 夹爪"
+    },
+    {
+      "start": 15.6,
+      "en": "Observe · grip",
+      "zh": "观察 · 夹爪"
+    },
+    {
+      "start": 16.8,
+      "en": "Summary",
+      "zh": "结束"
+    }
+  ],
+  "new_environment_illustration": true,
+  "native_render_resolution": [
+    1764,
+    990
+  ],
+  "graph_source": "Provided environment mechanism, not a learned pixel graph",
+  "original_learning_records_unchanged": null,
+  "old_trajectory_reproduction_claim": false,
+  "pixel_acc_experiment": false,
+  "contact_dynamics_validation": false,
+  "model_output_enhancement": false,
+  "timing": "Same phase-based pacing as the other videos; actual motion speed is displayed. Reading pauses remain.",
+  "publication_status": "PUBLIC_WEBSITE",
+  "shared_ui_version": "20261029-1",
+  "presentation_source_sha256": "1027ef2271db6b7098b07d8bf4837f5466480cd36061486c5513970d0ede85d7",
+  "scientific_panels_unchanged_before_encoding": true,
+  "presentation_exclusion": "Existing playback-speed badge: x997..1196, y220..269",
+  "all_original_timings_preserved": true
+}

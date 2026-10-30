@@ -1,0 +1,47 @@
+{
+  "module": "parallel",
+  "fps": 30,
+  "duration": 27.066666666666666,
+  "chapters": [
+    {
+      "id": "question",
+      "label": "问题",
+      "time": 0
+    },
+    {
+      "id": "calibration",
+      "label": "校准读数",
+      "time": 1.8
+    },
+    {
+      "id": "round1",
+      "label": "操作1",
+      "time": 5.066666666666666
+    },
+    {
+      "id": "update1",
+      "label": "图更新1",
+      "time": 7.9
+    },
+    {
+      "id": "round2",
+      "label": "操作2",
+      "time": 13.3
+    },
+    {
+      "id": "update2",
+      "label": "图更新2",
+      "time": 16.133333333333333
+    },
+    {
+      "id": "graph",
+      "label": "记录图",
+      "time": 19.366666666666667
+    },
+    {
+      "id": "query",
+      "label": "反事实查询",
+      "time": 21.566666666666666
+    }
+  ]
+}

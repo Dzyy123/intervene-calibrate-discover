@@ -33,7 +33,8 @@
     if(!root){root=document.createElement('dl');root.id='demo-brief';root.className='demo-brief';document.getElementById('extra-video').after(root);}
     const questions={balance_learning:['What changes when the robot moves the load versus the goal?','机械臂搬动砝码、移动目标，分别会改变什么？'],pnp_six_learning:['How do gripper opening and position affect the object?','夹爪的开合与位置，怎样影响物体？']};
     if(questions[record.id])document.getElementById('extra-question').textContent=t(...questions[record.id]);
-    render(root,rows[record.id]||[['Inspect the saved environment overview.','查看保存的环境概览。'],['Observe the scene and displayed variables.','观察场景及画面中的变量。'],['Background material only; no evaluated graph or predictor is attached.','仅作为背景素材，没有对应的评测图或预测器结果。']]);
+    const overview=record.new_environment_illustration?[['Follow each scripted operation in the original environment.','跟随原环境中各项编排操作。'],['Watch the response on the left and the selected variable on the right.','左侧观察响应，右侧查看所选变量。'],['The graph is the provided SCM mechanism, not a newly learned pixel graph.','图来自环境给定的 SCM 机制，不是新学出的像素因果图。']]:[['Inspect the saved environment overview.','查看保存的环境概览。'],['Observe the scene and displayed variables.','观察场景及画面中的变量。'],['Background material only; no evaluated graph or predictor is attached.','仅作为背景素材，没有对应的评测图或预测器结果。']];
+    render(root,rows[record.id]||overview);
   },stage(id,stage){
     if(id==='balance_learning'){
       if(stage==='round1_act')return t('The robot places the load on one side. Watch beam tilt and ball displacement.','机械臂把砝码放到一侧。请看横梁倾斜和球的位移。');
